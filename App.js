@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View, Dimensions } from 'react-native';
-import { TabNavigator } from 'react-navigation';
+import { TabNavigator, StackNavigator } from 'react-navigation';
 import { Icon } from 'react-native-elements';
 import { Constants } from 'expo';
+import Utils from './app/components/Utils'
+import UtilDetail from './app/components/UtilDetail'
 
 class UtilsScreen extends Component {
   render() {
@@ -16,8 +18,13 @@ class InfosScreen extends Component {
   }
 }
 
+const UtilsStack = StackNavigator({
+  Utils: { screen: Utils, },
+  Detail: { screen: UtilDetail, }
+})
+
 const MainScreenNavigator = TabNavigator({
-  Utils: { screen: UtilsScreen },
+  Utils: { screen: UtilsStack },
   Main: { screen: InfosScreen },
 },{
   tabBarOptions: {
