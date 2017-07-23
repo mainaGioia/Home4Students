@@ -1,23 +1,49 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { Component } from 'react';
+import { StyleSheet, Text, View, Dimensions } from 'react-native';
+import { TabNavigator } from 'react-navigation';
+import { Icon } from 'react-native-elements';
+import { Constants } from 'expo';
 
-export default class App extends React.Component {
+class UtilsScreen extends Component {
+  render() {
+    return <Text>List of recent chats</Text>
+  }
+}
+
+class InfosScreen extends Component {
+  render() {
+    return <Text>Infos about the dorm</Text>
+  }
+}
+
+const MainScreenNavigator = TabNavigator({
+  Utils: { screen: UtilsScreen },
+  Main: { screen: InfosScreen },
+},{
+  tabBarOptions: {
+    style: {
+      width: Dimensions.get("window").width,
+    },
+  },
+});
+
+export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
+        <MainScreenNavigator />
       </View>
     );
   }
 }
 
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    paddingTop: Constants.statusBarHeight,
+    backgroundColor: '#ecf0f1',
   },
 });
