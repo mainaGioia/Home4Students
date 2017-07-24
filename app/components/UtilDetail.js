@@ -9,7 +9,6 @@ export default class UtilDetail extends Component {
     const { picture, name, description, subcategories } = this.props.navigation.state.params;
 
     return (
-      <View style={ styles.list }>
       <ScrollView>
         <Tile
           imageSrc={{ uri: picture.large}}
@@ -52,7 +51,6 @@ export default class UtilDetail extends Component {
           />
         </List>
       </ScrollView>
-      </View>
     );
   }
 }

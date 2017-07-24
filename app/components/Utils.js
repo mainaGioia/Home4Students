@@ -17,7 +17,6 @@ export default class Utils extends Component {
 
   render() {
     return (
-      <View style={{flex:1}}>
       <ScrollView >
         <List>
           {utils.map((util) => (
@@ -32,7 +31,6 @@ export default class Utils extends Component {
           ))}
         </List>
       </ScrollView>
-      </View>
     );
   }
 }
