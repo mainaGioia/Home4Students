@@ -24,7 +24,7 @@ export default class Utils extends Component {
               key={util.name}
               roundAvatar
               avatar={ { uri: util.picture.thumbnail } }
-              title={ '${util.name.first.toUpperCase()}' }
+              title={ util.name.toUpperCase() }
               subtitle={util.description}
               onPress={() => {this.onLearnMore(util); console.log(this.props.navigation);}}
             />
