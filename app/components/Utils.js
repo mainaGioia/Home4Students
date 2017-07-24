@@ -11,7 +11,8 @@ import styles from './styles';
 export default class Utils extends Component {
 
   onLearnMore = (util) => {
-    console.log("this.props.navigation: "+this.props.navigation);
+    console.log("this.props.navigation: ",this.props.navigation);
+    console.log(util);
     this.props.navigation.navigate('Details', { ...util });
   };
 
@@ -26,7 +27,7 @@ export default class Utils extends Component {
               avatar={ { uri: util.picture.thumbnail } }
               title={ util.name.toUpperCase() }
               subtitle={util.description}
-              onPress={() => {this.onLearnMore(util); console.log(this.props.navigation);}}
+              onPress={() => {this.onLearnMore(util); console.log(this.props.navigation.state.params); console.log(util.name);}}
             />
           ))}
         </List>

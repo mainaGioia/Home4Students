@@ -3,15 +3,28 @@ export const utils = [
     "name": "Welcome!",
     "description": "things to know/do as soon as you come",
     "picture": {
-      "large": "",
+      "large": "../images/tirolerheim_neu_1.jpg",
       "medium": "",
-      "thumbnail": "./images/icons/welcome.png",
+      "thumbnail": "../images/icons/welcome.png",
     },
-    "subcategories": {
-      "sub1": "keys",
-      "sub2": "meldezettel",
-      "sub3": "list with stuff in da room"
-    },
+    "subcategories": [
+      {
+        "name": "keys",
+        "description": "how to access your private facilities"
+      },
+      {
+        "name": "meldezettel",
+        "description": "how to register to the townhall",
+      },
+      {
+        "name": "list with da stuff in da room",
+        "description": "check what you have and what you do not have"
+      },
+      {
+        "name": "silence policy",
+        "description": "there's a time to party and a time to shut up...",
+      }
+    ],
   },
   {
     "name": "kitchen",
@@ -19,7 +32,7 @@ export const utils = [
     "picture": {
       "large": "",
       "medium": "",
-      "thumbnail": "./images/icons/kitchen.png",
+      "thumbnail": "../images/icons/kitchen.png",
     }
   },
   {
@@ -28,13 +41,22 @@ export const utils = [
     "picture": {
       "large": "",
       "medium": "",
-      "thumbnail": "./images/icons/laundry.png",
+      "thumbnail": "../images/icons/laundry.png",
     },
-    "subcategories": {
-      "sub1": "how to make the laundry",
-      "sub2": "how to pay for it",
-      "sub3": "timer",
-    }
+    "subcategories": [
+      {
+        "name": "laundry, this unknown!",
+        "description": "how to avoid throwing away your clothes after the laundry"
+      },
+      {
+        "name": "how to start it",
+        "description": "alias how to pay for it"
+      },
+      {
+        "name": "timer",
+        "description": "choose the lavaggio and start the timer!"
+      },
+    ]
   },
   {
     "name": "cleaning ladies shifts",
@@ -42,7 +64,7 @@ export const utils = [
     "picture": {
       "large": "",
       "medium": "",
-      "thumbnail": "./images/icons/janitor.png",
+      "thumbnail": "../images/icons/janitor.png",
     },
   },
   {
@@ -51,7 +73,7 @@ export const utils = [
     "picture": {
       "large": "",
       "medium": "",
-      "thumbnail": "./images/icons/key.png",
+      "thumbnail": "../images/icons/key.png",
     },
   },
   {
@@ -60,7 +82,7 @@ export const utils = [
     "picture": {
       "large": "",
       "medium": "",
-      "thumbnail": "./images/icons/email.png",
+      "thumbnail": "../images/icons/email.png",
     },
   }
 

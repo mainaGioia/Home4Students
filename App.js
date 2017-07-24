@@ -18,7 +18,7 @@ const UtilsStack = StackNavigator({
     screen: Utils,
     navigationOptions: { title: 'Utils' },
   },
-  Detail: { screen: UtilDetail, }
+  Details: { screen: UtilDetail, }
 })
 
 const MainScreenNavigator = TabNavigator({
