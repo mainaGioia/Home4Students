@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import { ScrollView } from 'react-native';
-import { Tile, List, ListItem } from 'react-native-elements';
+import { ScrollView, Text, View } from 'react-native';
+import { Tile, List, ListView, ListItem } from 'react-native-elements';
 import styles from './styles.js';
+
 
 export default class UtilDetail extends Component {
 
@@ -11,37 +12,28 @@ export default class UtilDetail extends Component {
     return (
       <ScrollView>
         <Tile
-          imageSrc={{ uri: picture.large}}
+          imageSrc={ {uri: picture.large} }
           featured
-          title={'${name.toUpperCase()}'}
+          title={ name.toUpperCase() }
           caption={description}
         />
-
+        <Text style={ {textAlign: 'center',paddingTop: 20} }>
+          { description }
+        </Text>
         <List>
-          <ListItem
-              title="Name"
-              rightTitle={name}
-              hideChevron
-          />
-          <ListItem
-              title="Description"
-              rightTitle={description}
-              hideChevron
-          />
+          {subcategories.map((subcat,i) => (
+            <ListItem
+              key={subcat.name+i}
+              title={subcat.name}
+              subtitle={subcat.description}
+            />
+          ))}
         </List>
-          <List>
-            {subcategories.map((subcat,i) => (
-              <ListItem
-                  key={subcat.name+i}
-                  title={subcat.name}
-                  subtitle={subcat.description}
-              />
-            ))}
-          </List>
-          </ScrollView>
-        );
-      }
-    }
+      </ScrollView>
+    );
+  }
+
+}
 
         //   <ListItem
         //     title="Email"
