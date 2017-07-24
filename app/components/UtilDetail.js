@@ -8,11 +8,17 @@ export default class UtilDetail extends Component {
 
   render() {
     const { picture, name, description, subcategories } = this.props.navigation.state.params;
+    const images = {
+      Welcome: require('../images/tirolerheim_neu_1.jpg'),
+      kitchen: require('../images/kitchen.jpg'),
+      laundry: require('../images/doubleroom.jpg'),
+    };
+    console.log("name::::::", name, images[name] );
 
     return (
       <ScrollView>
         <Tile
-          imageSrc={ {uri: picture.large} }
+          imageSrc={ {uri: images[{name}]} }
           featured
           title={ name.toUpperCase() }
           caption={description}
@@ -21,7 +27,8 @@ export default class UtilDetail extends Component {
           { description }
         </Text>
         <List>
-          {subcategories.map((subcat,i) => (
+          {
+            subcategories.map((subcat,i) => (
             <ListItem
               key={subcat.name+i}
               title={subcat.name}

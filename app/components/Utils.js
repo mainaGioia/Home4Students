@@ -12,7 +12,6 @@ export default class Utils extends Component {
 
   onLearnMore = (util) => {
     console.log("this.props.navigation: ",this.props.navigation);
-    console.log(util);
     this.props.navigation.navigate('Details', { ...util });
   };
 
@@ -27,7 +26,7 @@ export default class Utils extends Component {
               avatar={ { uri: util.picture.thumbnail } }
               title={ util.name.toUpperCase() }
               subtitle={util.description}
-              onPress={() => {this.onLearnMore(util); console.log(this.props.navigation.state); console.log(util.name);}}
+              onPress={() => {this.onLearnMore(util); console.log(util.name);}}
             />
           ))}
         </List>

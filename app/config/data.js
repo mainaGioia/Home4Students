@@ -30,7 +30,7 @@ export const utils = [
     "name": "kitchen",
     "description": "how to use the kitchen",
     "picture": {
-      "large": "",
+      "large": "../images/kitchen.jpg",
       "medium": "",
       "thumbnail": "../images/icons/kitchen.png",
     }
@@ -39,7 +39,7 @@ export const utils = [
     "name": "laundry",
     "description": "everything to know on how to use the washing machine",
     "picture": {
-      "large": "",
+      "large": "../images/singleroom.jpg",
       "medium": "",
       "thumbnail": "../images/icons/laundry.png",
     },
@@ -62,7 +62,7 @@ export const utils = [
     "name": "cleaning ladies shifts",
     "description": "they actually are unpredictable...",
     "picture": {
-      "large": "",
+      "large": "../images/doubleroom.jpg",
       "medium": "",
       "thumbnail": "../images/icons/janitor.png",
     },
