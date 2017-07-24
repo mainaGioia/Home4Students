@@ -6,11 +6,6 @@ import { Constants } from 'expo';
 import Utils from './app/components/Utils'
 import UtilDetail from './app/components/UtilDetail'
 
-class UtilsScreen extends Component {
-  render() {
-    return <Text>List of recent chats</Text>
-  }
-}
 
 class InfosScreen extends Component {
   render() {
@@ -19,7 +14,10 @@ class InfosScreen extends Component {
 }
 
 const UtilsStack = StackNavigator({
-  Utils: { screen: Utils, },
+  Utils: {
+    screen: Utils,
+    navigationOptions: { title: 'Utils' },
+  },
   Detail: { screen: UtilDetail, }
 })
 
@@ -48,8 +46,8 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    // alignItems: 'center',
+    // justifyContent: 'center',
     paddingTop: Constants.statusBarHeight,
     backgroundColor: '#ecf0f1',
   },

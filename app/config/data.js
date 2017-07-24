@@ -5,7 +5,7 @@ export const utils = [
     "picture": {
       "large": "",
       "medium": "",
-      "thumbnail": "",
+      "thumbnail": "./images/icons/welcome.png",
     },
     "subcategories": {
       "sub1": "keys",
@@ -19,7 +19,7 @@ export const utils = [
     "picture": {
       "large": "",
       "medium": "",
-      "thumbnail": "",
+      "thumbnail": "./images/icons/kitchen.png",
     }
   },
   {
@@ -28,7 +28,7 @@ export const utils = [
     "picture": {
       "large": "",
       "medium": "",
-      "thumbnail": "",
+      "thumbnail": "./images/icons/laundry.png",
     },
     "subcategories": {
       "sub1": "how to make the laundry",
@@ -38,15 +38,30 @@ export const utils = [
   },
   {
     "name": "cleaning ladies shifts",
-    "description": "they actually are unpredictable..."
+    "description": "they actually are unpredictable...",
+    "picture": {
+      "large": "",
+      "medium": "",
+      "thumbnail": "./images/icons/janitor.png",
+    },
   },
   {
     "name": "I lost my keys",
-    "description": "what to do in case you are locked out"
+    "description": "what to do in case you are locked out",
+    "picture": {
+      "large": "",
+      "medium": "",
+      "thumbnail": "./images/icons/key.png",
+    },
   },
   {
     "name": "Write to Ben & Maria",
-    "description": "Send an email to our beloved officers..."
+    "description": "Send an email to our beloved officers...",
+    "picture": {
+      "large": "",
+      "medium": "",
+      "thumbnail": "./images/icons/email.png",
+    },
   }
 
 ]
