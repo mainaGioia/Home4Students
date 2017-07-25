@@ -28,6 +28,7 @@ const MainScreenNavigator = TabNavigator({
   tabBarOptions: {
     style: {
       width: Dimensions.get("window").width,
+      backgroundColor: '#789fbe',
     },
   },
 });

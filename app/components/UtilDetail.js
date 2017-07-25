@@ -18,7 +18,7 @@ export default class UtilDetail extends Component {
     return (
       <ScrollView>
         <Tile
-          imageSrc={ {uri: images[{name}]} }
+          imageSrc={ images[name] }
           featured
           title={ name.toUpperCase() }
           caption={description}

@@ -1,6 +1,6 @@
 export const utils = [
   {
-    "name": "Welcome!",
+    "name": "Welcome",
     "description": "things to know/do as soon as you come",
     "picture": {
       "large": "../images/tirolerheim_neu_1.jpg",
