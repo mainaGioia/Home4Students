@@ -6,13 +6,19 @@ import styles from './styles.js';
 
 export default class UtilDetail extends Component {
 
+  static navigationOptions = ({navigation}) => ({
+    title: navigation.state.params.name.toUpperCase(),
+  });
+
   render() {
     const { picture, name, description, subcategories } = this.props.navigation.state.params;
     const images = {
       Welcome: require('../images/tirolerheim_neu_1.jpg'),
       kitchen: require('../images/kitchen.jpg'),
       laundry: require('../images/doubleroom.jpg'),
+
     };
+
     console.log("name::::::", name, images[name] );
 
     return (

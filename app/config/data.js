@@ -33,7 +33,8 @@ export const utils = [
       "large": "../images/kitchen.jpg",
       "medium": "",
       "thumbnail": "../images/icons/kitchen.png",
-    }
+    },
+    "subcategories":[],
   },
   {
     "name": "laundry",
@@ -66,6 +67,7 @@ export const utils = [
       "medium": "",
       "thumbnail": "../images/icons/janitor.png",
     },
+    "subcategories":[],
   },
   {
     "name": "I lost my keys",
@@ -75,6 +77,7 @@ export const utils = [
       "medium": "",
       "thumbnail": "../images/icons/key.png",
     },
+    "subcategories":[],
   },
   {
     "name": "Write to Ben & Maria",
@@ -84,6 +87,7 @@ export const utils = [
       "medium": "",
       "thumbnail": "../images/icons/email.png",
     },
+    "subcategories":[],
   }
 
 ]

@@ -32,7 +32,7 @@ export default class Utils extends Component {
 
   render() {
     return (
-      <ScrollView >
+      <ScrollView automaticallyAdjustContentInsets={false} style={{paddingTop:-20}}>
         <List>
           {utils.map((util, num) => (
             <ListItem

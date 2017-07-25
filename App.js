@@ -18,17 +18,34 @@ const UtilsStack = StackNavigator({
     screen: Utils,
     navigationOptions: { title: 'Utils' },
   },
-  Details: { screen: UtilDetail, }
+  Details: {
+    screen: UtilDetail,
+
+  }
 })
 
 const MainScreenNavigator = TabNavigator({
-  Utils: { screen: UtilsStack },
-  Main: { screen: InfosScreen },
+  Utils: {
+    screen: UtilsStack,
+    navigationOptions: {
+      tabBarLabel: 'Utils',
+      tabBarIcon: ({ tintColor }) =>
+        <Icon name="list" size={35} color={tintColor}/>
+    },
+  },
+  Main: {
+    screen: InfosScreen,
+    navigationOptions: {
+      tabBarLabel: 'Infos',
+      tabBarIcon: ({ tintColor }) =>
+        <Icon name="domain" size={35} color={tintColor}/>
+    },
+  },
 },{
   tabBarOptions: {
     style: {
       width: Dimensions.get("window").width,
-      backgroundColor: '#789fbe',
+      // backgroundColor: '#789fbe',
     },
   },
 });
