@@ -15,12 +15,12 @@ const images = {
 export default class UtilDetail extends Component {
 
   static navigationOptions = ({navigation}) => ({
-    title: navigation.state.params.name.toUpperCase(),
+    title: navigation.state.params.name,
   });
 
 
   render() {
-    const { key, picture, name, description, subcategories } = this.props.navigation.state.params;
+    const { key, picture, name, description, caption, subcategories } = this.props.navigation.state.params;
 
     return (
       <ScrollView >
@@ -31,7 +31,7 @@ export default class UtilDetail extends Component {
           caption={description}
         />
         <Text style={ {textAlign: 'center',paddingTop: 20} }>
-          { description }
+          { caption }
         </Text>
         <List>
           {

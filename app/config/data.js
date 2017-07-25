@@ -3,6 +3,7 @@ export const utils = [
     "key": "welcome",
     "name": "Welcome",
     "description": "things to know/do as soon as you come",
+    "caption": "",
     "picture": {
       "large": "../images/tirolerheim_neu_1.jpg",
       "medium": "",
@@ -29,8 +30,9 @@ export const utils = [
   },
   {
     "key": "kitchen",
-    "name": "kitchen",
+    "name": "Kitchen",
     "description": "how to use the kitchen",
+    "caption": "mind your kitchen stuff.\neverything you leave in the kitchen at night will be thrown away by the housekeeper.",
     "picture": {
       "large": "../images/kitchen.jpg",
       "medium": "",
@@ -40,8 +42,9 @@ export const utils = [
   },
   {
     "key": "laundry",
-    "name": "laundry",
+    "name": "Laundry",
     "description": "everything to know on how to use the washing machine",
+    "caption": "",
     "picture": {
       "large": "../images/singleroom.jpg",
       "medium": "",
@@ -64,8 +67,9 @@ export const utils = [
   },
   {
     "key": "cleaning",
-    "name": "cleaning ladies shifts",
+    "name": "Cleaning ladies shifts",
     "description": "they actually are unpredictable...",
+    "caption": "shifts for the month",
     "picture": {
       "large": "../images/doubleroom.jpg",
       "medium": "",
@@ -77,12 +81,30 @@ export const utils = [
     "key": "keys",
     "name": "I lost my keys",
     "description": "what to do in case you are locked out",
+    "caption": "you can contact the following people",
     "picture": {
       "large": "",
       "medium": "",
       "thumbnail": "../images/icons/key.png",
     },
-    "subcategories":[],
+    "subcategories":[
+      {
+        "name": "Office desk",
+        "description": "During office opening times, you can ask the admin to unlock the room for you",
+      },
+      {
+        "name": "Gerhard",
+        "description": "Our beloved housekeeper! If you find him, he'll be happy to help you",
+      },
+      {
+        "name": "Cleaning ladies",
+        "description": "During weekdays, you can ask the cleaning ladies to unlock the room for you",
+      },
+      {
+        "name": "Dorm's choosen ones :P",
+        "description": "If nothing above works, here you find a list of people you can contact",
+      },
+    ],
   },
   {
     "key": "write",
@@ -93,7 +115,16 @@ export const utils = [
       "medium": "",
       "thumbnail": "../images/icons/email.png",
     },
-    "subcategories":[],
+    "subcategories":[
+      {
+        "name": "Write to Benjamin",
+        "description": "If you are in Höttinger Au or Tirolerheim",
+      },
+      {
+        "name": "Write to Maria",
+        "description": "If you are in Tirolerheim",
+      }
+    ],
   }
 
 ]
