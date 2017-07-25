@@ -1,5 +1,6 @@
 export const utils = [
   {
+    "key": "welcome",
     "name": "Welcome",
     "description": "things to know/do as soon as you come",
     "picture": {
@@ -27,6 +28,7 @@ export const utils = [
     ],
   },
   {
+    "key": "kitchen",
     "name": "kitchen",
     "description": "how to use the kitchen",
     "picture": {
@@ -37,6 +39,7 @@ export const utils = [
     "subcategories":[],
   },
   {
+    "key": "laundry",
     "name": "laundry",
     "description": "everything to know on how to use the washing machine",
     "picture": {
@@ -60,6 +63,7 @@ export const utils = [
     ]
   },
   {
+    "key": "cleaning",
     "name": "cleaning ladies shifts",
     "description": "they actually are unpredictable...",
     "picture": {
@@ -70,6 +74,7 @@ export const utils = [
     "subcategories":[],
   },
   {
+    "key": "keys",
     "name": "I lost my keys",
     "description": "what to do in case you are locked out",
     "picture": {
@@ -80,8 +85,9 @@ export const utils = [
     "subcategories":[],
   },
   {
-    "name": "Write to Ben & Maria",
-    "description": "Send an email to our beloved officers...",
+    "key": "write",
+    "name": "Write to Ben",
+    "description": "Send an email to our beloved admins...",
     "picture": {
       "large": "",
       "medium": "",

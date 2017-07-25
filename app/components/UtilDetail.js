@@ -3,6 +3,14 @@ import { ScrollView, Text, View } from 'react-native';
 import { Tile, List, ListView, ListItem } from 'react-native-elements';
 import styles from './styles.js';
 
+const images = {
+  welcome: require('../images/tirolerheim_neu_1.jpg'),
+  kitchen: require('../images/kitchen.jpg'),
+  laundry: require('../images/doubleroom.jpg'),
+  cleaning: require('../images/cleaning.jpg'),
+  keys: require('../images/keys.jpg'),
+  write: require('../images/write.jpg'),
+};
 
 export default class UtilDetail extends Component {
 
@@ -10,21 +18,14 @@ export default class UtilDetail extends Component {
     title: navigation.state.params.name.toUpperCase(),
   });
 
+
   render() {
-    const { picture, name, description, subcategories } = this.props.navigation.state.params;
-    const images = {
-      Welcome: require('../images/tirolerheim_neu_1.jpg'),
-      kitchen: require('../images/kitchen.jpg'),
-      laundry: require('../images/doubleroom.jpg'),
-
-    };
-
-    console.log("name::::::", name, images[name] );
+    const { key, picture, name, description, subcategories } = this.props.navigation.state.params;
 
     return (
-      <ScrollView>
+      <ScrollView >
         <Tile
-          imageSrc={ images[name] }
+          imageSrc={ images[key] }
           featured
           title={ name.toUpperCase() }
           caption={description}
