@@ -31,6 +31,8 @@ export default class Dorm extends Component{
               key={property.key+i}
                 title={property.key}
                 rightTitle={property.value}
+                rightTitleStyle={{flex:1, justifyContent:'flex-end'}}
+                rightTitleNumberOfLines={5}
                 hideChevron
             />
           ))}
