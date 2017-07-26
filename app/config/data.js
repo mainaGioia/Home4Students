@@ -132,7 +132,7 @@ export const utils = [
 
 export const dorm = [
   {
-    Tirolerheim: [
+    tirolerheim: [
       {
         "key": "name",
         "value": "Tirolerheim",

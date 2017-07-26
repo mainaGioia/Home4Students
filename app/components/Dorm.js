@@ -26,12 +26,12 @@ export default class Dorm extends Component{
           onPress={ this.handleButtonPress }
         />
         <List>
-          { dorm.map((property, i) => (
+          { dorm[0].tirolerheim.map((property, i) => (
             <ListItem
               key={property.key+i}
-              title={property.key}
-              rightTitle={property.value}
-              hideChevron
+                title={property.key}
+                rightTitle={property.value}
+                hideChevron
             />
           ))}
         </List>
