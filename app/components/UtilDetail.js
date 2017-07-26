@@ -4,7 +4,7 @@ import { Tile, List, ListView, ListItem } from 'react-native-elements';
 import styles from './styles.js';
 
 const images = {
-  welcome: require('../images/tirolerheim_neu_1.jpg'),
+  welcome: require('../images/tirolerheim_neu_2.jpg'),
   kitchen: require('../images/kitchen.jpg'),
   laundry: require('../images/doubleroom.jpg'),
   cleaning: require('../images/cleaning.jpg'),
@@ -34,8 +34,7 @@ export default class UtilDetail extends Component {
           { caption }
         </Text>
         <List>
-          {
-            subcategories.map((subcat,i) => (
+          { subcategories.map((subcat,i) => (
             <ListItem
               key={subcat.name+i}
               title={subcat.name}

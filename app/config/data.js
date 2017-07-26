@@ -68,7 +68,7 @@ export const utils = [
   {
     "key": "cleaning",
     "name": "Cleaning ladies shifts",
-    "description": "they actually are unpredictable...",
+    "description": "they are actually unpredictable...",
     "caption": "shifts for the month",
     "picture": {
       "large": "../images/doubleroom.jpg",
@@ -101,7 +101,7 @@ export const utils = [
         "description": "During weekdays, you can ask the cleaning ladies to unlock the room for you",
       },
       {
-        "name": "Dorm's choosen ones :P",
+        "name": "Dorm's chosen ones :P",
         "description": "If nothing above works, here you find a list of people you can contact",
       },
     ],
@@ -127,4 +127,40 @@ export const utils = [
     ],
   }
 
+];
+
+
+export const dorm = [
+  {
+    Tirolerheim: [
+      {
+        "key": "name",
+        "value": "Tirolerheim",
+      },
+      {
+        "key": "address",
+        "value": "Technikerstraße 7, 6020 Innsbruck",
+      },
+      {
+        "key": "category",
+        "value": "12-month-dormitory",
+      },
+      {
+        "key": "facilities",
+        "value": "communal kitchen, washing machine and dryer, bicycle storage, garden with bbq...and Gerhard",
+      },
+      {
+        "key": "rooms",
+        "value": "259 rooms with shower/WC, house intercom, internet wlan",
+      },
+      {
+        "key": "prices(monthly)",
+        "value": "Single room: €375\nDouble room: €308\nParking: €40\nGarage: €64",
+      },
+      {
+        "key": "nearby universities",
+        "value": "Technik Universität",
+      },
+    ],
+  },
 ]

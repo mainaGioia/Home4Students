@@ -3,15 +3,10 @@ import { StyleSheet, Text, View, Dimensions } from 'react-native';
 import { TabNavigator, StackNavigator } from 'react-navigation';
 import { Icon } from 'react-native-elements';
 import { Constants } from 'expo';
-import Utils from './app/components/Utils'
-import UtilDetail from './app/components/UtilDetail'
+import Utils from './app/components/Utils';
+import UtilDetail from './app/components/UtilDetail';
+import Dorm from './app/components/Dorm';
 
-
-class InfosScreen extends Component {
-  render() {
-    return <Text>Infos about the dorm</Text>
-  }
-}
 
 const UtilsStack = StackNavigator({
   Utils: {
@@ -34,7 +29,7 @@ const MainScreenNavigator = TabNavigator({
     },
   },
   Main: {
-    screen: InfosScreen,
+    screen: Dorm,
     navigationOptions: {
       tabBarLabel: 'Infos',
       tabBarIcon: ({ tintColor }) =>
