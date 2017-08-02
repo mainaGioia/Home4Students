@@ -10,6 +10,7 @@ const images = {
   cleaning: require('../images/cleaning.jpg'),
   keys: require('../images/keys.jpg'),
   write: require('../images/write.jpg'),
+  party: require('../images/party.jpg'),
 };
 
 export default class UtilDetail extends Component {

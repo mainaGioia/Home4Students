@@ -107,6 +107,45 @@ export const utils = [
     ],
   },
   {
+    "key": "party",
+    "name": "Party room",
+    "description": "Want to throw a party? Reserve the room!",
+    "picture": {
+      "large": "../images/party.png",
+      "medium": "",
+      "thumbnail": "../images/icons/party.png",
+    },
+    "subcategories":[
+
+    ],
+  },
+  {
+    "key": "music",
+    "name": "Music room",
+    "description": "Wanna play some music? We have the room for you",
+    "picture": {
+      "large": "../images/music.png",
+      "medium": "",
+      "thumbnail": "../images/icons/music.png",
+    },
+    "subcategories":[
+
+    ],
+  },
+  {
+    "key": "gym",
+    "name": "Gym",
+    "description": "Pump it up!",
+    "picture": {
+      "large": "",
+      "medium": "",
+      "thumbnail": "../images/icons/gym.png",
+    },
+    "subcategories":[
+
+    ],
+  },
+  {
     "key": "write",
     "name": "Write to Ben",
     "description": "Send an email to our beloved admins...",
