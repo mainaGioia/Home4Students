@@ -9,8 +9,10 @@ const images = {
   laundry: require('../images/doubleroom.jpg'),
   cleaning: require('../images/cleaning.jpg'),
   keys: require('../images/keys.jpg'),
+  party: require('../images/party.jpeg'),
+  music: require('../images/music.jpeg'),
+  gym: require('../images/gym.jpeg'),
   write: require('../images/write.jpg'),
-  party: require('../images/party.jpg'),
 };
 
 export default class UtilDetail extends Component {
