@@ -52,6 +52,10 @@ export const utils = [
     },
     "subcategories": [
       {
+        "name": "Where is it",
+        "description": "C block, basement. Look at the map!"
+      },
+      {
         "name": "laundry, this unknown!",
         "description": "how to avoid throwing away your clothes after the laundry"
       },
@@ -116,7 +120,18 @@ export const utils = [
       "thumbnail": "../images/icons/party.png",
     },
     "subcategories":[
-
+      {
+        "name": "Where is it",
+        "description": "B block, basement. Look at the map!",
+      },
+      {
+        "name": "Policy",
+        "description": "How to correctly use the room",
+      },
+      {
+        "name": "How to reserve it",
+        "description": "Ask the managers for the keys",
+      },
     ],
   },
   {
@@ -129,7 +144,18 @@ export const utils = [
       "thumbnail": "../images/icons/music.png",
     },
     "subcategories":[
-
+      {
+        "name": "Where is it",
+        "description": "A block, basement. Look at the map!",
+      },
+      {
+        "name": "Policy",
+        "description": "How to correctly use the room",
+      },
+      {
+        "name": "Wanna play with me?",
+        "description": "Let's arrange a live session!",
+      },
     ],
   },
   {
@@ -142,7 +168,18 @@ export const utils = [
       "thumbnail": "../images/icons/gym.png",
     },
     "subcategories":[
-
+      {
+        "name": "Where is it",
+        "description": "A block, basement. Look at the map!",
+      },
+      {
+        "name": "Policy",
+        "description": "How to correctly use the gym",
+      },
+      {
+        "name": "Who wants to come with me?",
+        "description": "Let's go together!",
+      },
     ],
   },
   {
