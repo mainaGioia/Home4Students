@@ -32,7 +32,7 @@ export const utils = [
     "key": "kitchen",
     "name": "Kitchen",
     "description": "how to use the kitchen",
-    "caption": "mind your kitchen stuff.\neverything you leave in the kitchen at night will be thrown away by the housekeeper.",
+    "caption": "Please mind your kitchen stuff.\nEverything you leave in the kitchen at night\nwill be thrown away by the housekeeper.",
     "picture": {
       "large": "../images/kitchen.jpg",
       "medium": "",
@@ -114,6 +114,7 @@ export const utils = [
     "key": "party",
     "name": "Party room",
     "description": "Want to throw a party? Reserve the room!",
+    "caption": "Mind the other people living here.\nArrange parties on the weekend",
     "picture": {
       "large": "../images/party.png",
       "medium": "",
@@ -138,6 +139,7 @@ export const utils = [
     "key": "music",
     "name": "Music room",
     "description": "Wanna play some music? We have the room for you",
+    "caption": "Maybe the new Mozart or Parov Stelar is among us...",
     "picture": {
       "large": "../images/music.png",
       "medium": "",
@@ -162,6 +164,7 @@ export const utils = [
     "key": "gym",
     "name": "Gym",
     "description": "Pump it up!",
+    "caption": "The hardest lift of all is lifting your butt off the couch",
     "picture": {
       "large": "",
       "medium": "",
