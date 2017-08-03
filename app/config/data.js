@@ -26,6 +26,9 @@ export const utils = [
       {
         "name": "meldezettel",
         "description": "how to register to the townhall",
+        "text": "This document is required to register as a citizen of Innsbruck. You get it from the office on arrival\
+        and have to bring it to the office on the first floor in Kaufhaus Tirol (mariatheresienstraße).\
+        If you do not do it, you will incur a fine "
       },
       {
         "name": "list with da stuff in da room",
@@ -148,7 +151,7 @@ export const utils = [
     "key": "music",
     "name": "Music room",
     "description": "Wanna play some music? We have the room for you",
-    "caption": "Maybe the new Mozart or Parov Stelar is among us...",
+    "caption": "Maybe the new Mozart or Parov Stelar\n is among us...",
     "picture": {
       "large": "../images/music.png",
       "medium": "",
@@ -173,7 +176,7 @@ export const utils = [
     "key": "gym",
     "name": "Gym",
     "description": "Pump it up!",
-    "caption": "The hardest lift of all is lifting your butt off the couch",
+    "caption": "Mens sana in corpore sano",
     "picture": {
       "large": "",
       "medium": "",
