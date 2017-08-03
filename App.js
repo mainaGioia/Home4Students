@@ -5,6 +5,7 @@ import { Icon } from 'react-native-elements';
 import { Constants } from 'expo';
 import Utils from './app/components/Utils';
 import UtilDetail from './app/components/UtilDetail';
+import SubDetail from './app/components/SubDetail';
 import Dorm from './app/components/Dorm';
 
 
@@ -15,7 +16,9 @@ const UtilsStack = StackNavigator({
   },
   Details: {
     screen: UtilDetail,
-
+  },
+  Subcategory: {
+    screen: SubDetail,
   }
 })
 
