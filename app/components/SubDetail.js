@@ -12,20 +12,16 @@ export default class UtilDetail extends Component {
 
 
   render() {
-    const { name, description } = this.props.navigation.state.params.subcategory;
+    const { name, description, text } = this.props.navigation.state.params.subcategory;
 
     console.log("name, description: ", name, description);
     return (
-      <View>
-        <Tile
-          imageSrc={ require('../images/tirolerheim_neu_2.jpg') }
-          featured
-          title={ name.toUpperCase() }
-        />
-        <Text style={ {textAlign: 'center',paddingTop: 20} }>
+      <ScrollView style={{ backgroundColor: '#ffffff' }}>
+        <Text style={{ paddingTop: 20 }}>
           { description }
         </Text>
-      </View>
+        <Text style={{ paddingTop: 10 }}> { text } </Text>
+      </ScrollView>
     );
   }
 
