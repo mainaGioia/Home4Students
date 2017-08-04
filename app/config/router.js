@@ -27,7 +27,7 @@ export const MainScreenNavigator = TabNavigator({
     navigationOptions: {
       tabBarLabel: 'Utils',
       tabBarIcon: ({ tintColor }) =>
-        <Icon name="list" size={35} color={tintColor}/>
+        <Icon name="list" color={tintColor}/>
     },
   },
   Main: {
