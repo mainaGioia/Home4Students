@@ -17,7 +17,8 @@ const images = {
   image5: require('../images/icons/party.png'),
   image6: require('../images/icons/music.png'),
   image7: require('../images/icons/gym.png'),
-  image8: require('../images/icons/email.png'),
+  image8: require('../images/icons/waste.png'),
+  image9: require('../images/icons/email.png'),
 }
 
 export default class Utils extends Component {
