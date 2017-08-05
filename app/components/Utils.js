@@ -35,7 +35,7 @@ export default class Utils extends Component {
 
   render() {
     return (
-      <ScrollView style={{top:-20}}>
+      <ScrollView style={{top:0,}}>
         <List>
           {utils.map((util, num) => (
             <ListItem

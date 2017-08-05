@@ -13,15 +13,18 @@ export const utils = [
       {
         "name": "keys",
         "description": "how to access your private facilities",
-        "text": "As soon as you come, you are gonna get a pair of keys like the ones in the picture.\
-        One is gonna be for the maibox, the other one for your room. Your room's key is an NFC chip,\
-        you just have to bring it close to the sensor on the handle to lock/unlock the door.\
-        By default the door is locked, this means you have to use your key every time to open it from\
-        outside. The door can also be used as a normal door without locking mechanism: press the button on the handle\
-        (you find it on the back side) and you'll notice a green light, you can now close and open the door without\
-        using the keys. To lock it again, bring your key close to the sensor or press the same button again. \
-        You'll see a red light on the handle. \
-        In case you lose them or get locked out, have a look at the section \"I lost my keys\" of the app."
+        "text": "As soon as you come, you are gonna get a pair of keys like the\
+        ones in the picture. One is gonna be for the maibox, the other one for\
+        your room. Your room's key is an NFC chip, you just have to bring it \
+        close to the sensor on the handle to lock/unlock the door. By default \
+        the door is locked, this means you have to use your key every time to\
+        open it from outside. The door can also be used as a normal door without\
+        locking mechanism: press the button on the handle (you find it on the \
+        back side) and you'll notice a green light, you can now close and open \
+        the door without using the keys. To lock it again, bring your key close\
+        to the sensor or press the same button again. You'll see a red light on \
+        the handle. In case you lose them or get locked out, have a look at the \
+        section \"I lost my keys\" of the app."
       },
       {
         "name": "meldezettel",
@@ -50,7 +53,24 @@ export const utils = [
       "medium": "",
       "thumbnail": "../images/icons/kitchen.png",
     },
-    "subcategories":[],
+    "subcategories":[
+      {
+        "name": "Common pots, pans and whatever you need to cook",
+        "description": "Where to find or put common kitchen stuff",
+      },
+      {
+        "name": "Personal pots, pans and whatever you need to cook",
+        "description": "You also have a personal cupboard and a space in the fridge and in the freezer",
+      },
+      {
+        "name": "The stove doesn't work!",
+        "description": "You turned on the stove but it doesn't work? Do not panic, we have the solution",
+      },
+      {
+        "name": "Where to put the trash?",
+        "description": "Also in this case, we have the solution for you",
+      },
+    ],
   },
   {
     "key": "laundry",
@@ -195,6 +215,34 @@ export const utils = [
         "name": "Who wants to come with me?",
         "description": "Let's go together!",
       },
+    ],
+  },
+  {
+    "key": "waste",
+    "name": "Waste",
+    "description": "How does it work with separating and throwing the trash",
+    "picture": {
+      "large": "",
+      "medium": "",
+      "thumbnail": "",
+    },
+    "subcategories": [
+      {
+        "name": "Waste separation",
+        "description": "Different trash in different box",
+      },
+      {
+        "name": "Organic waste",
+        "description": "Where to put the organic waste",
+      },
+      {
+        "name": "Kitchen waste",
+        "description": "What can i put in the trash bin in the cupboards area?"
+      },
+      {
+        "name": "Personal waste",
+        "description": "How does it work with personal waste",
+      }
     ],
   },
   {
