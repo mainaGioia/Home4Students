@@ -36,9 +36,10 @@ export const utils = [
       {
         "name": "meldezettel",
         "description": "how to register to the townhall",
-        "text": "This document is required to register as a citizen of Innsbruck. You get it from the office on arrival\
-        and have to bring it to the office on the first floor in Kaufhaus Tirol (mariatheresienstraße).\
-        If you do not do it, you will incur a fine "
+        "text": "This document is required to register as a citizen of Innsbruck."+
+        " You get it from the office on arrival and have to bring it to the office"+
+        " on the first floor in Kaufhaus Tirol (mariatheresienstraße)."+
+        "If you do not do it, you will incur a fine."
       },
       {
         "name": "list with da stuff in da room",
