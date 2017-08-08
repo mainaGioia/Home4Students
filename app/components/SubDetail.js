@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { ScrollView, Text, View } from 'react-native';
 import { Tile, List, ListView, ListItem } from 'react-native-elements';
-import styles from './styles.js';
+import { sectionText } from './styles.js';
 
 
 export default class UtilDetail extends Component {
@@ -20,7 +20,7 @@ export default class UtilDetail extends Component {
         <Text style={{ paddingTop: 20 }}>
           { description }
         </Text>
-        <Text style={{ paddingTop: 10 }}> { text } </Text>
+        <Text style={sectionText}> { text } </Text>
       </ScrollView>
     );
   }

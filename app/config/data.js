@@ -2,7 +2,7 @@ export const utils = [
   {
     "key": "welcome",
     "name": "Welcome",
-    "description": "things to know/do as soon as you come",
+    "description": "wifi, keys and other things to know as soon as you come",
     "caption": "",
     "picture": {
       "large": "../images/tirolerheim_neu_1.jpg",
@@ -11,20 +11,27 @@ export const utils = [
     },
     "subcategories": [
       {
+        "name": "wifi",
+        "description": "let's get connected!",
+        "text": "You can find the password of the wifi at the entrance, "+
+        "if you need, take a picture of it and do not lose it cause you will "+
+        "need it more often than you think :)",
+      },
+      {
         "name": "keys",
         "description": "how to access your private facilities",
-        "text": "As soon as you come, you are gonna get a pair of keys like the\
-        ones in the picture. One is gonna be for the maibox, the other one for\
-        your room. Your room's key is an NFC chip, you just have to bring it \
-        close to the sensor on the handle to lock/unlock the door. By default \
-        the door is locked, this means you have to use your key every time to\
-        open it from outside. The door can also be used as a normal door without\
-        locking mechanism: press the button on the handle (you find it on the \
-        back side) and you'll notice a green light, you can now close and open \
-        the door without using the keys. To lock it again, bring your key close\
-        to the sensor or press the same button again. You'll see a red light on \
-        the handle. In case you lose them or get locked out, have a look at the \
-        section \"I lost my keys\" of the app."
+        "text": "As soon as you come, you are gonna get a pair of keys like the "+
+        "ones in the picture. One is gonna be for the maibox, the other one for "+
+        "your room. Your room's key is an NFC chip, you just have to bring it "+
+        "close to the sensor on the handle to lock/unlock the door. By default "+
+        "the door is locked, this means you have to use your key every time to "+
+        "open it from outside. The door can also be used as a normal door without "+
+        "locking mechanism: press the button on the handle (you find it on the "+
+        "back side) and you'll notice a green light, you can now close and open "+
+        "the door without using the keys. To lock it again, bring your key close "+
+        "to the sensor or press the same button again. You'll see a red light on "+
+        "the handle. In case you lose them or get locked out, have a look at the "+
+        "section \"I lost my keys\" of the app."
       },
       {
         "name": "meldezettel",

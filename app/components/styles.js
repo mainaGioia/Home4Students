@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-const styles = StyleSheet.create({
+export default StyleSheet.create({
   list: {
     flex: 1,
   },
@@ -13,5 +13,11 @@ const styles = StyleSheet.create({
     fontSize: 24,
     textAlign: 'center',
     paddingTop: 10,
+  },
+  sectionText: {
+    flex: 1,
+    paddingTop:50,
+    color: '#cc00ff',
   }
+
 });
