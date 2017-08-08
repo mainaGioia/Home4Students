@@ -1,6 +1,13 @@
 import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#ffffff'
+
+  },
   list: {
     flex: 1,
   },
@@ -15,9 +22,8 @@ export default StyleSheet.create({
     paddingTop: 10,
   },
   sectionText: {
-    flex: 1,
-    paddingTop:50,
-    color: '#cc00ff',
+    padding: 20,
+    fontSize: 18,
   }
 
 });

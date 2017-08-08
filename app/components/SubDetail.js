@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { ScrollView, Text, View } from 'react-native';
+import { ScrollView, Text, View, StyleSheet } from 'react-native';
 import { Tile, List, ListView, ListItem } from 'react-native-elements';
-import { sectionText } from './styles.js';
+import styles from './styles.js';
 
 
 export default class UtilDetail extends Component {
@@ -16,16 +16,21 @@ export default class UtilDetail extends Component {
 
     console.log("name, description: ", name, description);
     return (
-      <ScrollView style={{ backgroundColor: '#ffffff' }}>
-        <Text style={{ paddingTop: 20 }}>
+      <View style={styles.container}>
+      <ScrollView>
+        <Text style={{ paddingTop: 20, justifyContent: 'center' }}>
           { description }
         </Text>
-        <Text style={sectionText}> { text } </Text>
+        <Text style={styles.sectionText}> { text } </Text>
       </ScrollView>
+      </View>
     );
   }
 
 }
+
+
+
 
         //   <ListItem
         //     title="Email"
