@@ -23,7 +23,6 @@ export default StyleSheet.create({
   },
   sectionText: {
     padding: 20,
-    fontSize: 18,
   }
 
 });

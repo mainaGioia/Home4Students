@@ -17,8 +17,10 @@ export default class UtilDetail extends Component {
     console.log("name, description: ", name, description);
     return (
       <View style={styles.container}>
+      <ScrollView>
         <Text style={styles.subtitle}> { description } </Text>
         <Text style={styles.sectionText}> { text } </Text>
+      </ScrollView>
       </View>
     );
   }
