@@ -13,6 +13,7 @@ const images = {
   music: require('../images/music.jpeg'),
   gym: require('../images/gym.jpeg'),
   write: require('../images/write.jpg'),
+  waste: require('../images/waste.jpg'),
 };
 
 export default class UtilDetail extends Component {
