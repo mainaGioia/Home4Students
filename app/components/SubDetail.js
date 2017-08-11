@@ -11,14 +11,22 @@ export default class SubDetail extends Component {
   });
 
 
+  handleButtonPress = () => {
+    console.log("pressed button");
+  };
+
+
   render() {
     const { name, description, text } = this.props.navigation.state.params.subcategory;
     let content = null;
     if (name == "timer") {
-      content =  <Button
+      content =  <View><Button
         title= "60 min"
         onPress={ this.handleButtonPress }
       />
+      <Text> {}</Text>
+      </View>
+
     }
     else {
       content = <ScrollView>
