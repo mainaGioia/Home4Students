@@ -30,7 +30,6 @@ export default class Utils extends Component {
 
 
   getImage(num: number){
-    console.log(images['image'+num]);
     return images['image'+num];
   }
 

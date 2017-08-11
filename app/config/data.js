@@ -238,6 +238,7 @@ export const utils = [
       {
         "name": "Waste separation",
         "description": "Different trash in different box",
+        "text": ""
       },
       {
         "name": "Organic waste",
