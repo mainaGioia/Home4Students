@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import {
   Text,
   View,
-  ScrollView
+  ScrollView,
+  StyleSheet
 } from 'react-native';
 import { List, ListItem } from 'react-native-elements';
 import { utils } from '../config/data';
@@ -36,9 +37,10 @@ export default class Utils extends Component {
   render() {
     return (
       <ScrollView style={{top:0,}}>
-        <List>
+        <List style={styles.list}>
           {utils.map((util, num) => (
             <ListItem
+              style={ styles.listItem }
               key={util.name}
               roundAvatar
               avatar={ this.getImage(num) }

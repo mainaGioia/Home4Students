@@ -9,7 +9,18 @@ export default StyleSheet.create({
 
   },
   list: {
-    flex: 1,
+    justifyContent: 'center',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+  },
+  listItem: {
+    backgroundColor: '#131210',
+    margin: 2,
+    width: 110,
+    height: 130,
+    opacity: 0.5,
+    justifyContent: 'center',
+    alignItems: 'flex-start'
   },
   title:{
     fontSize: 34,
