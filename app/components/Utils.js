@@ -43,7 +43,6 @@ export default class Utils extends Component {
               style={ styles.listItem }
               key={util.name}
               roundAvatar
-              avatar={ this.getImage(num) }
               title={ util.name.toUpperCase() }
               subtitle={util.description}
               onPress={() => {this.onLearnMore(util); console.log(util.name);}}
