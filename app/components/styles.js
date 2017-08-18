@@ -20,6 +20,7 @@ export default StyleSheet.create({
     height: 130,
     flexDirection: 'column',
     alignItems:'center',
+    
     /*opacity: 0.5,
     justifyContent: 'center',*/
   },

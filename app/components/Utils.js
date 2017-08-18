@@ -44,11 +44,11 @@ export default class Utils extends Component {
               key={util.name}
               avatar={this.getImage(num)}
               hideChevron
-              wrapperStyle={{flexDirection:'column', alignItems:'center', }}
+              wrapperStyle={{flexDirection:'column', alignItems:'center', margin: 10}}
               avatarOverlayContainerStyle={{ borderWidth:1, borderColor:'#cc00ff'}}
               title={
                 <View style={styles.subtitleView}>
-                <Text style={{color: '#ffffff'}}> {util.name.toUpperCase()} </Text>
+                <Text style={{color: '#ffffff', textAlign:'center'}}> {util.name.toUpperCase()} </Text>
               <Text style={{color: '#ffffff'}}> Bala </Text>
             </View> }
               subtitle={util.description}
