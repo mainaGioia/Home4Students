@@ -5,7 +5,7 @@ import {
   ScrollView,
   StyleSheet
 } from 'react-native';
-import { List, ListItem } from 'react-native-elements';
+import { List, ListItem, Avatar } from 'react-native-elements';
 import { utils } from '../config/data';
 import styles from './styles';
 
@@ -42,8 +42,19 @@ export default class Utils extends Component {
             <ListItem
               style={ styles.listItem }
               key={util.name}
-              roundAvatar
-              title={ util.name.toUpperCase() }
+              avatar={
+                <Avatar overlayContainerStyle={{flexDirection:'column', alignItems: 'center', justifyContent: 'center' }}
+                containerStyle={{borderWidth:1, borderColor:'#cc00ff', marginTop:20, alignItems: 'center', justifyContent:'center'}}
+                  rounded
+                  source={this.getImage(num)}
+                  title="test"
+                />
+              }
+              title={
+                <View style={styles.subtitleView}>
+                <Text style={{color: '#ffffff'}}> {util.name.toUpperCase()} </Text>
+              <Text style={{color: '#ffffff'}}> Bala </Text>
+            </View> }
               subtitle={util.description}
               onPress={() => {this.onLearnMore(util); console.log(util.name);}}
             />

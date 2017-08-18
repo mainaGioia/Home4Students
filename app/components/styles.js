@@ -10,23 +10,27 @@ export default StyleSheet.create({
   },
   list: {
     justifyContent: 'center',
-    flexDirection: 'row',
+    /*flexDirection: 'row',*/
     flexWrap: 'wrap',
   },
   listItem: {
-    flexDirection: 'row',
-    margin: 'auto',
     backgroundColor: '#131210',
     margin: 2,
     width: 110,
     height: 130,
-    opacity: 0.5,
-    justifyContent: 'center',
+    flexDirection: 'column',
+    /*opacity: 0.5,
+    justifyContent: 'center',*/
   },
   title:{
     fontSize: 34,
     textAlign: 'center',
 
+  },
+  subtitleView: {
+    flexDirection: 'column',
+    paddingLeft: 10,
+    paddingTop: 5,
   },
   subtitle: {
     fontSize: 24,
