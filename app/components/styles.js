@@ -19,8 +19,7 @@ export default StyleSheet.create({
     width: 110,
     height: 130,
     flexDirection: 'column',
-    alignItems:'center',
-    
+    alignItems: 'center',
     /*opacity: 0.5,
     justifyContent: 'center',*/
   },
@@ -32,7 +31,7 @@ export default StyleSheet.create({
   subtitleView: {
     flexDirection: 'column',
     alignItems: 'center',
-    paddingTop: 5,
+    /*paddingTop: 5,*/
   },
   subtitle: {
     fontSize: 24,
