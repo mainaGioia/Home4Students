@@ -42,14 +42,9 @@ export default class Utils extends Component {
             <ListItem
               style={ styles.listItem }
               key={util.name}
-              avatar={
-                <Avatar overlayContainerStyle={{flexDirection:'column', alignItems: 'center', justifyContent: 'center' }}
-                containerStyle={{borderWidth:1, borderColor:'#cc00ff', marginTop:20, alignItems: 'center', justifyContent:'center'}}
-                  rounded
-                  source={this.getImage(num)}
-                  title="test"
-                />
-              }
+              avatar={this.getImage(num)}
+              wrapperStyle={{flexDirection:'column', alignItems:'center'}}
+              avatarOverlayContainerStyle={{flexDirection: 'column', borderWidth:1, borderColor:'#cc00ff', alignItems:'center'}}
               title={
                 <View style={styles.subtitleView}>
                 <Text style={{color: '#ffffff'}}> {util.name.toUpperCase()} </Text>
