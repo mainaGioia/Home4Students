@@ -48,7 +48,7 @@ export default class Utils extends Component {
               avatarOverlayContainerStyle={{ borderWidth:1, borderColor:'#cc00ff'}}
               title={
                 <View style={styles.subtitleView}>
-                <Text style={{color: '#ffffff', textAlign:'center'}}> {util.name.toUpperCase()} </Text>
+                <Text style={{color: '#ffffff', textAlign:'center'}}> {util.name[0].toUpperCase()+util.name.substr(1)} </Text>
               <Text style={{color: '#ffffff'}}> Bala </Text>
             </View> }
               subtitle={util.description}
