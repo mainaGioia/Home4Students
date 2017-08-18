@@ -10,7 +10,7 @@ export default StyleSheet.create({
   },
   list: {
     justifyContent: 'center',
-    /*flexDirection: 'row',*/
+    flexDirection: 'row',
     flexWrap: 'wrap',
   },
   listItem: {
@@ -19,6 +19,7 @@ export default StyleSheet.create({
     width: 110,
     height: 130,
     flexDirection: 'column',
+    alignItems:'center',
     /*opacity: 0.5,
     justifyContent: 'center',*/
   },
@@ -29,7 +30,7 @@ export default StyleSheet.create({
   },
   subtitleView: {
     flexDirection: 'column',
-    paddingLeft: 10,
+    alignItems: 'center',
     paddingTop: 5,
   },
   subtitle: {

@@ -43,8 +43,9 @@ export default class Utils extends Component {
               style={ styles.listItem }
               key={util.name}
               avatar={this.getImage(num)}
-              wrapperStyle={{flexDirection:'column', alignItems:'center'}}
-              avatarOverlayContainerStyle={{flexDirection: 'column', borderWidth:1, borderColor:'#cc00ff', alignItems:'center'}}
+              hideChevron
+              wrapperStyle={{flexDirection:'column', alignItems:'center', }}
+              avatarOverlayContainerStyle={{ borderWidth:1, borderColor:'#cc00ff'}}
               title={
                 <View style={styles.subtitleView}>
                 <Text style={{color: '#ffffff'}}> {util.name.toUpperCase()} </Text>
