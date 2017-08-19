@@ -25,7 +25,7 @@ export default class Dorm extends Component{
     return(
       <ScrollView>
         <Tile
-          imageSrc={ require('../images/tirolerheim.jpg') }
+          imageSrc={ require('../../assets/images/tirolerheim.jpg') }
           featured
           title="TIROLERHEIM"
         />

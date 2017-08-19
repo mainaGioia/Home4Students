@@ -15,7 +15,7 @@ export default StyleSheet.create({
   },
   listItem: {
     backgroundColor: '#131210',
-    margin: 2,
+    margin: 1,
     width: 110,
     height: 130,
     flexDirection: 'column',

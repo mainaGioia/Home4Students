@@ -4,16 +4,16 @@ import { Tile, List, ListView, ListItem } from 'react-native-elements';
 import styles from './styles.js';
 
 const images = {
-  welcome: require('../images/tirolerheim_neu_2.jpg'),
-  kitchen: require('../images/kitchen.jpg'),
-  laundry: require('../images/doubleroom.jpg'),
-  cleaning: require('../images/cleaning.jpg'),
-  keys: require('../images/keys.jpg'),
-  party: require('../images/party.jpeg'),
-  music: require('../images/music.jpeg'),
-  gym: require('../images/gym.jpeg'),
-  write: require('../images/write.jpg'),
-  waste: require('../images/waste.jpg'),
+  welcome: require('../../assets/images/tirolerheim_neu_2.jpg'),
+  kitchen: require('../../assets/images/kitchen.jpg'),
+  laundry: require('../../assets/images/doubleroom.jpg'),
+  cleaning: require('../../assets/images/cleaning.jpg'),
+  keys: require('../../assets/images/keys.jpg'),
+  party: require('../../assets/images/party.jpeg'),
+  music: require('../../assets/images/music.jpeg'),
+  gym: require('../../assets/images/gym.jpeg'),
+  write: require('../../assets/images/write.jpg'),
+  waste: require('../../assets/images/waste.jpg'),
 };
 
 export default class UtilDetail extends Component {

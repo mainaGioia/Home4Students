@@ -10,16 +10,15 @@ import { utils } from '../config/data';
 import styles from './styles';
 
 const images = {
-  image0: require('../images/icons/welcome.png'),
-  image1: require('../images/icons/kitchen.png'),
-  image2: require('../images/icons/laundry.png'),
-  image3: require('../images/icons/janitor.png'),
-  image4: require('../images/icons/key.png'),
-  image5: require('../images/icons/party.png'),
-  image6: require('../images/icons/music.png'),
-  image7: require('../images/icons/gym.png'),
-  image8: require('../images/icons/waste.png'),
-  image9: require('../images/icons/email.png'),
+  image0: require('../../assets/images/icons/kitchenIcon.png'),
+  image1: require('../../assets/images/icons/laundryIcon.png'),
+  image2: require('../../assets/images/icons/cleaningIcon.png'),
+  image3: require('../../assets/images/icons/keysIcon.png'),
+  image4: require('../../assets/images/icons/partyIcon.png'),
+  image5: require('../../assets/images/icons/musicIcon.png'),
+  image6: require('../../assets/images/icons/gymIcon.png'),
+  image7: require('../../assets/images/icons/wasteIcon.png'),
+  image8: require('../../assets/images/icons/writeIcon.png'),
 }
 
 export default class Utils extends Component {
