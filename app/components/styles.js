@@ -28,7 +28,7 @@ export default StyleSheet.create({
     textAlign: 'center',
 
   },
-  subtitleView: {
+  titleView: {
     flexDirection: 'column',
     alignItems: 'center',
     /*paddingTop: 5,*/

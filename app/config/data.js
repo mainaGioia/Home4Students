@@ -71,7 +71,7 @@ export const utils = [
   },
   {
     "key": "keys",
-    "name": "I lost my keys",
+    "name": "lost my keys",
     "description": "what to do in case you are locked out",
     "caption": "you can contact the following people",
     "picture": {
@@ -100,7 +100,7 @@ export const utils = [
   },
   {
     "key": "party",
-    "name": "Party room",
+    "name": "Party Room",
     "description": "Want to throw a party? Reserve the room!",
     "caption": "Mind the other people living here.\nArrange parties on the weekend",
     "picture": {
@@ -125,7 +125,7 @@ export const utils = [
   },
   {
     "key": "music",
-    "name": "Music room",
+    "name": "Music Room",
     "description": "Wanna play some music? We have the room for you",
     "caption": "Maybe the new Mozart or Parov Stelar\n is among us...",
     "picture": {
