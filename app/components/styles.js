@@ -33,6 +33,13 @@ export default StyleSheet.create({
     alignItems: 'center',
     /*paddingTop: 5,*/
   },
+  subtitleText: {
+    color: '#ffffff',
+    opacity: 0.5,
+    textAlign:'center',
+    fontFamily: 'montserrat',
+    fontSize: 11,
+  },
   subtitle: {
     fontSize: 24,
     textAlign: 'center',

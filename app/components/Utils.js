@@ -50,9 +50,16 @@ export default class Utils extends Component {
                 <Text style={{color: '#ffffff', textAlign:'center'}}> {util.name[0].toUpperCase()+util.name.substr(1)} </Text>
                 </View>
               }
-              subtitle={util.description}
+              subtitle={
+                <View style={styles.subtitleView}>
+                {
+                    <Text style={styles.subtitleText}>
+                      {util.description[0].toUpperCase()+util.description.substr(1)}
+                    </Text>
+                }
+                </View>
+              }
               subtitleNumberOfLines = {2}
-              subtitleStyle={{textAlign:'center'}}
               onPress={() => {this.onLearnMore(util); console.log(util.name);}}
             />
           ))}
