@@ -33,6 +33,14 @@ export default StyleSheet.create({
     alignItems: 'center',
     /*paddingTop: 5,*/
   },
+  subtitleView: {
+    height: 28,
+    width: 100,
+    overflow: 'hidden',
+    /*borderWidth: 1,
+    borderColor: '#ccffcc',*/
+
+  },
   subtitleText: {
     color: '#ffffff',
     opacity: 0.5,

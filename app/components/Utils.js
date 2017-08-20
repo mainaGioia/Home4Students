@@ -44,7 +44,7 @@ export default class Utils extends Component {
               avatar={this.getImage(num)}
               hideChevron
               wrapperStyle={{flexDirection:'column', alignItems:'center', margin: 10}}
-              avatarOverlayContainerStyle={{ borderWidth:1, borderColor:'#cc00ff', width:34, height:34}}
+              avatarOverlayContainerStyle={{ borderWidth:1, borderColor:'#cc00ff', width:42, height:42}}
               title={
                 <View style={styles.titleView}>
                 <Text style={{color: '#ffffff', textAlign:'center'}}> {util.name[0].toUpperCase()+util.name.substr(1)} </Text>
