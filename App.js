@@ -17,7 +17,7 @@ export default class App extends Component {
   _loadAssetsAsync = async() => {
     try{
       await Font.loadAsync({
-        'open-sans-bold': require('./assets/fonts/Open_Sans/OpenSans-SemiBold.ttf'),
+        'open-sans-semi': require('./assets/fonts/Open_Sans/OpenSans-SemiBold.ttf'),
         'montserrat': require('./assets/fonts/Montserrat/Montserrat-Regular.ttf')
       });
       this.setState({ loaded: true });

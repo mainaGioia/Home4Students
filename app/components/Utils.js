@@ -30,7 +30,7 @@ export default class Utils extends Component {
 
   render() {
     return (
-      <View style={styles.listContainer}>
+      <ScrollView contentContainerStyle={styles.listContainer}>
         <List style={styles.list}>
           {utils.map((util, num) => (
             <ListItem
@@ -47,14 +47,14 @@ export default class Utils extends Component {
               hideChevron
               title={
                 <View style={styles.titleView}>
-                <Text style={{color: '#ffffff', textAlign:'center'}}> {util.name[0].toUpperCase()+util.name.substr(1)} </Text>
+                <Text style={styles.titleText}> {util.name[0].toUpperCase()+util.name.substr(1)} </Text>
                 </View>
               }
               subtitle={
                 <View style={styles.subtitleView}>
                 {
                     <Text style={styles.subtitleText}>
-                      {util.description[0].toUpperCase()+util.description.substr(1)}
+                      {util.subtitle[0].toUpperCase()+util.subtitle.substr(1)}
                     </Text>
                 }
                 </View>
@@ -64,7 +64,7 @@ export default class Utils extends Component {
             />
           ))}
         </List>
-      </View>
+      </ScrollView>
     );
   }
 }

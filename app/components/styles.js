@@ -33,13 +33,12 @@ export default StyleSheet.create({
     height:50,
     justifyContent:'center',
     alignItems:'center',
-    /*borderWidth: 1,
-    borderColor: '#ff00cc',*/
+    //borderWidth: 1,
+    //borderColor: '#ff00cc',
   },
   title:{
     fontSize: 34,
     textAlign: 'center',
-
   },
   titleView: {
     flexDirection: 'column',
@@ -48,17 +47,22 @@ export default StyleSheet.create({
     /*borderWidth: 1,
     borderColor: '#ff00cc'*/
   },
+  titleText: {
+    color: '#ffffff',
+    textAlign:'center',
+
+  },
   subtitleView: {
     height: 28,
     width: 100,
     overflow: 'hidden',
-    borderWidth: 0,
-    borderColor: '#ccffcc',
+    //borderWidth: 1,
+    //borderColor: '#ccffcc',
 
   },
   subtitleText: {
     color: '#ffffff',
-    opacity: 0.5,
+    opacity: 0.6,
     textAlign:'center',
     fontFamily: 'montserrat',
     fontSize: 11,
