@@ -1,10 +1,5 @@
 import React, { Component } from 'react';
-import {
-  Text,
-  View,
-  ScrollView,
-  StyleSheet
-} from 'react-native';
+import { Text, View, ScrollView, StyleSheet, Image } from 'react-native';
 import { List, ListItem, Avatar } from 'react-native-elements';
 import { utils } from '../config/data';
 import styles from './styles';
@@ -42,8 +37,11 @@ export default class Utils extends Component {
               style={ styles.listItem }
               wrapperStyle={{flexDirection:'column', alignItems:'center', margin: 10}}
               key={util.name}
-              avatar={this.getImage(num)}
-              avatarContainerStyle= {{width:42, height:42,}}
+              avatar= {
+                <Image
+                source={this.getImage(num)}
+                style={{justifyContent:'center', alignItems:'center'}}
+                 /> }
               hideChevron
               title={
                 <View style={styles.titleView}>
