@@ -40,11 +40,11 @@ export default class Utils extends Component {
           {utils.map((util, num) => (
             <ListItem
               style={ styles.listItem }
+              wrapperStyle={{flexDirection:'column', alignItems:'center', margin: 10}}
               key={util.name}
               avatar={this.getImage(num)}
+              avatarContainerStyle= {{width:42, height:42,}}
               hideChevron
-              wrapperStyle={{flexDirection:'column', alignItems:'center', margin: 10,}}
-              avatarContainerStyle= {{width:42, height:42, borderWidth:1, borderColor:'#ff00ff'}}
               title={
                 <View style={styles.titleView}>
                 <Text style={{color: '#ffffff', textAlign:'center'}}> {util.name[0].toUpperCase()+util.name.substr(1)} </Text>

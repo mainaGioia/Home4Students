@@ -31,14 +31,14 @@ export default StyleSheet.create({
   titleView: {
     flexDirection: 'column',
     alignItems: 'center',
-    /*paddingTop: 5,*/
+    marginTop: 15,
   },
   subtitleView: {
     height: 28,
     width: 100,
     overflow: 'hidden',
-    /*borderWidth: 1,
-    borderColor: '#ccffcc',*/
+    borderWidth: 0,
+    borderColor: '#ccffcc',
 
   },
   subtitleText: {
@@ -55,6 +55,11 @@ export default StyleSheet.create({
   },
   sectionText: {
     padding: 20,
-  }
+  },
+  tabIcon: {
+    width: 26,
+    height: 26,
+    padding: 5,
+  },
 
 });

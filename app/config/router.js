@@ -1,11 +1,12 @@
 import React from 'react';
 import { TabNavigator, StackNavigator } from 'react-navigation';
-import { Dimensions } from 'react-native';
+import { Dimensions, StyleSheet, Image } from 'react-native';
 import { Icon } from 'react-native-elements';
 import Utils from '../components/Utils';
 import UtilDetail from '../components/UtilDetail';
 import SubDetail from '../components/SubDetail';
 import Dorm from '../components/Dorm';
+import styles from '../components/styles.js'
 
 
 const UtilsStack = StackNavigator({
@@ -25,24 +26,37 @@ export const MainScreenNavigator = TabNavigator({
   Utils: {
     screen: UtilsStack,
     navigationOptions: {
-      tabBarLabel: 'Utils',
-      tabBarIcon: ({ tintColor }) =>
-        <Icon name="list" color={tintColor}/>
+      tabBarPosition: 'bottom',
+      tabBarIcon: ({ tintColor }) => {
+        return (
+          <Image
+            source={require('../../assets/images/icons/utilitiesIcon.png')}
+            style={[styles.tabIcon, {tintColor: tintColor}]}
+            />
+          );},
     },
   },
   Main: {
     screen: Dorm,
     navigationOptions: {
-      tabBarLabel: 'Infos',
-      tabBarIcon: ({ tintColor }) =>
-        <Icon name="domain" size={35} color={tintColor}/>
+      tabBarIcon: ({ tintColor }) => {
+        return (
+          <Image
+            source={require('../../assets/images/icons/welcomeIcon.png')}
+            style={[styles.tabIcon, {tintColor: tintColor}]}
+            />
+          )},
     },
   },
 },{
+  tabBarPosition: 'bottom',
   tabBarOptions: {
     style: {
       width: Dimensions.get("window").width,
+      //showIcon: 'true',
       // backgroundColor: '#789fbe',
     },
+    showIcon: true,
+    showLabel: false,
   },
 });
