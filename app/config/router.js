@@ -53,6 +53,7 @@ export const MainScreenNavigator = TabNavigator({
   tabBarOptions: {
     style: {
       width: Dimensions.get("window").width,
+      backgroundColor: '#383a3d'
       //showIcon: 'true',
       // backgroundColor: '#789fbe',
     },

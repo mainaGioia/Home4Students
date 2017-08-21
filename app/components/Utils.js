@@ -30,7 +30,7 @@ export default class Utils extends Component {
 
   render() {
     return (
-      <ScrollView style={{top:0,}}>
+      <View style={styles.listContainer}>
         <List style={styles.list}>
           {utils.map((util, num) => (
             <ListItem
@@ -38,10 +38,12 @@ export default class Utils extends Component {
               wrapperStyle={{flexDirection:'column', alignItems:'center', margin: 10}}
               key={util.name}
               avatar= {
+                <View style={styles.avatarView}>
                 <Image
                 source={this.getImage(num)}
-                style={{justifyContent:'center', alignItems:'center'}}
-                 /> }
+                style={{justifyContent:'center', alignItems:'center',}}
+                 />
+               </View> }
               hideChevron
               title={
                 <View style={styles.titleView}>
@@ -62,7 +64,7 @@ export default class Utils extends Component {
             />
           ))}
         </List>
-      </ScrollView>
+      </View>
     );
   }
 }

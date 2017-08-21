@@ -6,7 +6,11 @@ export default StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#ffffff'
-
+  },
+  listContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    backgroundColor: '#383a3d',
   },
   list: {
     justifyContent: 'center',
@@ -23,6 +27,15 @@ export default StyleSheet.create({
     /*opacity: 0.5,
     justifyContent: 'center',*/
   },
+  avatarView: {
+    marginLeft:-33,
+    width:100,
+    height:50,
+    justifyContent:'center',
+    alignItems:'center',
+    /*borderWidth: 1,
+    borderColor: '#ff00cc',*/
+  },
   title:{
     fontSize: 34,
     textAlign: 'center',
@@ -32,6 +45,8 @@ export default StyleSheet.create({
     flexDirection: 'column',
     alignItems: 'center',
     marginTop: 15,
+    /*borderWidth: 1,
+    borderColor: '#ff00cc'*/
   },
   subtitleView: {
     height: 28,
