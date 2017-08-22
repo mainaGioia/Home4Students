@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, Dimensions } from 'react-native';
+import { Platform, StyleSheet, Text, View, Dimensions } from 'react-native';
 import { MainScreenNavigator } from './app/config/router.js';
 import { AppLoading, Font, Constants } from 'expo';
 
@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#383a3d',
     // alignItems: 'center',
     // justifyContent: 'center',
-    paddingTop: Constants.statusBarHeight,
+    paddingTop: Platform.OS === 'ios' ? 0 : Constants.statusBarHeight,
     //backgroundColor: '#ecf0f1',
   },
 });

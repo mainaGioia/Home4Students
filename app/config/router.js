@@ -18,7 +18,7 @@ const navigationOptions = {
 }
 
 const UtilsStack = StackNavigator({
-  Utils: { screen: Utils, navigationOptions:{ title: 'Utils'} },
+  Utils: { screen: Utils, navigationOptions:{ title: 'Utils', headerTintColor: '#fff'} },
   Details: { screen: UtilDetail },
   Subcategory: { screen: SubDetail }
 },
