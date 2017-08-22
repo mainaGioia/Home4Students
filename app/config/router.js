@@ -20,21 +20,15 @@ const UtilsStack = StackNavigator({
   Subcategory: {
     screen: SubDetail,
   }
+},{
+  navigationOptions:{
+    headerStyle: styles.header,
+    headerTintColor: '#fff',
+    headerTitleStyle: styles.headerTitle,
+  }
 });
 
 export const MainScreenNavigator = TabNavigator({
-  Main: {
-    screen: Dorm,
-    navigationOptions: {
-      tabBarIcon: ({ tintColor }) => {
-        return (
-          <Image
-            source={require('../../assets/images/icons/welcomeIcon.png')}
-            style={[styles.tabIcon, {tintColor: tintColor}]}
-            />
-          )},
-    },
-  },
   Utils: {
     screen: UtilsStack,
     navigationOptions: {
@@ -45,6 +39,18 @@ export const MainScreenNavigator = TabNavigator({
             style={[styles.tabIcon, {tintColor: tintColor}]}
             />
           );},
+    },
+  },
+  Main: {
+    screen: Dorm,
+    navigationOptions: {
+      tabBarIcon: ({ tintColor }) => {
+        return (
+          <Image
+            source={require('../../assets/images/icons/welcomeIcon.png')}
+            style={[styles.tabIcon, {tintColor: tintColor}]}
+            />
+          )},
     },
   },
 },{

@@ -1,6 +1,14 @@
 import { Dimensions, StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
+  header: {
+    backgroundColor: '#383a3d',
+    borderWidth: 1,
+    borderColor: '#ff0000',
+  },
+  headerTitle: {
+    fontWeight: 'normal',
+  },
   tabBarOptions: {
     width: Dimensions.get("window").width,
     backgroundColor: '#383a3d',
