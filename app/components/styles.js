@@ -35,6 +35,8 @@ export default StyleSheet.create({
     alignItems:'center',
     //borderWidth: 1,
     //borderColor: '#ff00cc',
+    // home4students color
+    // backgroundColor: '#789fbe',
   },
   title:{
     fontSize: 34,
@@ -75,10 +77,6 @@ export default StyleSheet.create({
   sectionText: {
     padding: 20,
   },
-  tabIcon: {
-    width: 26,
-    height: 26,
-    padding: 5,
-  },
+  
 
 });
