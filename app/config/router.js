@@ -9,57 +9,53 @@ import Dorm from '../components/Dorm';
 import styles from './styles.js'
 
 
-const UtilsStack = StackNavigator({
-  Utils: {
-    screen: Utils,
-    navigationOptions: { title: 'Utils' },
-  },
-  Details: {
-    screen: UtilDetail,
-  },
-  Subcategory: {
-    screen: SubDetail,
-  }
-},{
+const navigationOptions = {
   navigationOptions:{
     headerStyle: styles.header,
     headerTintColor: '#fff',
     headerTitleStyle: styles.headerTitle,
-  }
-});
+  },
+}
+
+const UtilsStack = StackNavigator({
+  Utils: { screen: Utils, navigationOptions:{ title: 'Utils'} },
+  Details: { screen: UtilDetail },
+  Subcategory: { screen: SubDetail }
+},
+  navigationOptions
+);
+
+const createTabBar = (img) => ({ tintColor }) => (
+  <Image
+    source={img}
+    style={[styles.tabIcon, {tintColor: tintColor}]}
+  />
+);
+
+const tabNavigatorOptions = {
+    tabBarPosition: 'bottom',
+    tabBarOptions: {
+      style: styles.tabBarOptions,
+      showIcon: true,
+      showLabel: false,
+      activeTintColor: '#ffffff',
+      indicatorStyle:{backgroundColor:'#789fbe'},
+    },
+}
 
 export const MainScreenNavigator = TabNavigator({
   Utils: {
     screen: UtilsStack,
     navigationOptions: {
-      tabBarIcon: ({ tintColor }) => {
-        return (
-          <Image
-            source={require('../../assets/images/icons/utilitiesIcon.png')}
-            style={[styles.tabIcon, {tintColor: tintColor}]}
-            />
-          );},
+      tabBarIcon: createTabBar(require('../../assets/images/icons/utilitiesIcon.png'))
     },
   },
   Main: {
     screen: Dorm,
     navigationOptions: {
-      tabBarIcon: ({ tintColor }) => {
-        return (
-          <Image
-            source={require('../../assets/images/icons/welcomeIcon.png')}
-            style={[styles.tabIcon, {tintColor: tintColor}]}
-            />
-          )},
+      tabBarIcon: createTabBar(require('../../assets/images/icons/welcomeIcon.png'))
     },
   },
-},{
-  tabBarPosition: 'bottom',
-  tabBarOptions: {
-    style: styles.tabBarOptions,
-    showIcon: true,
-    showLabel: false,
-    activeTintColor: '#ffffff',
-    indicatorStyle:{backgroundColor:'#789fbe'},
-  },
-});
+},
+  tabNavigatorOptions
+);

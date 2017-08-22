@@ -3,8 +3,9 @@ import { Dimensions, StyleSheet } from 'react-native';
 export default StyleSheet.create({
   header: {
     backgroundColor: '#383a3d',
-    borderWidth: 1,
-    borderColor: '#ff0000',
+    //height: 42,
+    //borderWidth: 1,
+    //borderColor: '#ff0000',
   },
   headerTitle: {
     fontWeight: 'normal',
@@ -16,8 +17,8 @@ export default StyleSheet.create({
     // backgroundColor: '#789fbe',
   },
   tabIcon: {
-    width: 26,
-    height: 26,
+    width: 20,
+    height: 20,
     padding: 5,
   },
 })
