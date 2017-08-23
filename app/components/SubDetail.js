@@ -6,11 +6,6 @@ import styles from './styles.js';
 
 export default class SubDetail extends Component {
 
-  static navigationOptions = ({navigation}) => ({
-    title: navigation.state.params.subcategory.name,
-  });
-
-
   handleButtonPress = () => {
     console.log("pressed button");
   };

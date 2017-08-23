@@ -6,6 +6,7 @@ import Utils from '../components/Utils';
 import UtilDetail from '../components/UtilDetail';
 import SubDetail from '../components/SubDetail';
 import Dorm from '../components/Dorm';
+import ModalPage from '../components/ModalPage';
 import styles from './styles.js'
 
 
@@ -43,7 +44,7 @@ const tabNavigatorOptions = {
     },
 }
 
-export const MainScreenNavigator = TabNavigator({
+const Tabs = TabNavigator({
   Utils: {
     screen: UtilsStack,
     navigationOptions: {
@@ -59,3 +60,15 @@ export const MainScreenNavigator = TabNavigator({
 },
   tabNavigatorOptions
 );
+
+const ModalPagesStack = StackNavigator({
+  ModalPages: { screen: ModalPage },
+})
+
+export const MainScreenNavigator = StackNavigator({
+  Tabs: { screen: Tabs },
+  ModalPages: { screen: ModalPagesStack },
+},{
+  mode: 'modal',
+  headerMode: 'none',
+});

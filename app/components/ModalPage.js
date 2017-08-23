@@ -1,0 +1,40 @@
+import React, { Component } from 'react';
+import { ScrollView, Text, View } from 'react-native';
+import { Tile, List, ListView, ListItem } from 'react-native-elements';
+import styles from './styles.js';
+
+const images = {
+  welcome: require('../../assets/images/tirolerheim_neu_2.jpg'),
+  kitchen: require('../../assets/images/kitchen.jpg'),
+  laundry: require('../../assets/images/doubleroom.jpg'),
+  cleaning: require('../../assets/images/cleaning.jpg'),
+  keys: require('../../assets/images/keys.jpg'),
+  party: require('../../assets/images/party.jpeg'),
+  music: require('../../assets/images/music.jpeg'),
+  gym: require('../../assets/images/gym.jpeg'),
+  write: require('../../assets/images/write.jpg'),
+  waste: require('../../assets/images/waste.jpg'),
+};
+
+export default class ModalPage extends Component {
+
+  
+  render() {
+    const { name } = this.props.navigation.state.params;
+
+    return (
+      <ScrollView >
+        <Tile
+          imageSrc={ images[key] }
+          featured
+          title={ name.toUpperCase() }
+          caption={description}
+        />
+        <Text style={ {textAlign: 'center',paddingTop: 20} }>
+          { caption }
+        </Text>
+      </ScrollView>
+    );
+  }
+
+}

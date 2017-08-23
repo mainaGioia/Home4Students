@@ -8,6 +8,12 @@ import styles from './styles.js';
 
 export default class Dorm extends Component{
 
+  openModal = (menuitem) => {
+    console.log("this.props.navigation: ",this.props.navigation);
+    console.log("modal to open: ", menuitem);
+    this.props.navigation.navigate('ExplanationModal', { menuitem });
+  };
+
   render(){
     return(
       <ScrollView style={{paddingTop: Platform.OS === 'ios' ? Constants.statusBarHeight : 0}}>
@@ -15,7 +21,7 @@ export default class Dorm extends Component{
           imageSrc={require('../../assets/images/tirolerheim_neu_1.jpg')}
           featured
         />
-        <Text style={ {textAlign: 'center',paddingTop: 20, color:'#fff', fontSize: 21} }>
+        <Text style={ {textAlign: 'center',paddingTop: 20, fontSize: 21} }>
           { 'WELCOME TO '+dorm[0].tirolerheim.name.toUpperCase()+"!" }
         </Text>
         <List>
@@ -24,7 +30,7 @@ export default class Dorm extends Component{
               key={subcat.name+i}
               title={subcat.name}
               subtitle={subcat.description}
-              onPress={() => {this.openSub(subcat); console.log(subcat.name);}}
+              onPress={() => {this.openModal(subcat); console.log(subcat.name);}}
             />
           ))}
         </List>

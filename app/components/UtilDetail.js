@@ -25,10 +25,6 @@ export default class UtilDetail extends Component {
   };
 
 
-  static navigationOptions = ({navigation}) => ({
-    title: navigation.state.params.name,
-  });
-
 
   render() {
     const { key, picture, name, description, caption, subcategories } = this.props.navigation.state.params;
