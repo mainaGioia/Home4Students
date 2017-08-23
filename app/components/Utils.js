@@ -60,6 +60,7 @@ export default class Utils extends Component {
                 </View>
               }
               subtitleNumberOfLines = {2}
+              underlayColor='#232426'
               onPress={() => {this.onLearnMore(util); console.log(util.name);}}
             />
           ))}
