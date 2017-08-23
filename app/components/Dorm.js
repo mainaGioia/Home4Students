@@ -1,48 +1,30 @@
 import React, { Component } from 'react';
-import { ScrollView, WebView } from 'react-native';
-import { Tile, List, ListItem, Button } from 'react-native-elements';
+import { Platform, ScrollView, View, StyleSheet } from 'react-native';
+import { Tile, List, ListItem, Button, Text } from 'react-native-elements';
 import { dorm } from '../config/data';
+import { MapView, Constants } from 'expo';
+import styles from './styles.js';
 
-class TirolerWebView extends Component{
-  render() {
-    return (
-      <WebView source={{uri: 'https://www.home4students.at/en/living/dormitories-innsbruck/74-studentenheim-technikerstrasse/'}}
-      style={{marginTop: 20}}
-      />
-    );
-  }
-}
 
 export default class Dorm extends Component{
 
-  handleButtonPress = () => {
-    console.log("that's navigation: ", this.props.navigation);
-    console.log("dorm: ", dorm.Tirolerheim);
-    this.props.navigation.navigate();
-  };
-
   render(){
     return(
-      <ScrollView>
+      <ScrollView style={{paddingTop: Platform.OS === 'ios' ? Constants.statusBarHeight : 0}}>
         <Tile
-          imageSrc={ require('../../assets/images/tirolerheim.jpg') }
+          imageSrc={require('../../assets/images/tirolerheim_neu_1.jpg')}
           featured
-          title="TIROLERHEIM"
         />
-        <Button
-          title= "Website"
-          buttonStyle={{ marginTop: 20 }}
-          onPress={ this.handleButtonPress }
-        />
+        <Text style={ {textAlign: 'center',paddingTop: 20, color:'#fff', fontSize: 21} }>
+          { 'WELCOME TO '+dorm[0].tirolerheim.name.toUpperCase()+"!" }
+        </Text>
         <List>
-          { dorm[0].tirolerheim.map((property, i) => (
+          { dorm[0].tirolerheim.subcategories.map((subcat,i) => (
             <ListItem
-              key={property.key+i}
-                title={property.key}
-                rightTitle={property.value}
-                rightTitleStyle={{flex:1, justifyContent:'flex-end'}}
-                rightTitleNumberOfLines={5}
-                hideChevron
+              key={subcat.name+i}
+              title={subcat.name}
+              subtitle={subcat.description}
+              onPress={() => {this.openSub(subcat); console.log(subcat.name);}}
             />
           ))}
         </List>

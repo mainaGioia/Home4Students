@@ -236,87 +236,92 @@ export const utils = [
 
 export const dorm = [
   {
-    tirolerheim: [
+    tirolerheim:
       {
-        "key": "name",
-        "value": "Tirolerheim",
-      },
-      {
-        "key": "address",
-        "value": "Technikerstraße 7, 6020 Innsbruck",
-      },
-      {
-        "key": "category",
-        "value": "12-month-dormitory",
-      },
-      {
-        "key": "facilities",
-        "value": "communal kitchen, washing machine and dryer, bicycle storage, garden with bbq...and Gerhard",
-      },
-      {
-        "key": "rooms",
-        "value": "259 rooms with shower/WC, house intercom, internet wlan",
-      },
-      {
-        "key": "prices(monthly)",
-        "value": "Single room: €375\nDouble room: €308\nParking: €40\nGarage: €64",
-      },
-      {
-        "key": "nearby universities",
-        "value": "Technik Universität",
-      },
-      {
-        "key": "welcome",
-        "name": "Welcome",
-        "description": "wifi, keys and other things to know as soon as you come",
-        "caption": "",
-        "picture": {
-          "large": "../images/tirolerheim_neu_1.jpg",
-          "medium": "",
-          "thumbnail": "../images/icons/welcome.png",
-        },
-        "subcategories": [
+        "key": "Tirolerheim",
+        "name": "Tirolerheim",
+        "caption": "Home4Students\nTechnikerstraße 7, 6020 Innsbruck",
+        "subcategories":[
           {
-            "name": "wifi",
-            "description": "let's get connected!",
-            "text": "You can find the password of the wifi at the entrance, "+
-            "if you need, take a picture of it and do not lose it cause you will "+
-            "need it more often than you think :)",
+            "name": "Where to find us",
+            "description": "Have a look at the map!",
           },
           {
-            "name": "keys",
-            "description": "how to access your private facilities",
-            "text": "As soon as you come, you are gonna get a pair of keys like the "+
-            "ones in the picture. One is gonna be for the maibox, the other one for "+
-            "your room. Your room's key is an NFC chip, you just have to bring it "+
-            "close to the sensor on the handle to lock/unlock the door. By default "+
-            "the door is locked, this means you have to use your key every time to "+
-            "open it from outside. The door can also be used as a normal door without "+
-            "locking mechanism: press the button on the handle (you find it on the "+
-            "back side) and you'll notice a green light, you can now close and open "+
-            "the door without using the keys. To lock it again, bring your key close "+
-            "to the sensor or press the same button again. You'll see a red light on "+
-            "the handle. In case you lose them or get locked out, have a look at the "+
-            "section \"I lost my keys\" of the app."
+            "name": "things to do as soon as you arrive",
+            "description": "meldezettel, wifi and keys",
+            subcategories: [
+              {
+                "name": "meldezettel",
+                "description": "how to register to the townhall",
+                "text": "This document is required to register as a citizen of Innsbruck."+
+                " You get it from the office on arrival and have to bring it to the office"+
+                " on the first floor in Kaufhaus Tirol (mariatheresienstraße)."+
+                "If you do not do it, you will incur a fine."
+              },
+              {
+                "name": "wifi",
+                "description": "let's get connected!",
+                "text": "You can find the password of the wifi at the entrance, "+
+                "if you need, take a picture of it and do not lose it cause you will "+
+                "need it more often than you think :)",
+              },
+              {
+                "name": "keys",
+                "description": "how to access your private facilities",
+                "text": "As soon as you come, you are gonna get a pair of keys like the "+
+                "ones in the picture. One is gonna be for the maibox, the other one for "+
+                "your room. Your room's key is an NFC chip, you just have to bring it "+
+                "close to the sensor on the handle to lock/unlock the door. By default "+
+                "the door is locked, this means you have to use your key every time to "+
+                "open it from outside. The door can also be used as a normal door without "+
+                "locking mechanism: press the button on the handle (you find it on the "+
+                "back side) and you'll notice a green light, you can now close and open "+
+                "the door without using the keys. To lock it again, bring your key close "+
+                "to the sensor or press the same button again. You'll see a red light on "+
+                "the handle. In case you lose them or get locked out, have a look at the "+
+                "section \"I lost my keys\" of the app."
+              },
+              {
+                "name": "list with da stuff in da room",
+                "description": "check what you have and what you do not have"
+              },
+            ]
           },
           {
-            "name": "meldezettel",
-            "description": "how to register to the townhall",
-            "text": "This document is required to register as a citizen of Innsbruck."+
-            " You get it from the office on arrival and have to bring it to the office"+
-            " on the first floor in Kaufhaus Tirol (mariatheresienstraße)."+
-            "If you do not do it, you will incur a fine."
+            "name": "Facilities",
+            "description": "What do we offer?",
           },
           {
-            "name": "list with da stuff in da room",
-            "description": "check what you have and what you do not have"
+            "name": "Nerby spots",
+            "description": "You need a supermarket or a pharmacy?",
           },
-          {
-            "name": "silence policy",
-            "description": "there's a time to party and a time to shut up...",
-          }
         ],
-      },
-    ],
+      }
   },
 ]
+
+
+// {
+//   "key": "where to find us",
+//   "value": "Technikerstraße 7, 6020 Innsbruck",
+// },
+// {
+//   "key": "category",
+//   "value": "12-month-dormitory",
+// },
+// {
+//   "key": "facilities",
+//   "value": "communal kitchen, washing machine and dryer, bicycle storage, garden with bbq...and Gerhard",
+// },
+// {
+//   "key": "rooms",
+//   "value": "259 rooms with shower/WC, house intercom, internet wlan",
+// },
+// {
+//   "key": "prices(monthly)",
+//   "value": "Single room: €375\nDouble room: €308\nParking: €40\nGarage: €64",
+// },
+// {
+//   "key": "nearby universities",
+//   "value": "Technik Universität",
+// },

@@ -77,6 +77,24 @@ export default StyleSheet.create({
   sectionText: {
     padding: 20,
   },
-  
+  map_container: {
+    position: 'absolute',
+    top: 150,
+    left: 20,
+    right: 20,
+    bottom: 40,
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+    borderWidth: 2,
+    borderColor: '#cc00ff'
+  },
+  map: {
+    position: 'absolute',
+    top:0,
+    left:0,
+    right:0,
+    bottom: 0,
+  }
+
 
 });
