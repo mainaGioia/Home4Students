@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Platform } from 'react-native';
 
 export default StyleSheet.create({
   container: {
@@ -90,11 +90,19 @@ export default StyleSheet.create({
   },
   map: {
     position: 'absolute',
-    top:0,
-    left:0,
-    right:0,
+    top: 0,
+    left: 0,
+    right: 0,
     bottom: 0,
-  }
+  },
+  modal: {
+    ...StyleSheet.absoluteFillObject,
+    margin: 20,
+    backgroundColor: '#fff',
+  },
+  button_for_ios: {
+    display: Platform.OS === 'ios' ? 'inline' : 'none',
+    alignItems: 'flex-end',
 
-
+  },
 });

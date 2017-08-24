@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { ScrollView, Text, View } from 'react-native';
-import { Tile, List, ListView, ListItem } from 'react-native-elements';
+import { Tile, List, ListView, ListItem, Button } from 'react-native-elements';
 import styles from './styles.js';
 
 const images = {
@@ -23,7 +23,7 @@ export default class ModalPage extends Component {
     const { name, description } = this.props.navigation.state.params.menuitem;
 
     return (
-      <ScrollView >
+      <View style={styles.modal} >
 
         <Text style={ {textAlign: 'center',paddingTop: 20} }>
           { name }
@@ -31,7 +31,10 @@ export default class ModalPage extends Component {
         <Text style={ {textAlign: 'center',paddingTop: 20} }>
           { description }
         </Text>
-      </ScrollView>
+        <View style={styles.button_for_ios}>
+        <Button onPress={() => this.props.navigation.goBack(null)} title="Done" backgroundColor='transparent' color='#397af8'/>
+        </View>
+      </View>
     );
   }
 

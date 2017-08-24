@@ -18,6 +18,23 @@ const navigationOptions = {
   },
 }
 
+const tabNavigatorOptions = {
+    tabBarPosition: 'bottom',
+    tabBarOptions: {
+      style: styles.tabBarOptions,
+      showIcon: true,
+      showLabel: false,
+      activeTintColor: '#ffffff',
+      indicatorStyle:{backgroundColor:'#789fbe'},
+    },
+}
+
+const modalNavigatorOptions = {
+  headerMode: 'none',
+  cardStyle: { backgroundColor: '#383a3d'}
+
+}
+
 const UtilsStack = StackNavigator({
   Utils: { screen: Utils, navigationOptions:{ title: 'Utils', headerTintColor: '#fff'} },
   Details: { screen: UtilDetail },
@@ -33,16 +50,7 @@ const createTabBar = (img) => ({ tintColor }) => (
   />
 );
 
-const tabNavigatorOptions = {
-    tabBarPosition: 'bottom',
-    tabBarOptions: {
-      style: styles.tabBarOptions,
-      showIcon: true,
-      showLabel: false,
-      activeTintColor: '#ffffff',
-      indicatorStyle:{backgroundColor:'#789fbe'},
-    },
-}
+
 
 const Tabs = TabNavigator({
   Utils: {
@@ -63,7 +71,9 @@ const Tabs = TabNavigator({
 
 const ModalPagesStack = StackNavigator({
   ModalPages: { screen: ModalPage },
-})
+},
+  modalNavigatorOptions
+);
 
 export const MainScreenNavigator = StackNavigator({
   Tabs: { screen: Tabs },
