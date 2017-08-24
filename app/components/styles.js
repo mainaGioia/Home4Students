@@ -79,11 +79,11 @@ export default StyleSheet.create({
   },
   map_container: {
     position: 'absolute',
-    top: 150,
+    top: 50,
     left: 20,
     right: 20,
-    bottom: 40,
-    justifyContent: 'flex-end',
+    height: 200, 
+    justifyContent: 'flex-start',
     alignItems: 'center',
     borderWidth: 2,
     borderColor: '#cc00ff'
@@ -103,6 +103,5 @@ export default StyleSheet.create({
   button_for_ios: {
     display: Platform.OS === 'ios' ? 'inline' : 'none',
     alignItems: 'flex-end',
-
   },
 });

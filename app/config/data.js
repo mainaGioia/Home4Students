@@ -243,10 +243,12 @@ export const dorm = [
         "caption": "Home4Students\nTechnikerstraße 7, 6020 Innsbruck",
         "subcategories":[
           {
+            "key": "map",
             "name": "Where to find us",
             "description": "Have a look at the map!",
           },
           {
+            "key": "welcome",
             "name": "things to do as soon as you arrive",
             "description": "meldezettel, wifi and keys",
             subcategories: [
@@ -292,6 +294,7 @@ export const dorm = [
             "description": "What do we offer?",
           },
           {
+            "key": "nearby",
             "name": "Nerby spots",
             "description": "You need a supermarket or a pharmacy?",
           },

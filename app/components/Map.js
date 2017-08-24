@@ -1,23 +1,12 @@
 import React, { Component } from 'react';
+import { View } from 'react-native';
 import { MapView } from 'expo';
+import styles from './styles.js';
 
 
-export default class Map extends Component {
-
-  state = {
-    region : {
-      latitude: 47.264595,
-      longitude: 11.349841,
-      latitueDelta: 0.1,
-      longitudeDelta: 0.1,
-    },
-  }
-
-  render(){
-    return (
-      <MapView
-        initialRegion={region}/>
-    );
-  }
-
-}
+export const MyMap = ({initialRegion}) => (
+      <View style={styles.map_container}>
+        <MapView style={styles.map}
+          initialRegion={ initialRegion }/>
+      </View>
+  );
