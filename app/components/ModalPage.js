@@ -16,10 +16,10 @@ export default class ModalPage extends Component {
     if (key.toLowerCase() == "map")
       content = <MyMap
           initialRegion={{
-            latitude: 47.264595,
-            longitude: 11.349841,
-            latitudeDelta: 0.01,
-            longitudeDelta: 0.01,
+            latitude: 47.264995,
+            longitude: 11.378328,
+            latitudeDelta: 0.03,
+            longitudeDelta: 0.03,
           }}
           markercoords={ {latitude: 47.264595, longitude: 11.349841} }
           markertitle='Home4Students - Tirolerheim'
