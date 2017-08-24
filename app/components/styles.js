@@ -79,7 +79,7 @@ export default StyleSheet.create({
   },
   map_container: {
     position: 'absolute',
-    top: 50,
+    top: 20,
     left: 20,
     right: 20,
     height: 200,
@@ -94,6 +94,11 @@ export default StyleSheet.create({
     left: 0,
     right: 0,
     bottom: 0,
+  },
+  text_under_map: {
+    position: 'absolute',
+    top: 250,
+    left: 20,
   },
   modal: {
     ...StyleSheet.absoluteFillObject,

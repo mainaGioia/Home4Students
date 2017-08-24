@@ -14,7 +14,7 @@ export default class ModalPage extends Component {
 
     let content = null;
     if (key.toLowerCase() == "map")
-      content = <MyMap
+      content = (<View><MyMap
           initialRegion={{
             latitude: 47.264995,
             longitude: 11.378328,
@@ -25,6 +25,11 @@ export default class ModalPage extends Component {
           markertitle='Home4Students - Tirolerheim'
           markerdescript='Technikerstraße, 7'
           />
+          <View style={styles.text_under_map}>
+            <Text> How to reach us: </Text>
+          </View>
+          </View>
+        )
     else if (key.toLowerCase() == "welcome"){
       content = <Text>some text + {name}</Text>
     }
