@@ -19,7 +19,7 @@ const images = {
 export default class Utils extends Component {
 
   onLearnMore = (util) => {
-    console.log("this.props.navigation: ",this.props.navigation);
+    //console.log("this.props.navigation: ",this.props.navigation);
     this.props.navigation.navigate('Details', { ...util });
   };
 

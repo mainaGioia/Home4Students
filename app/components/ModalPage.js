@@ -18,20 +18,18 @@ const images = {
 
 export default class ModalPage extends Component {
 
-  
+
   render() {
-    const { name } = this.props.navigation.state.params;
+    const { name, description } = this.props.navigation.state.params.menuitem;
 
     return (
       <ScrollView >
-        <Tile
-          imageSrc={ images[key] }
-          featured
-          title={ name.toUpperCase() }
-          caption={description}
-        />
+
         <Text style={ {textAlign: 'center',paddingTop: 20} }>
-          { caption }
+          { name }
+        </Text>
+        <Text style={ {textAlign: 'center',paddingTop: 20} }>
+          { description }
         </Text>
       </ScrollView>
     );

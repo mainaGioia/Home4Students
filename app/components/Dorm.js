@@ -9,9 +9,8 @@ import styles from './styles.js';
 export default class Dorm extends Component{
 
   openModal = (menuitem) => {
-    console.log("this.props.navigation: ",this.props.navigation);
-    console.log("modal to open: ", menuitem);
-    this.props.navigation.navigate('ExplanationModal', { menuitem });
+    console.log("modal to open: ",this.props.navigation);
+    this.props.navigation.navigate('ModalPages', { menuitem });
   };
 
   render(){

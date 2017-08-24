@@ -19,7 +19,7 @@ const images = {
 export default class UtilDetail extends Component {
 
   openSub = (subcategory) => {
-    console.log("this.props.navigation: ",this.props.navigation);
+//    console.log("this.props.navigation: ",this.props.navigation);
     console.log("this is what i pass:  ", subcategory);
     this.props.navigation.navigate("Subcategory", { subcategory });
   };
