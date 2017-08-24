@@ -82,11 +82,11 @@ export default StyleSheet.create({
     top: 50,
     left: 20,
     right: 20,
-    height: 200, 
+    height: 200,
     justifyContent: 'flex-start',
     alignItems: 'center',
-    borderWidth: 2,
-    borderColor: '#cc00ff'
+    //borderWidth: 2,
+    //borderColor: '#cc00ff'
   },
   map: {
     position: 'absolute',

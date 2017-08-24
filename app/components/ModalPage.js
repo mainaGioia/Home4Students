@@ -18,9 +18,13 @@ export default class ModalPage extends Component {
           initialRegion={{
             latitude: 47.264595,
             longitude: 11.349841,
-            latitudeDelta: 0.02,
-            longitudeDelta: 0.02,
-          }}/>
+            latitudeDelta: 0.01,
+            longitudeDelta: 0.01,
+          }}
+          markercoords={ {latitude: 47.264595, longitude: 11.349841} }
+          markertitle='Home4Students - Tirolerheim'
+          markerdescript='Technikerstraße, 7'
+          />
     else if (key.toLowerCase() == "welcome"){
       content = <Text>some text + {name}</Text>
     }
