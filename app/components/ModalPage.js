@@ -35,8 +35,8 @@ export default class ModalPage extends Component {
       content = <ScrollView style={styles.modal}>
       { subcategories.map((subcat, i) => (
           <View key={subcat.name+i}>
-            <Text style={styles.titleText}>{subcat.name}</Text>
-            <Text style={styles.subtitleText}>{subcat.description}</Text>
+            <Text style={styles.section_title}>{subcat.name}</Text>
+            <Text style={styles.section_description}>{subcat.description}</Text>
             <Text style={styles.section_text}>{subcat.text}</Text>
           </View>
         ))

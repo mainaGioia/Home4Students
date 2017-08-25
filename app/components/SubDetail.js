@@ -26,7 +26,7 @@ export default class SubDetail extends Component {
     else {
       content = <ScrollView>
         <Text style={styles.subtitle}> { description } </Text>
-        <Text style={styles.sectionText}> { text } </Text>
+        <Text style={styles.section_text}> { text } </Text>
       </ScrollView>
     }
 

@@ -74,8 +74,19 @@ export default StyleSheet.create({
     textAlign: 'center',
     paddingTop: 10,
   },
-  sectionText: {
+  section_text: {
+    fontFamily: 'montserrat',
     padding: 20,
+    textAlign: 'justify',
+  },
+  section_title: {
+    marginTop: 20,
+    fontSize: 16,
+    fontFamily: 'montserrat',
+  },
+  section_description: {
+    fontFamily: 'montserrat',
+    opacity: 0.7,
   },
   map_container: {
     position: 'absolute',
