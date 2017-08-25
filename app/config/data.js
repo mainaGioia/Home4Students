@@ -246,10 +246,9 @@ export const dorm = [
             "key": "map",
             "name": "Where to find us",
             "description": "Have a look at the map!",
-            subcategories:
-              {
-                address: "Technikestraße 7, 6020 Innsbruck",
-              }
+            "address": "Technikestraße 7, 6020 Innsbruck",
+            "coords": {latitude: 47.264595, longitude: 11.349841},
+            "initialRegion": {latitude: 47.264995,longitude: 11.378328,latitudeDelta: 0.03, longitudeDelta: 0.03},
           },
           {
             "key": "welcome",
@@ -294,6 +293,7 @@ export const dorm = [
             ]
           },
           {
+            "key": "facilities",
             "name": "Facilities",
             "description": "What do we offer?",
           },

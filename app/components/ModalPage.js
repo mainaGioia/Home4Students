@@ -5,34 +5,43 @@ import { MyMap } from './Map.js';
 
 import styles from './styles.js';
 
+const createCurrentMap = (address, region, markerCoords) => (
+  <View>
+    <MyMap
+      initialRegion={region}
+      markercoords={ {latitude: markerCoords.lat, longitude: markerCoords.long } }
+      markertitle='Home4Students - Tirolerheim'
+      markerdescript={address.split(',')[0]}
+    />
+    <View style={styles.text_under_map}>
+      <Text> We are here: </Text>
+      <Text> {address} </Text>
+    </View>
+  </View>
+)
 
 export default class ModalPage extends Component {
 
 
   render() {
-    const { key, name, description, subcategories } = this.props.navigation.state.params.menuitem;
+    const { key, name, description, initialRegion, coords, address, subcategories } = this.props.navigation.state.params.menuitem;
 
     let content = null;
     if (key.toLowerCase() == "map")
-      content = (<View><MyMap
-          initialRegion={{
-            latitude: 47.264995,
-            longitude: 11.378328,
-            latitudeDelta: 0.03,
-            longitudeDelta: 0.03,
-          }}
-          markercoords={ {latitude: 47.264595, longitude: 11.349841} }
-          markertitle='Home4Students - Tirolerheim'
-          markerdescript={subcategories.address.split(',')[0]+'\nGet directions'}
-          />
-          <View style={styles.text_under_map}>
-            <Text> We are here: </Text>
-            <Text> {subcategories.address} </Text>
+      content = createCurrentMap(address, initialRegion, {lat:coords.latitude, long:coords.longitude});
+    else if (key.toLowerCase() == 'nearby')
+      content = this.createNearbyMap();
+    else {
+      content = <ScrollView style={styles.modal}>
+      { subcategories.map((subcat, i) => (
+          <View key={subcat.name+i}>
+            <Text style={styles.titleText}>{subcat.name}</Text>
+            <Text style={styles.subtitleText}>{subcat.description}</Text>
+            <Text style={styles.section_text}>{subcat.text}</Text>
           </View>
-          </View>
-        )
-    else if (key.toLowerCase() == "welcome"){
-      content = <Text>some text + {name}</Text>
+        ))
+      }
+      </ScrollView>
     }
 
     return (
