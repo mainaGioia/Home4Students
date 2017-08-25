@@ -246,6 +246,10 @@ export const dorm = [
             "key": "map",
             "name": "Where to find us",
             "description": "Have a look at the map!",
+            subcategories:
+              {
+                address: "Technikestraße 7, 6020 Innsbruck",
+              }
           },
           {
             "key": "welcome",

@@ -10,7 +10,7 @@ export default class ModalPage extends Component {
 
 
   render() {
-    const { key, name, description } = this.props.navigation.state.params.menuitem;
+    const { key, name, description, subcategories } = this.props.navigation.state.params.menuitem;
 
     let content = null;
     if (key.toLowerCase() == "map")
@@ -23,10 +23,11 @@ export default class ModalPage extends Component {
           }}
           markercoords={ {latitude: 47.264595, longitude: 11.349841} }
           markertitle='Home4Students - Tirolerheim'
-          markerdescript='Technikerstraße, 7'
+          markerdescript={subcategories.address.split(',')[0]+'\nGet directions'}
           />
           <View style={styles.text_under_map}>
-            <Text> How to reach us: </Text>
+            <Text> We are here: </Text>
+            <Text> {subcategories.address} </Text>
           </View>
           </View>
         )
@@ -39,7 +40,7 @@ export default class ModalPage extends Component {
         { /* button for dismissing modal page in ios */ }
         <View style={styles.button_for_ios}>
           <Button onPress={() => this.props.navigation.goBack(null)}
-          title="Done" backgroundColor='transparent' color='#397af8'/>
+          title="Close" backgroundColor='transparent' color='#397af8'/>
         </View>
 
         { content }
