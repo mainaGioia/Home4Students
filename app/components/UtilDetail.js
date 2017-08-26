@@ -55,36 +55,3 @@ export default class UtilDetail extends Component {
   }
 
 }
-
-        //   <ListItem
-        //     title="Email"
-        //     rightTitle={email}
-        //     hideChevron
-        //   />
-        //   <ListItem
-        //     title="Phone"
-        //     rightTitle={phone}
-        //     hideChevron
-        //   />
-        // </List>
-        //
-        // <List>
-        //   <ListItem
-        //     title="Username"
-        //     rightTitle={login.username}
-        //     hideChevron
-        //   />
-        // </List>
-        //
-        // <List>
-        //   <ListItem
-        //     title="Birthday"
-        //     rightTitle={dob}
-        //     hideChevron
-        //   />
-        //   <ListItem
-        //     title="City"
-        //     rightTitle={location.city}
-        //     hideChevron
-        //   />
-        // </List>

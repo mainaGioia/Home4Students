@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { ScrollView, Text, View } from 'react-native';
+import { ScrollView, Text, View, Image } from 'react-native';
 import { Tile, List, ListView, ListItem, Button } from 'react-native-elements';
 import { MyMap } from './Map.js';
-
 import styles from './styles.js';
 
 const createCurrentMap = (address, region, markerCoords) => (
@@ -20,6 +19,11 @@ const createCurrentMap = (address, region, markerCoords) => (
   </View>
 )
 
+const images = {
+  welcome: require('../../assets/images/doubleroom.jpg'),
+  facilities: require('../../assets/images/doubleroom.jpg'),
+}
+
 export default class ModalPage extends Component {
 
 
@@ -33,6 +37,9 @@ export default class ModalPage extends Component {
       content = this.createNearbyMap();
     else {
       content = <ScrollView style={styles.modal}>
+      <View style={{height:200}}>
+        <Image resizeMode='contain' source={images[key]}/>
+        </View>
       { subcategories.map((subcat, i) => (
           <View key={subcat.name+i}>
             <Text style={styles.section_title}>{subcat.name}</Text>
