@@ -77,6 +77,7 @@ export default StyleSheet.create({
   section_text: {
     fontFamily: 'montserrat',
     padding: 20,
+    paddingBottom:0,
     textAlign: 'justify',
   },
   section_title: {

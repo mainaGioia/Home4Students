@@ -20,7 +20,7 @@ const createCurrentMap = (address, region, markerCoords) => (
 )
 
 const images = {
-  welcome: require('../../assets/images/doubleroom.jpg'),
+  welcome: require('../../assets/images/tirolerheim_neu_2.jpg'),
   facilities: require('../../assets/images/doubleroom.jpg'),
 }
 
@@ -37,7 +37,7 @@ export default class ModalPage extends Component {
       content = this.createNearbyMap();
     else {
       content = <ScrollView style={styles.modal}>
-      <Tile style={{paddingBottom:100}}
+      <Tile
         imageSrc={ images[key] }
         featured
         activeOpacity={1}
