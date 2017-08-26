@@ -120,4 +120,5 @@ export default StyleSheet.create({
     display: Platform.OS === 'ios' ? 'inline' : 'none',
     alignItems: 'flex-end',
   },
+
 });

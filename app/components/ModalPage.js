@@ -37,9 +37,11 @@ export default class ModalPage extends Component {
       content = this.createNearbyMap();
     else {
       content = <ScrollView style={styles.modal}>
-      <View style={{height:200}}>
-        <Image resizeMode='contain' source={images[key]}/>
-        </View>
+      <Tile style={{paddingBottom:30}}
+        imageSrc={ images[key] }
+        featured
+        activeOpacity={1}
+      />
       { subcategories.map((subcat, i) => (
           <View key={subcat.name+i}>
             <Text style={styles.section_title}>{subcat.name}</Text>

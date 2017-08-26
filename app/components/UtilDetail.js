@@ -34,6 +34,7 @@ export default class UtilDetail extends Component {
         <Tile
           imageSrc={ images[key] }
           featured
+          activeOpacity={1}
           title={ name.toUpperCase() }
           caption={description}
         />
