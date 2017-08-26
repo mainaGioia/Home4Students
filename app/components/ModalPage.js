@@ -37,7 +37,7 @@ export default class ModalPage extends Component {
       content = this.createNearbyMap();
     else {
       content = <ScrollView style={styles.modal}>
-      <Tile style={{paddingBottom:30}}
+      <Tile style={{paddingBottom:100}}
         imageSrc={ images[key] }
         featured
         activeOpacity={1}

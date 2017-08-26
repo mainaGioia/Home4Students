@@ -19,6 +19,7 @@ export default class Dorm extends Component{
         <Tile
           imageSrc={require('../../assets/images/tirolerheim_neu_1.jpg')}
           featured
+          activeOpacity={1}
         />
         <Text style={ {textAlign: 'center',paddingTop: 20, fontSize: 21} }>
           { 'WELCOME TO '+dorm[0].tirolerheim.name.toUpperCase()+"!" }
