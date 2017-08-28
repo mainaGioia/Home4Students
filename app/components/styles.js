@@ -91,7 +91,8 @@ export default StyleSheet.create({
   },
   map_container: {
     position: 'absolute',
-    top: 20,
+    //margin for the ios close button
+    top: Platform.OS === 'ios' ? 0 : 20,
     left: 20,
     right: 20,
     height: 200,
