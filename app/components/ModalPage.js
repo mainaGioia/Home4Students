@@ -19,6 +19,13 @@ const createCurrentMap = (address, region, markerCoords) => (
   </View>
 )
 
+const createNearbyMap = {...closeInterestsPoints} => (
+  <View/>
+)
+
+
+
+
 const images = {
   welcome: require('../../assets/images/tirolerheim_neu_2.jpg'),
   facilities: require('../../assets/images/doubleroom.jpg'),
@@ -34,7 +41,7 @@ export default class ModalPage extends Component {
     if (key.toLowerCase() == "map")
       content = createCurrentMap(address, initialRegion, {lat:coords.latitude, long:coords.longitude});
     else if (key.toLowerCase() == 'nearby')
-      content = this.createNearbyMap();
+      content = this.createNearbyMap(points);
     else {
       content = <ScrollView style={{margin:20, marginTop:Platform.OS === 'ios' ? 0 : 20,}}>
       <Tile

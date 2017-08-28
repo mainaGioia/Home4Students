@@ -293,29 +293,29 @@ export const dorm = [
             ]
           },
           {
-            "key": "facilities",
-            "name": "Facilities",
-            "description": "What do we offer?",
+            key: "facilities",
+            name: "Facilities",
+            description: "What do we offer?",
             subcategories: [
               {
-                "name": "Dormitory",
-                "description": "12-month-dormitory (01.09. - 31.08.) -\nrooms are also offered during summer! ",
-                "text": "We offer a communal kitchen, washing machine and dryer, garage and bicycle storage,"+
+                name: "Dormitory",
+                description: "12-month-dormitory (01.09. - 31.08.) -\nrooms are also offered during summer! ",
+                text: "We offer a communal kitchen, washing machine and dryer, garage and bicycle storage,"+
                 "a party room and an amazing garden with a barbeque"+
                 "Extensive renovation 2014 ",
               },
               {
-                "name": "Rooms",
-                "text": "259 spots in total (157 single / 102 double) with shower/WC,"+
+                name: "Rooms",
+                text: "259 spots in total (157 single / 102 double) with shower/WC,"+
                 "house intercom, internet wireless-LAN",
               },
 
             ]
           },
           {
-            "key": "nearby",
-            "name": "Nerby spots",
-            "description": "You need a supermarket or a pharmacy?",
+            key: "nearby",
+            name: "Nerby spots",
+            description: "You need a supermarket or a pharmacy?",
             subcategories: [],
 
           },
