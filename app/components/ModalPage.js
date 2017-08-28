@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ScrollView, Text, View, Image } from 'react-native';
+import { ScrollView, Text, View, Image, Platform } from 'react-native';
 import { Tile, List, ListView, ListItem, Button } from 'react-native-elements';
 import { MyMap } from './Map.js';
 import styles from './styles.js';
@@ -36,7 +36,7 @@ export default class ModalPage extends Component {
     else if (key.toLowerCase() == 'nearby')
       content = this.createNearbyMap();
     else {
-      content = <ScrollView style={styles.modal}>
+      content = <ScrollView style={{margin:20, marginTop:Platform.OS === 'ios' ? 0 : 20,}}>
       <Tile
         imageSrc={ images[key] }
         featured

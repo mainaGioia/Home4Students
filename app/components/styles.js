@@ -118,7 +118,7 @@ export default StyleSheet.create({
     backgroundColor: '#fff',
   },
   button_for_ios: {
-    display: Platform.OS === 'ios' ? 'inline' : 'none',
+    display: Platform.OS === 'ios' ? 'block' : 'none',
     alignItems: 'flex-end',
   },
 
