@@ -322,7 +322,7 @@ export const dorm = [
                   type: "universities",
                   value: [
                     {
-                      name: "Universität Innsbruck - Campus Technik"
+                      name: "Universität Innsbruck - Campus Technik",
                       address: "Technikerstraße 15",
                       coords: {latitude: 47.264202, longitude: 11.343651},
                     }

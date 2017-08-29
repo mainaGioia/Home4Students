@@ -19,8 +19,14 @@ const createCurrentMap = (address, region, markerCoords) => (
   </View>
 )
 
-const createNearbyMap = (...points) => {
-  console.log("POINTS: ",points);
+const createNearbyMap = (points) => {
+  points.map((point,i) => {
+    console.log("punto: ", point.type);
+    {/*
+    <View key={point.type+i}>
+      <Text style={styles.section_title}>{point.type}</Text>
+    </View> */}
+  })
 }
 
 
