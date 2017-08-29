@@ -316,7 +316,49 @@ export const dorm = [
             key: "nearby",
             name: "Nerby spots",
             description: "You need a supermarket or a pharmacy?",
-            subcategories: [],
+            subcategories: [
+              surroundings:{
+                banks: {
+                  "Lohbach Apotheke":{
+                    address: "Technikerstraße 3",
+                    coords: {latitude: , longitude: },
+                  },
+                  "Hypo Tirol":{
+                    address: "Viktor-Franz-Hess-Straße 1",
+                    coords: {latitude: 47.266719, longitude: 11.345393},
+                  },
+                  "Tiroler Sparkasse": {
+                    address: "Technikerstraße 34",
+                    coords: {latitude: 47.265466, longitude: 11.352989},
+                  },
+                  "Eurospar":{
+                    address: "Technikerstraße 5",
+                    coords: {latitude: 47.264606, longitude: 11.350674},
+                  },
+                  "MPreis":{
+                    address: "Viktor-Franz-Hess-Straße 5",
+                    coords: {latitude: 47.265711, longitude: 11.345737},
+                  },
+                  "MPreis - Innsbruck Airport": {
+                    address: "Fürstenweg 180",
+                    coords: {latitude: 47.257526, longitude: 11.351541},
+                  },
+                  "Der Bäcker Ruetz":{
+                    address: "Viktor-Franz-Hess-Straße 3",
+                    coords: {latitude: 47.265551, longitude: 11.345125},
+                  },
+                  "Post Office/Newsagent's":{
+                    address: "Technikerstraße 1",
+                    coords: {latitude: 47.263563, longitude: 11.351737},
+                  },
+                  "Universität Innsbruck - Campus Technik":{
+                    address: "Technikerstraße 15",
+                    coords: {latitude: 47.264202, longitude: 11.343651},
+                  },
+
+                }
+              }
+            ],
 
           },
         ],
