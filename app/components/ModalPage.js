@@ -19,9 +19,9 @@ const createCurrentMap = (address, region, markerCoords) => (
   </View>
 )
 
-const createNearbyMap = {...closeInterestsPoints} => (
-  <View/>
-)
+const createNearbyMap = (...points) => {
+  console.log("POINTS: ",points);
+}
 
 
 
@@ -41,7 +41,7 @@ export default class ModalPage extends Component {
     if (key.toLowerCase() == "map")
       content = createCurrentMap(address, initialRegion, {lat:coords.latitude, long:coords.longitude});
     else if (key.toLowerCase() == 'nearby')
-      content = this.createNearbyMap(points);
+      content = createNearbyMap(subcategories.surroundings);
     else {
       content = <ScrollView style={{margin:20, marginTop:Platform.OS === 'ios' ? 0 : 20,}}>
       <Tile
