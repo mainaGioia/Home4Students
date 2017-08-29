@@ -19,15 +19,20 @@ const createCurrentMap = (address, region, markerCoords) => (
   </View>
 )
 
-const createNearbyMap = (points) => {
-  points.map((point,i) => {
-    console.log("punto: ", point.type);
-    {/*
-    <View key={point.type+i}>
-      <Text style={styles.section_title}>{point.type}</Text>
-    </View> */}
-  })
-}
+const createNearbyMap = (points) => (
+  <ScrollView  style={{margin:20, marginTop:Platform.OS === 'ios' ? 0 : 20,}}>
+  {
+    points.map((point,i) => (
+        <Text key={point.type+i} style={styles.section_title}> {point.type} </Text>
+        { point.value.map((item,i) => (
+            <Text key={item.name+i} style={styles.section_description}> {item.name} </Text>
+          ))
+        }
+
+      ))
+  }
+  </ScrollView>
+)
 
 
 
