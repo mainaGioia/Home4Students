@@ -30,6 +30,7 @@ const createCurrentMap = (address, region, markerCoords) => (
 )
 
 const createNearbyMap = (region, points) => (
+  <View>
   <View style={styles.map_nearbypoints_container}>
     <MapView style={styles.map}
       initialRegion={ region }>
@@ -43,11 +44,12 @@ const createNearbyMap = (region, points) => (
         />
       ))}
     </MapView>
+    </View>
     <View style={styles.text_under_nearbymap}>
       <Text> We are here: </Text>
       <Text> ciao </Text>
     </View>
-  </View>
+    </View>
 )
 
 
