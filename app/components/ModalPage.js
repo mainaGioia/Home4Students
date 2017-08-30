@@ -43,7 +43,7 @@ const createNearbyMap = (region, points) => (
         />
       ))}
     </MapView>
-    <View style={styles.text_under_map}>
+    <View style={styles.text_under_nearbymap}>
       <Text> We are here: </Text>
       <Text> ciao </Text>
     </View>

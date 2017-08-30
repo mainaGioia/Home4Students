@@ -125,6 +125,10 @@ export default StyleSheet.create({
     top: 250,
     left: 20,
   },
+  text_under_nearbymap: {
+    position: 'absolute',
+    top: 400,
+  },
   modal: {
     ...StyleSheet.absoluteFillObject,
     margin: 20,
