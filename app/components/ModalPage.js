@@ -5,6 +5,15 @@ import { MyMap } from './Map.js';
 import { MapView } from 'expo';
 import styles from './styles.js';
 
+const markers = {
+  bakeries: require('../../assets/images/markers/bakeries.png'),
+  banks: require('../../assets/images/markers/banks.png'),
+  Home4Students: require('../../assets/images/markers/Home4Students.png'),
+  pharmacies: require('../../assets/images/markers/pharmacies.png'),
+  supermarkets: require('../../assets/images/markers/supermarkets.png'),
+  universities: require('../../assets/images/markers/universities.png'),
+};
+
 const createCurrentMap = (address, region, markerCoords) => (
   <View>
     <MyMap
@@ -28,6 +37,7 @@ const createNearbyMap = (region, points) => (
         <MapView.Marker
           key={ point.address }
           coordinate={ point.coords }
+          image={ markers[point.type] }
           title= { point.name }
           description= { point.address }
         />
