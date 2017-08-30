@@ -316,8 +316,15 @@ export const dorm = [
             key: "nearby",
             name: "Nerby spots",
             description: "You need a supermarket or a pharmacy?",
+            "initialRegion": {latitude: 47.262930,longitude: 11.348187,latitudeDelta: 0.012, longitudeDelta: 0.012},
             subcategories: {
               "surroundings":[
+                {
+                  type: "Home4Students",
+                  name: "Tirolerheim",
+                  address: "Technikestraße 7",
+                  coords: {latitude: 47.264595, longitude: 11.349841},
+                },
                 {
                   type: "universities",
                   name: "Universität Innsbruck - Campus Technik",
@@ -346,7 +353,7 @@ export const dorm = [
                   type: "supermarkets",
                   name: "Eurospar",
                   address: "Technikerstraße 5",
-                  coords: {latitude: 47.264606, longitude: 11.350674},
+                  coords: {latitude: 47.264041, longitude: 11.350787},
                 },
                 {
                   type: "supermarkets",

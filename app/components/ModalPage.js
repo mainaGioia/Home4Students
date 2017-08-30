@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { ScrollView, Text, View, Image, Platform } from 'react-native';
 import { Tile, List, ListView, ListItem, Button } from 'react-native-elements';
 import { MyMap } from './Map.js';
+import { MapView } from 'expo';
 import styles from './styles.js';
 
 const createCurrentMap = (address, region, markerCoords) => (
@@ -19,19 +20,24 @@ const createCurrentMap = (address, region, markerCoords) => (
   </View>
 )
 
-const createNearbyMap = (points, category) => (
-  <ScrollView  style={{margin:20, marginTop:Platform.OS === 'ios' ? 0 : 20,}}>
-  {  points.map((point,i) => (
-      <View key={point.type+i}>
-      <Text>{ category = (category == null || point.type != category) ? point.type : category }</Text>
-        <Text style={styles.section_title}> {category[0].toUpperCase()+category.substr(1)} </Text>
-        <Text style={styles.section_description}> {point.name} </Text>
-        <Text style={styles.section_description}> {point.address} </Text>
-        <Text style={styles.section_description}> {point.note} </Text>
-      </View>
-    ))
-  }
-  </ScrollView>
+const createNearbyMap = (region, points) => (
+  <View style={styles.map_nearbypoints_container}>
+    <MapView style={styles.map}
+      initialRegion={ region }>
+      { points.map(point => (
+        <MapView.Marker
+          key={ point.address }
+          coordinate={ point.coords }
+          title= { point.name }
+          description= { point.address }
+        />
+      ))}
+    </MapView>
+    <View style={styles.text_under_map}>
+      <Text> We are here: </Text>
+      <Text> ciao </Text>
+    </View>
+  </View>
 )
 
 
@@ -49,10 +55,8 @@ export default class ModalPage extends Component {
     let content = null;
     if (key.toLowerCase() == "map")
       content = createCurrentMap(address, initialRegion, {lat:coords.latitude, long:coords.longitude});
-    else if (key.toLowerCase() == 'nearby'){
-      let category = null;
-      content = createNearbyMap(subcategories.surroundings, category);
-    }
+    else if (key.toLowerCase() == 'nearby')
+      content = createNearbyMap(initialRegion, subcategories.surroundings);
     else {
       content = <ScrollView style={{margin:20, marginTop:Platform.OS === 'ios' ? 0 : 20,}}>
       <Tile

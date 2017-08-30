@@ -101,6 +101,18 @@ export default StyleSheet.create({
     //borderWidth: 2,
     //borderColor: '#cc00ff'
   },
+  map_nearbypoints_container: {
+    position: 'absolute',
+    //margin for the ios close button
+    top: Platform.OS === 'ios' ? 0 : 20,
+    left: 20,
+    right: 20,
+    height: 350,
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    //borderWidth: 2,
+    //borderColor: '#cc00ff'
+  },
   map: {
     position: 'absolute',
     top: 0,
