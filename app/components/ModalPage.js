@@ -19,22 +19,20 @@ const createCurrentMap = (address, region, markerCoords) => (
   </View>
 )
 
-const createNearbyMap = (points) => (
+const createNearbyMap = (points, category) => (
   <ScrollView  style={{margin:20, marginTop:Platform.OS === 'ios' ? 0 : 20,}}>
-  {
-    points.map((point,i) => (
-        <Text key={point.type+i} style={styles.section_title}> {point.type} </Text>
-        { point.value.map((item,i) => (
-            <Text key={item.name+i} style={styles.section_description}> {item.name} </Text>
-          ))
-        }
-
-      ))
+  {  points.map((point,i) => (
+      <View key={point.type+i}>
+      <Text>{ category = (category == null || point.type != category) ? point.type : category }</Text>
+        <Text style={styles.section_title}> {category[0].toUpperCase()+category.substr(1)} </Text>
+        <Text style={styles.section_description}> {point.name} </Text>
+        <Text style={styles.section_description}> {point.address} </Text>
+        <Text style={styles.section_description}> {point.note} </Text>
+      </View>
+    ))
   }
   </ScrollView>
 )
-
-
 
 
 const images = {
@@ -51,8 +49,10 @@ export default class ModalPage extends Component {
     let content = null;
     if (key.toLowerCase() == "map")
       content = createCurrentMap(address, initialRegion, {lat:coords.latitude, long:coords.longitude});
-    else if (key.toLowerCase() == 'nearby')
-      content = createNearbyMap(subcategories.surroundings);
+    else if (key.toLowerCase() == 'nearby'){
+      let category = null;
+      content = createNearbyMap(subcategories.surroundings, category);
+    }
     else {
       content = <ScrollView style={{margin:20, marginTop:Platform.OS === 'ios' ? 0 : 20,}}>
       <Tile
