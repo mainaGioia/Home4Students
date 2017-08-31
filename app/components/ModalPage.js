@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { ScrollView, Text, View, Image, Platform } from 'react-native';
-import { Tile, List, ListView, ListItem, Button } from 'react-native-elements';
+import { Tile, List, ListView, ListItem, Button  } from 'react-native-elements';
 import { MyMap } from './Map.js';
+import { MyPin } from './MyPin.js';
 import { MapView } from 'expo';
 import styles from './styles.js';
 
@@ -35,13 +36,13 @@ const createNearbyMap = (region, points) => (
     <MapView style={styles.map}
       initialRegion={ region }>
       { points.map(point => (
-        <MapView.Marker
+        <MyPin
+          coords={ point.coords }
           key={ point.address }
-          coordinate={ point.coords }
-          image={ markers[point.type] }
-          title= { point.name }
-          description= { point.address }
-        />
+          name={ point.name }
+          address={ point.address }
+          image = { markers[point.type] }
+          />
       ))}
     </MapView>
     </View>
