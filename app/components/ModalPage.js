@@ -41,12 +41,7 @@ const createNearbyMap = (region, points) => (
           key={ point.address }
           title={ point.name }
           description={ point.address }
-          image={<Image
-            source={ markers[point.type] }
-            style={{height:30}}
-            onLoad={() => this.forceUpdate()}>
-            <Text style={{width:0, height:0}}>{Math.random()}</Text>
-          </Image>}
+          image={markers[point.type] }
           />
       ))}
     </MapView>
