@@ -36,12 +36,17 @@ const createNearbyMap = (region, points) => (
     <MapView style={styles.map}
       initialRegion={ region }>
       { points.map(point => (
-        <MyPin
-          coords={ point.coords }
+        <MapView.Marker
+          coordinate={ point.coords }
           key={ point.address }
-          name={ point.name }
-          address={ point.address }
-          image = { markers[point.type] }
+          title={ point.name }
+          description={ point.address }
+          image={<Image
+            source={ markers[point.type] }
+            style={{height:30}}
+            onLoad={() => this.forceUpdate()}>
+            <Text style={{width:0, height:0}}>{Math.random()}</Text>
+          </Image>}
           />
       ))}
     </MapView>
