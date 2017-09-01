@@ -24,6 +24,11 @@ export default class UtilDetail extends Component {
     this.props.navigation.navigate("Subcategory", { subcategory });
   };
 
+  //setting page title
+  static navigationOptions = ({ navigation }) => ({
+      title: navigation.state.params.name[0].toUpperCase()+
+        navigation.state.params.name.substr(1),
+    });
 
 
   render() {

@@ -10,6 +10,12 @@ export default class SubDetail extends Component {
     console.log("pressed button");
   };
 
+  //setting page title
+  static navigationOptions = ({ navigation }) => ({
+      title: navigation.state.params.subcategory.name[0].toUpperCase()+
+        navigation.state.params.subcategory.name.substr(1),
+    });
+
 
   render() {
     const { name, description, text } = this.props.navigation.state.params.subcategory;
