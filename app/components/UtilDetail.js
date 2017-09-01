@@ -45,7 +45,7 @@ export default class UtilDetail extends Component {
             />
           </View>
           <View style={{ backgroundColor: 'black', opacity: 0.7, paddingBottom:20, bottom:-20 }}>
-            <Text style={ {textAlign: 'center',paddingTop: 20, color:'white'} }>
+            <Text style={ {textAlign: 'center',paddingTop: 20, color:'white', fontFamily:'montserrat', fontSize:14} }>
               { caption }
             </Text>
           </View>
