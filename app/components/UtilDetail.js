@@ -46,7 +46,11 @@ export default class UtilDetail extends Component {
             <ListItem
               key={subcat.name+i}
               title={subcat.name}
-              subtitle={subcat.description}
+              subtitle={
+                <View>
+                <Text style={{opacity:0.4, fontSize:12, left:7 }}> {subcat.description} </Text>
+                </View>
+              }
               onPress={() => {this.openSub(subcat); console.log(subcat.name);}}
             />
           ))}

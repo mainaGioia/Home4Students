@@ -30,7 +30,7 @@ export default class Utils extends Component {
 
   render() {
     return (
-      <View contentContainerStyle={styles.listContainer}>
+      <ScrollView contentContainerStyle={styles.listContainer} >
         <List style={styles.list}>
           {utils.map((util, num) => (
             <ListItem
@@ -65,7 +65,7 @@ export default class Utils extends Component {
             />
           ))}
         </List>
-      </View>
+      </ScrollView>
     );
   }
 }
