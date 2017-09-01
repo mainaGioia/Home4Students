@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ScrollView, Text, View } from 'react-native';
+import { ScrollView, Text, View, Image } from 'react-native';
 import { Tile, List, ListView, ListItem } from 'react-native-elements';
 import styles from './styles.js';
 
@@ -35,18 +35,22 @@ export default class UtilDetail extends Component {
     const { key, picture, name, description, caption, subcategories } = this.props.navigation.state.params;
 
     return (
-      <ScrollView >
-        <Tile
-          imageSrc={ images[key] }
-          featured
-          activeOpacity={1}
-          title={ name.toUpperCase() }
-          caption={description}
-        />
-        <Text style={ {textAlign: 'center',paddingTop: 20} }>
-          { caption }
-        </Text>
-        <List>
+      <View style={{flex:1}}>
+        <View style={{flex:1}}>
+          <View style={{flex:1, flexDirection:'row', alignItems:'center'}}>
+            <Image
+              source={ images[key] }
+              resizeMode="cover"
+              style={{flexShrink:1}}
+            />
+          </View>
+          <View style={{ backgroundColor: 'black', opacity: 0.7, paddingBottom:20, bottom:-20 }}>
+            <Text style={ {textAlign: 'center',paddingTop: 20, color:'white'} }>
+              { caption }
+            </Text>
+          </View>
+        </View>
+        <List >
           { subcategories.map((subcat,i) => (
             <ListItem
               key={subcat.name+i}
@@ -60,7 +64,7 @@ export default class UtilDetail extends Component {
             />
           ))}
         </List>
-      </ScrollView>
+      </View>
     );
   }
 
