@@ -10,7 +10,7 @@ const images = {
   cleaning: require('../../assets/images/singleroom_small.jpg'),
   keys: require('../../assets/images/keys.jpg'),
   party: require('../../assets/images/party_small.jpg'),
-  music: require('../../assets/images/music.jpeg'),
+  music: require('../../assets/images/music.jpg'),
   gym: require('../../assets/images/gym_small.jpg'),
   write: require('../../assets/images/write.jpg'),
   waste: require('../../assets/images/waste.jpg'),

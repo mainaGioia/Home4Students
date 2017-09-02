@@ -46,13 +46,13 @@ export default StyleSheet.create({
     flexDirection: 'column',
     alignItems: 'center',
     marginTop: 15,
-    /*borderWidth: 1,
-    borderColor: '#ff00cc'*/
+    //borderWidth: 1,
+    //borderColor: '#ff00cc',
   },
   titleText: {
     color: '#ffffff',
     textAlign:'center',
-
+    //fontFamily: 'open-sans-semi',
   },
   subtitleView: {
     height: 28,
