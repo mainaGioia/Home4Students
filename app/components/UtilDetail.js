@@ -32,7 +32,7 @@ export default class UtilDetail extends Component {
 
 
   render() {
-    const { key, picture, name, description, caption, subtitle, subcategories } = this.props.navigation.state.params;
+    const { key, picture, name, description, caption, subcategories } = this.props.navigation.state.params;
 
     return (
       <View style={{flex:1}}>
@@ -44,9 +44,9 @@ export default class UtilDetail extends Component {
               style={{flexShrink:1}}
             />
           </View>
-          <View style={{ backgroundColor: 'rgba(0,0,0,0.2)', paddingBottom:20, bottom:-20 }}>
+          <View style={{ backgroundColor: 'rgba(0,0,0,0.4)', paddingBottom:20, bottom:-20 }}>
             <Text style={{textAlign:'center', paddingTop: 20, color:'white', fontSize:17, fontFamily:'open-sans-semi'}}>
-            {subtitle[0].toUpperCase()+subtitle.substr(1)}
+            {description[0].toUpperCase()+description.substr(1)}
             </Text>
             <Text style={ {textAlign: 'center', color:'#aaaaaa', fontSize:14, fontFamily:'montserrat'} }>
               { caption }

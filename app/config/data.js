@@ -3,8 +3,7 @@ export const utils = [
     "key": "kitchen",
     "name": "Kitchen",
     "subtitle": "How to use the kitchen",
-    "description": "how to use the kitchen",
-    "caption": "Please mind your kitchen stuff.\nEverything you leave in the kitchen at night\nwill be thrown away by the housekeeper.",
+    "description": "Please mind your kitchen stuff.\nEverything you leave in the kitchen at night\nwill be thrown away by the housekeeper.",
     "picture": {
       "large": "../images/kitchen.jpg",
       "medium": "",
@@ -33,7 +32,7 @@ export const utils = [
     "key": "laundry",
     "name": "Laundry",
     "subtitle": "Everything you need to know",
-    "description": "everything to know on how to use the washing machine",
+    "description": "Everything you need to know",
     "caption": "Start the Timer",
     "picture": {
       "large": "../images/singleroom.jpg",
@@ -70,7 +69,12 @@ export const utils = [
       "medium": "",
       "thumbnail": "../images/icons/janitor.png",
     },
-    "subcategories":[],
+    "subcategories":[
+      {
+        name: "Calendar",
+        description: "find out when the cleaning lady is coming!",
+      }
+    ],
   },
   {
     "key": "keys",
@@ -107,7 +111,7 @@ export const utils = [
     "name": "Party",
     "subtitle": "want to throw a party?",
     "description": "Want to throw a party?",
-    "caption": "Reserve the room! Just mind the other people living here.\nArrange parties on the weekend",
+    "caption": "Reserve the room!\nJust mind the other people living here.",
     "picture": {
       "large": "../images/party.png",
       "medium": "",
@@ -132,7 +136,7 @@ export const utils = [
     "key": "music",
     "name": "Music",
     "subtitle": "want to play some music?",
-    "description": "We have the room for you",
+    "description": "want to play some music?",
     "caption": "We have the place for you! Maybe the\nnew Mozart or Parov Stelar is among us...",
     "picture": {
       "large": "../images/music.png",
@@ -184,7 +188,7 @@ export const utils = [
     "key": "waste",
     "name": "Waste",
     "subtitle": "How does it work?",
-    "description": "How does it work with separating and throwing the trash",
+    "description": "How to separate and where to throw the trash",
     "picture": {
       "large": "",
       "medium": "",
@@ -213,7 +217,7 @@ export const utils = [
     "key": "write",
     "name": "Write to Ben",
     "subtitle": "He will like to hear from you",
-    "description": "Send an email to our beloved admins...",
+    "description": "Write to us",
     "picture": {
       "large": "",
       "medium": "",
