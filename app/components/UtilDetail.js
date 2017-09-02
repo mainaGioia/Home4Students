@@ -44,7 +44,7 @@ export default class UtilDetail extends Component {
               style={{flexShrink:1}}
             />
           </View>
-          <View style={{ backgroundColor: 'black', opacity: 0.7, paddingBottom:20, bottom:-20 }}>
+          <View style={{ backgroundColor: 'rgba(0,0,0,0.2)', paddingBottom:20, bottom:-20 }}>
             <Text style={{textAlign:'center', paddingTop: 20, color:'white', fontSize:17, fontFamily:'open-sans-semi'}}>
             {subtitle[0].toUpperCase()+subtitle.substr(1)}
             </Text>
