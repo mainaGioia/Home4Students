@@ -16,7 +16,6 @@ export default StyleSheet.create({
     //fontSize: 14,
   },
   headerIcon: {
-    marginLeft: 20,
     opacity:1,
   },
   tabBarOptions: {

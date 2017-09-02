@@ -17,7 +17,7 @@ const navigationOptions = {
     headerTintColor: '#fff',
     headerTitleStyle: styles.headerTitle,
     headerLeft: (
-      <TouchableHighlight style={{borderColor:'red', borderWidth:3, height:50, width:50}}
+      <TouchableHighlight style={{alignItems:'center', padding:20, opacity:1, flexDirection:'row', height:56, width:56}}
         onPress={() => {navigation.goBack()}}>
         <Image
           source={require('../../assets/images/icons/backArrow.png')}
