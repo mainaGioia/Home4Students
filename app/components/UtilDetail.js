@@ -6,12 +6,12 @@ import styles from './styles.js';
 const images = {
   welcome: require('../../assets/images/tirolerheim_neu_2.jpg'),
   kitchen: require('../../assets/images/kitchen.jpg'),
-  laundry: require('../../assets/images/doubleroom.jpg'),
-  cleaning: require('../../assets/images/cleaning.jpg'),
+  laundry: require('../../assets/images/doubleroom_small.jpg'),
+  cleaning: require('../../assets/images/singleroom_small.jpg'),
   keys: require('../../assets/images/keys.jpg'),
-  party: require('../../assets/images/party.jpeg'),
+  party: require('../../assets/images/party_small.jpg'),
   music: require('../../assets/images/music.jpeg'),
-  gym: require('../../assets/images/gym.jpeg'),
+  gym: require('../../assets/images/gym_small.jpg'),
   write: require('../../assets/images/write.jpg'),
   waste: require('../../assets/images/waste.jpg'),
 };
@@ -32,7 +32,7 @@ export default class UtilDetail extends Component {
 
 
   render() {
-    const { key, picture, name, description, caption, subcategories } = this.props.navigation.state.params;
+    const { key, picture, name, description, caption, subtitle, subcategories } = this.props.navigation.state.params;
 
     return (
       <View style={{flex:1}}>
@@ -45,7 +45,8 @@ export default class UtilDetail extends Component {
             />
           </View>
           <View style={{ backgroundColor: 'black', opacity: 0.7, paddingBottom:20, bottom:-20 }}>
-            <Text style={ {textAlign: 'center',paddingTop: 20, color:'white', fontFamily:'montserrat', fontSize:14} }>
+            <Text style={{textAlign:'center', paddingTop: 20, color:'white', fontSize:17, fontFamily:'open-sans-semi'}}>{subtitle}</Text>
+            <Text style={ {textAlign: 'center', color:'#aaaaaa', fontSize:14, fontFamily:'montserrat'} }>
               { caption }
             </Text>
           </View>
@@ -57,7 +58,7 @@ export default class UtilDetail extends Component {
               title={subcat.name}
               subtitle={
                 <View>
-                <Text style={{opacity:0.4, fontSize:12, left:7 }}> {subcat.description} </Text>
+                <Text style={{opacity:0.4, fontSize:13, left:7 }}> {subcat.description} </Text>
                 </View>
               }
               onPress={() => {this.openSub(subcat); console.log(subcat.name);}}

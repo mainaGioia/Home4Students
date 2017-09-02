@@ -106,8 +106,8 @@ export const utils = [
     "key": "party",
     "name": "Party",
     "subtitle": "want to throw a party?",
-    "description": "Want to throw a party? Reserve the room!",
-    "caption": "Mind the other people living here.\nArrange parties on the weekend",
+    "description": "Want to throw a party?",
+    "caption": "Reserve the room! Just mind the other people living here.\nArrange parties on the weekend",
     "picture": {
       "large": "../images/party.png",
       "medium": "",
@@ -132,8 +132,8 @@ export const utils = [
     "key": "music",
     "name": "Music",
     "subtitle": "want to play some music?",
-    "description": "Wanna play some music? We have the room for you",
-    "caption": "Maybe the new Mozart or Parov Stelar\n is among us...",
+    "description": "We have the room for you",
+    "caption": "We have the place for you! Maybe the new Mozart or Parov Stelar\n is among us...",
     "picture": {
       "large": "../images/music.png",
       "medium": "",

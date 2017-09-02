@@ -36,7 +36,7 @@ const modalNavigatorOptions = {
 }
 
 const UtilsStack = StackNavigator({
-  Utils: { screen: Utils, navigationOptions:{ title: 'Utilities', headerTintColor: '#fff'} },
+  Utils: { screen: Utils, navigationOptions:{ title: 'Utilities'} },
   Details: { screen: UtilDetail },
   Subcategory: { screen: SubDetail }
 },

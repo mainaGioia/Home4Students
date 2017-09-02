@@ -3,6 +3,7 @@ import { Dimensions, StyleSheet } from 'react-native';
 export default StyleSheet.create({
   header: {
     backgroundColor: '#383a3d',
+    opacity: 0.5,
     //height: 42,
     //borderWidth: 1,
     //borderColor: '#ff0000',
