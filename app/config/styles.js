@@ -9,7 +9,15 @@ export default StyleSheet.create({
     //borderColor: '#ff0000',
   },
   headerTitle: {
+    fontFamily: 'open-sans-semi',
+    textAlign: 'center',
     fontWeight: 'normal',
+    opacity: 1,
+    //fontSize: 14,
+  },
+  headerIcon: {
+    marginLeft: 20,
+    opacity:1,
   },
   tabBarOptions: {
     width: Dimensions.get("window").width,

@@ -1,6 +1,6 @@
 import React from 'react';
 import { TabNavigator, StackNavigator } from 'react-navigation';
-import { StyleSheet, Image } from 'react-native';
+import { StyleSheet, Image, TouchableHighlight } from 'react-native';
 import { Icon } from 'react-native-elements';
 import Utils from '../components/Utils';
 import UtilDetail from '../components/UtilDetail';
@@ -10,12 +10,22 @@ import ModalPage from '../components/ModalPage';
 import styles from './styles.js'
 
 
+
 const navigationOptions = {
-  navigationOptions:{
+  navigationOptions: ({navigation}) => ({
     headerStyle: styles.header,
     headerTintColor: '#fff',
     headerTitleStyle: styles.headerTitle,
-  },
+    headerLeft: (
+      <TouchableHighlight style={{borderColor:'red', borderWidth:3, height:50, width:50}}
+        onPress={() => {navigation.goBack()}}>
+        <Image
+          source={require('../../assets/images/icons/backArrow.png')}
+          style={styles.headerIcon}
+        />
+      </TouchableHighlight>
+    ),
+  }),
 }
 
 const tabNavigatorOptions = {
@@ -36,7 +46,7 @@ const modalNavigatorOptions = {
 }
 
 const UtilsStack = StackNavigator({
-  Utils: { screen: Utils, navigationOptions:{ title: 'Utilities'} },
+  Utils: { screen: Utils },
   Details: { screen: UtilDetail },
   Subcategory: { screen: SubDetail }
 },

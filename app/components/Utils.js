@@ -28,9 +28,14 @@ export default class Utils extends Component {
     return images['image'+num];
   }
 
+  //setting page title
+  static navigationOptions = ({ navigation }) => ({
+      header: null
+    });
+
   render() {
     return (
-      <ScrollView contentContainerStyle={styles.listContainer} >
+      <View style={styles.listContainer} >
         <List style={styles.list}>
           {utils.map((util, num) => (
             <ListItem
@@ -65,7 +70,7 @@ export default class Utils extends Component {
             />
           ))}
         </List>
-      </ScrollView>
+      </View>
     );
   }
 }

@@ -133,7 +133,7 @@ export const utils = [
     "name": "Music",
     "subtitle": "want to play some music?",
     "description": "We have the room for you",
-    "caption": "We have the place for you! Maybe the new Mozart or Parov Stelar\n is among us...",
+    "caption": "We have the place for you! Maybe the\nnew Mozart or Parov Stelar is among us...",
     "picture": {
       "large": "../images/music.png",
       "medium": "",
