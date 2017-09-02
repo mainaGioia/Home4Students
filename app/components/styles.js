@@ -10,7 +10,7 @@ export default StyleSheet.create({
   listContainer: {
     flex: 1,
     justifyContent: 'center',
-    backgroundColor: '#383a3d',
+    backgroundColor: 'rgba(0,0,0,0.7)',
   },
   list: {
     justifyContent: 'center',
@@ -45,21 +45,21 @@ export default StyleSheet.create({
   titleView: {
     flexDirection: 'column',
     alignItems: 'center',
-    marginTop: 15,
     //borderWidth: 1,
     //borderColor: '#ff00cc',
   },
   titleText: {
     color: '#ffffff',
     textAlign:'center',
-    //fontFamily: 'open-sans-semi',
+    fontFamily: 'open-sans-semi',
   },
   subtitleView: {
-    height: 28,
-    width: 100,
+    //height: 28,
+    width: 98,
     overflow: 'hidden',
-    //borderWidth: 1,
+    borderWidth: 1,
     //borderColor: '#ccffcc',
+    //justifyContent:'center'
 
   },
   subtitleText: {

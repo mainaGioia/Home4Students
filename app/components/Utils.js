@@ -40,7 +40,7 @@ export default class Utils extends Component {
           {utils.map((util, num) => (
             <ListItem
               style={ styles.listItem }
-              wrapperStyle={{flexDirection:'column', alignItems:'center', margin: 10}}
+              wrapperStyle={{flexDirection:'column', alignItems:'center', top:12, left:-5}}
               key={util.name}
               avatar= {
                 <View style={styles.avatarView}>
