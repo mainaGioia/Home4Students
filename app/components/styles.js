@@ -151,5 +151,11 @@ export default StyleSheet.create({
     display: Platform.OS === 'ios' ? 'block' : 'none',
     alignItems: 'flex-end',
   },
+  notes: {
+    fontFamily: 'open-sans-semi',
+    color: "#4a4a4a",
+    fontSize: 17,
+    textAlign: 'center',
+  },
 
 });
