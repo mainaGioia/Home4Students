@@ -74,6 +74,7 @@ export default class ModalPage extends Component {
     else {
       content = <ScrollView style={{margin:20, marginTop:Platform.OS === 'ios' ? 0 : 20,}}>
       <Tile
+        containerStyle={{flex:1, flexDirection:'row', alignItems:'center'}}
         imageSrc={ images[key] }
         featured
         activeOpacity={1}
