@@ -48,7 +48,6 @@ const modalNavigatorOptions = {
 const UtilsStack = StackNavigator({
   Utils: { screen: Utils },
   Details: { screen: UtilDetail },
-  Subcategory: { screen: SubDetail }
 },
   navigationOptions
 );

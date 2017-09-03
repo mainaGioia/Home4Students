@@ -11,17 +11,52 @@ export const utils = [
     },
     "subcategories":[
       {
+        "key": "common kitchenware",
         "name": "Common kitchenware",
         "description": "Where to find or put common kitchen stuff",
+        "page": [
+          {
+            "name": "common kitchenware",
+            "description": "under the sink cabinet",
+            "text": "Usually, you can find common pots, pans and cuttlery "+
+            "in the cabinet under the sink. This kitchenware used to belong "+
+            "to previous tenants or to current ones who decided "+
+            "to share their things.\nPlease, respect common kitchenware, if it's "+
+            "there it's because people before you took good care of it :)",
+            "note": "Please note that everything you leave in the kitchen at night "+
+            "will be thrown away by the housekeeper"
+          },
+        ]
       },
       {
+        "key": "personal kitchenware",
         "name": "Personal kitchenware",
         "description": "cupboard, fridge and the freezer!",
       },
       {
-        "name": "The stove doesn't work!",
+        "key": "faq",
+        "name": "Troubleshoot",
         "description": "Do not panic, we have the solution",
+        "page": [
+          {
+            "name": "The stove doesn't work!",
+            "description": "Do not panic, we have the solution",
+            "text": "Easy! For security reasons, the stove is supposed not"+
+            "to work without setting the timer. You find it on the wall, close "+
+            "to the kitchen hood."
+          },
+          {
+            "name": "I left my stuff in the kitchen at night!",
+            "description": "And now you don't find it anymore, right?",
+            "text": "Don't say I haven't told you not to leave anything in the kitchen. "+
+            "Luckily sometimes our housekeeper does not throw away whatever he finds "+
+            "but he puts it somewhere on the ground floor. Time for a treasure hunt!"+
+            " Another option could be asking to the cleaning ladies, sometimes they "+
+            "put kitchenware in their private storage closet."
+          },
+        ]
       },
+
       // {
       //   "name": "Where to put the trash?",
       //   "description": "Also in this case, we have the solution for you",
@@ -258,7 +293,7 @@ export const dorm = [
             "key": "welcome",
             "name": "things to do as soon as you arrive",
             "description": "meldezettel, wifi and keys",
-            subcategories: [
+            page: [
               {
                 "name": "meldezettel",
                 "description": "how to register to the townhall",
@@ -300,7 +335,7 @@ export const dorm = [
             key: "facilities",
             name: "Facilities",
             description: "What do we offer?",
-            subcategories: [
+            page: [
               {
                 name: "Dormitory",
                 description: "12-month-dormitory (01.09. - 31.08.) -\nrooms are also offered during summer! ",
@@ -321,7 +356,7 @@ export const dorm = [
             name: "Nerby spots",
             description: "You need a supermarket or a pharmacy?",
             "initialRegion": {latitude: 47.262930,longitude: 11.348187,latitudeDelta: 0.012, longitudeDelta: 0.012},
-            subcategories: {
+            page: {
               "surroundings":[
                 {
                   type: "Home4Students",

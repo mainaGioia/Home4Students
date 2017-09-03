@@ -18,10 +18,10 @@ const images = {
 
 export default class UtilDetail extends Component {
 
-  openSub = (subcategory) => {
+  openSub = (menuitem) => {
 //    console.log("this.props.navigation: ",this.props.navigation);
-    console.log("this is what i pass:  ", subcategory);
-    this.props.navigation.navigate("Subcategory", { subcategory });
+    console.log("this is what i pass:  ", menuitem);
+    this.props.navigation.navigate('ModalPages', { menuitem });
   };
 
   //setting page title
