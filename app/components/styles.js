@@ -89,6 +89,18 @@ export default StyleSheet.create({
     fontFamily: 'montserrat',
     opacity: 0.7,
   },
+  list_title: {
+    fontFamily: 'open-sans-semi',
+    color: "#4a4a4a",
+    fontSize: 17,
+    left:7,
+  },
+  list_subtitle: {
+    fontFamily: 'montserrat',
+    color: "#aaaaaa",
+    fontSize: 13,
+    left:7
+  },
   map_container: {
     position: 'absolute',
     //margin for the ios close button

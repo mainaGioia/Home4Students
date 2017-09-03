@@ -11,21 +11,21 @@ export const utils = [
     },
     "subcategories":[
       {
-        "name": "Common pots, pans and whatever you need to cook",
+        "name": "Common kitchenware",
         "description": "Where to find or put common kitchen stuff",
       },
       {
-        "name": "Personal pots, pans and whatever you need to cook",
-        "description": "You also have a personal cupboard and a space in the fridge and in the freezer",
+        "name": "Personal kitchenware",
+        "description": "cupboard, fridge and the freezer!",
       },
       {
         "name": "The stove doesn't work!",
-        "description": "You turned on the stove but it doesn't work? Do not panic, we have the solution",
+        "description": "Do not panic, we have the solution",
       },
-      {
-        "name": "Where to put the trash?",
-        "description": "Also in this case, we have the solution for you",
-      },
+      // {
+      //   "name": "Where to put the trash?",
+      //   "description": "Also in this case, we have the solution for you",
+      // },
     ],
   },
   {

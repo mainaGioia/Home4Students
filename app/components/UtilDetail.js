@@ -57,10 +57,14 @@ export default class UtilDetail extends Component {
           { subcategories.map((subcat,i) => (
             <ListItem
               key={subcat.name+i}
-              title={subcat.name}
+              title={
+                <View>
+                <Text style={styles.list_title}> {subcat.name[0].toUpperCase()+subcat.name.substr(1)} </Text>
+                </View>
+              }
               subtitle={
                 <View>
-                <Text style={{opacity:0.4, fontSize:13, left:7 }}> {subcat.description} </Text>
+                <Text style={styles.list_subtitle}> {subcat.description[0].toUpperCase()+subcat.description.substr(1)} </Text>
                 </View>
               }
               onPress={() => {this.openSub(subcat); console.log(subcat.name);}}
