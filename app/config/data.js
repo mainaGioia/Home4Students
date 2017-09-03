@@ -46,7 +46,7 @@ export const utils = [
       },
       {
         "name": "laundry, this unknown!",
-        "description": "how to avoid throwing away your clothes after the laundry"
+        "description": "how to properly do the laundry"
       },
       {
         "name": "how to start it",
