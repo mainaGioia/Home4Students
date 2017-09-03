@@ -19,12 +19,12 @@ export const utils = [
             "name": "common kitchenware",
             "description": "under the sink cabinet",
             "text": "Usually, you can find common pots, pans and cuttlery "+
-            "in the cabinet under the sink. This kitchenware used to belong "+
-            "to previous tenants or to current ones who decided "+
-            "to share their things.\nPlease, respect common kitchenware, if it's "+
-            "there it's because people before you took good care of it :)",
+              "in the cabinet under the sink. This kitchenware used to belong "+
+              "to previous tenants or to current ones who decided "+
+              "to share their things.\nPlease, respect common kitchenware, if it's "+
+              "there it's because people before you took good care of it :)",
             "note": "Please note that everything you leave in the kitchen at night "+
-            "will be thrown away by the housekeeper"
+              "will be thrown away by the housekeeper"
           },
         ]
       },
@@ -42,17 +42,19 @@ export const utils = [
             "name": "The stove doesn't work!",
             "description": "Do not panic, we have the solution",
             "text": "Easy! For security reasons, the stove is supposed not"+
-            "to work without setting the timer. You find it on the wall, close "+
-            "to the kitchen hood."
+              "to work without setting the timer. You find it on the wall, close "+
+              "to the kitchen hood.",
+            "note":"",
           },
           {
             "name": "I left my stuff in the kitchen at night!",
             "description": "And now you don't find it anymore, right?",
             "text": "Don't say I haven't told you not to leave anything in the kitchen. "+
-            "Luckily sometimes our housekeeper does not throw away whatever he finds "+
-            "but he puts it somewhere on the ground floor. Time for a treasure hunt!"+
-            " Another option could be asking to the cleaning ladies, sometimes they "+
-            "put kitchenware in their private storage closet."
+              "Luckily sometimes our housekeeper does not throw away whatever he finds "+
+              "but he puts it somewhere on the ground floor. Time for a treasure hunt!"+
+              " Another option could be asking to the cleaning ladies, sometimes they "+
+              "put kitchenware in their private storage closet.",
+            "note":"",
           },
         ]
       },

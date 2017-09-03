@@ -87,7 +87,7 @@ export default StyleSheet.create({
   },
   section_description: {
     fontFamily: 'montserrat',
-    opacity: 0.7,
+    color:"#aaaaaa",
   },
   list_title: {
     fontFamily: 'open-sans-semi',
@@ -155,6 +155,7 @@ export default StyleSheet.create({
     fontFamily: 'open-sans-semi',
     color: "#4a4a4a",
     fontSize: 17,
+    paddingTop: 20,
     textAlign: 'center',
   },
 

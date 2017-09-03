@@ -83,7 +83,7 @@ export default class ModalPage extends Component {
             <Text style={styles.section_title}>{subcat.name[0].toUpperCase()+subcat.name.substr(1)}</Text>
             <Text style={styles.section_description}>{subcat.description[0].toUpperCase()+subcat.description.substr(1)}</Text>
             <Text style={styles.section_text}>{subcat.text[0].toUpperCase()+subcat.text.substr(1)}</Text>
-            <Text style={styles.notes}>{subcat.note[0].toUpperCase()+subcat.note.substr(1)}</Text>
+            {/*<Text style={styles.notes}>{subcat.note[0].toUpperCase()+subcat.note.substr(1)}</Text>*/}
           </View>
         ))
       }
