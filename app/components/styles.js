@@ -16,7 +16,7 @@ export default StyleSheet.create({
   listContainer: {
     flex: 1,
     justifyContent: 'center',
-    backgroundColor: 'rgba(0,0,0,0.7)',
+    backgroundColor: 'rgba(0,0,0,0.8)',
   },
   list: {
     justifyContent: 'center',
@@ -24,7 +24,7 @@ export default StyleSheet.create({
     flexWrap: 'wrap',
   },
   listItem: {
-    backgroundColor: '#131210',
+    backgroundColor: 'rgba(0,0,0,0.5)',
     margin: 1,
     width: 110,
     height: 130,
