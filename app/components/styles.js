@@ -7,6 +7,12 @@ export default StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: '#ffffff'
   },
+  backgroundImage: {
+    flex: 1,
+    width: null,
+    height: null,
+    resizeMode: 'cover',
+  },
   listContainer: {
     flex: 1,
     justifyContent: 'center',

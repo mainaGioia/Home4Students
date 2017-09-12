@@ -35,6 +35,8 @@ export default class Utils extends Component {
 
   render() {
     return (
+      <Image style={ styles.backgroundImage }
+      source={require('../../assets/images/utilitiesBackground.png')}>
       <View style={styles.listContainer} >
         <List style={styles.list}>
           {utils.map((util, num) => (
@@ -71,6 +73,7 @@ export default class Utils extends Component {
           ))}
         </List>
       </View>
+      </Image>
     );
   }
 }
