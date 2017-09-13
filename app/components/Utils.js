@@ -31,7 +31,6 @@ export default class Utils extends Component {
   //setting page title
   static navigationOptions = ({ navigation }) => ({
       header: null,
-      tabBarVisible: false,
     });
 
   render() {

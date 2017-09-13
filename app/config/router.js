@@ -35,7 +35,8 @@ const tabNavigatorOptions = {
       showIcon: true,
       showLabel: false,
       activeTintColor: '#ffffff',
-      indicatorStyle:{backgroundColor:'#789fbe'},
+      //indicatorStyle:{backgroundColor:'#789fbe'},
+      indicatorStyle:{backgroundColor:'rgba(0,0,0,0.2)'},
     },
 }
 
