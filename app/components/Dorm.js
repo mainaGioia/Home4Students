@@ -17,20 +17,20 @@ export default class Dorm extends Component{
     return(
       <View style={{paddingTop: Platform.OS === 'ios' ? Constants.statusBarHeight : 0, flex:1}}>
         <View style={{flex:1}}>
-          <View style={{flex:1, flexDirection:'row', alignItems:'center'}}>
             <Image
               source={ require('../../assets/images/tirolerheim_neu_1.jpg') }
-              resizeMode="cover"
-              style={{flexShrink:1}}
-            />
-          </View>
-          <View style={{ backgroundColor: 'rgba(0,0,0,0.4)', paddingBottom:20, bottom:-20 }}>
-            <Text style={{textAlign:'center', paddingTop: 20, color:'white', fontSize:17, fontFamily:'open-sans-semi'}}>
-            { 'Welcome to '+dorm[0].tirolerheim.name[0].toUpperCase()+dorm[0].tirolerheim.name.substr(1)+"!" }
-            </Text>
-          </View>
+              style={ styles.backgroundImage }>
+                <View style={{flex:1, justifyContent:'flex-end'}}>
+                <View style={{ backgroundColor: 'rgba(0,0,0,0.4)', padding:20}}>
+                  <Text style={{textAlign:'center', color:'white', fontSize:17, fontFamily:'open-sans-semi'}}>
+                  { 'Welcome to '+dorm[0].tirolerheim.name[0].toUpperCase()+dorm[0].tirolerheim.name.substr(1)+"!" }
+                  </Text>
+                </View>
+                </View>
+                </Image>
+
         </View>
-        <List>
+        <List style={{top:0, bottom:0}}>
           { dorm[0].tirolerheim.subcategories.map((subcat,i) => (
             <ListItem
               key={subcat.name+i}
