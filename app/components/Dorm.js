@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Platform, ScrollView, View, StyleSheet } from 'react-native';
+import { Platform, ScrollView, View, StyleSheet, Image } from 'react-native';
 import { Tile, List, ListItem, Button, Text } from 'react-native-elements';
 import { dorm } from '../config/data';
 import { MapView, Constants } from 'expo';
@@ -15,15 +15,21 @@ export default class Dorm extends Component{
 
   render(){
     return(
-      <ScrollView style={{paddingTop: Platform.OS === 'ios' ? Constants.statusBarHeight : 0}}>
-        <Tile
-          imageSrc={require('../../assets/images/tirolerheim_neu_1.jpg')}
-          featured
-          activeOpacity={1}
-        />
-        <Text style={ {textAlign: 'center',paddingTop: 20, fontSize: 21, fontFamily:'open-sans-semi'} }>
-          { 'WELCOME TO '+dorm[0].tirolerheim.name.toUpperCase()+"!" }
-        </Text>
+      <View style={{paddingTop: Platform.OS === 'ios' ? Constants.statusBarHeight : 0, flex:1}}>
+        <View style={{flex:1}}>
+          <View style={{flex:1, flexDirection:'row', alignItems:'center'}}>
+            <Image
+              source={ require('../../assets/images/tirolerheim_neu_1.jpg') }
+              resizeMode="cover"
+              style={{flexShrink:1}}
+            />
+          </View>
+          <View style={{ backgroundColor: 'rgba(0,0,0,0.4)', paddingBottom:20, bottom:-20 }}>
+            <Text style={{textAlign:'center', paddingTop: 20, color:'white', fontSize:17, fontFamily:'open-sans-semi'}}>
+            { 'Welcome to '+dorm[0].tirolerheim.name[0].toUpperCase()+dorm[0].tirolerheim.name.substr(1)+"!" }
+            </Text>
+          </View>
+        </View>
         <List>
           { dorm[0].tirolerheim.subcategories.map((subcat,i) => (
             <ListItem
@@ -42,7 +48,7 @@ export default class Dorm extends Component{
             />
           ))}
         </List>
-      </ScrollView>
+      </View>
     );
   }
 }
