@@ -79,7 +79,7 @@ export default StyleSheet.create({
     //height: 28,
     width: 98,
     overflow: 'hidden',
-    borderWidth: 1,
+    //borderWidth: 1,
     //borderColor: '#ccffcc',
     //justifyContent:'center'
 

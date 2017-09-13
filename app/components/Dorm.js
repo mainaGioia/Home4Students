@@ -29,7 +29,7 @@ export default class Dorm extends Component{
             </View>
           </Image>
         </View>
-        <List style={{top:0, bottom:0}}>
+        <List style={{top:0}}>
           { dorm[0].tirolerheim.subcategories.map((subcat,i) => (
             <ListItem
               key={subcat.name+i}

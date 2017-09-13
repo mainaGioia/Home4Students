@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ScrollView, Text, View, Image } from 'react-native';
+import { ScrollView, Text, View, Image, Platform } from 'react-native';
 import { Tile, List, ListView, ListItem } from 'react-native-elements';
 import styles from './styles.js';
 
@@ -37,23 +37,20 @@ export default class UtilDetail extends Component {
     return (
       <View style={{flex:1}}>
         <View style={{flex:1}}>
-          <View style={{flex:1, flexDirection:'row', alignItems:'center'}}>
-            <Image
-              source={ images[key] }
-              resizeMode="cover"
-              style={{flexShrink:1}}
-            />
-          </View>
-          <View style={{ backgroundColor: 'rgba(0,0,0,0.4)', paddingBottom:20, bottom:-20 }}>
-            <Text style={{textAlign:'center', paddingTop: 20, color:'white', fontSize:17, fontFamily:'open-sans-semi'}}>
-            {description[0].toUpperCase()+description.substr(1)}
-            </Text>
-            <Text style={ styles.captionSubtitle }>
-              { caption }
-            </Text>
-          </View>
+          <Image
+            source={ images[key] }
+            style={ styles.backgroundImage }>
+            <View style={{flex:1, justifyContent:'flex-end'}}>
+              <View style={ styles.captionBox }>
+                <Text style={ styles.captionTitle }>
+                {description[0].toUpperCase()+description.substr(1)}
+                </Text>
+                <Text style={ styles.captionSubtitle }> { caption } </Text>
+              </View>
+            </View>
+          </Image>
         </View>
-        <List >
+        <List style={{top:0}}>
           { subcategories.map((subcat,i) => (
             <ListItem
               key={subcat.name+i}
