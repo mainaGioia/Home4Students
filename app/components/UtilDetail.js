@@ -48,7 +48,7 @@ export default class UtilDetail extends Component {
             <Text style={{textAlign:'center', paddingTop: 20, color:'white', fontSize:17, fontFamily:'open-sans-semi'}}>
             {description[0].toUpperCase()+description.substr(1)}
             </Text>
-            <Text style={ {textAlign: 'center', color:'#aaaaaa', fontSize:14, fontFamily:'montserrat'} }>
+            <Text style={ styles.captionSubtitle }>
               { caption }
             </Text>
           </View>

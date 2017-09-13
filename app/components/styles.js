@@ -44,6 +44,22 @@ export default StyleSheet.create({
     // home4students color
     // backgroundColor: '#789fbe',
   },
+  captionBox:{
+    backgroundColor: 'rgba(0,0,0,0.4)',
+    padding:20,
+  },
+  captionTitle:{
+    textAlign:'center',
+    color:'white',
+    fontSize:17,
+    fontFamily:'open-sans-semi',
+  },
+  captionSubtitle: {
+    textAlign: 'center',
+    color:'#aaaaaa',
+    fontSize:14,
+    fontFamily:'montserrat',
+  },
   title:{
     fontSize: 34,
     textAlign: 'center',
@@ -90,6 +106,7 @@ export default StyleSheet.create({
     marginTop: 20,
     fontSize: 16,
     fontFamily: 'montserrat',
+    left: 5,
   },
   section_description: {
     fontFamily: 'montserrat',
@@ -99,7 +116,7 @@ export default StyleSheet.create({
     fontFamily: 'open-sans-semi',
     color: "#4a4a4a",
     fontSize: 17,
-    left:5,
+    //left:5,
   },
   list_subtitle: {
     fontFamily: 'montserrat',
