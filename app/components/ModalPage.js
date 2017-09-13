@@ -79,7 +79,7 @@ export default class ModalPage extends Component {
         featured
         activeOpacity={1}
       />
-      { page.map((subcat, i) => (
+      { page.map((obj, i) => (
           <View key={obj.name+i}>
             <Text style={styles.section_title}>{obj.name[0].toUpperCase()+obj.name.substr(1)}</Text>
             <Text style={styles.section_description}>{obj.description[0].toUpperCase()+obj.description.substr(1)}</Text>

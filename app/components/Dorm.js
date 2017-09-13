@@ -21,15 +21,23 @@ export default class Dorm extends Component{
           featured
           activeOpacity={1}
         />
-        <Text style={ {textAlign: 'center',paddingTop: 20, fontSize: 21} }>
+        <Text style={ {textAlign: 'center',paddingTop: 20, fontSize: 21, fontFamily:'open-sans-semi'} }>
           { 'WELCOME TO '+dorm[0].tirolerheim.name.toUpperCase()+"!" }
         </Text>
         <List>
           { dorm[0].tirolerheim.subcategories.map((subcat,i) => (
             <ListItem
               key={subcat.name+i}
-              title={subcat.name}
-              subtitle={subcat.description}
+              title={
+                <View>
+                <Text style={styles.list_title}> {subcat.name[0].toUpperCase()+subcat.name.substr(1)} </Text>
+                </View>
+              }
+              subtitle={
+                <View>
+                <Text style={styles.list_subtitle}> {subcat.description[0].toUpperCase()+subcat.description.substr(1)} </Text>
+                </View>
+              }
               onPress={() => {this.openModal(subcat); console.log(subcat.name);}}
             />
           ))}
