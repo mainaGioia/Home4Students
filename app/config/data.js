@@ -329,7 +329,9 @@ export const dorm = [
               },
               {
                 "name": "list with da stuff in da room",
-                "description": "check what you have and what you do not have"
+                "description": "check what you have and what you do not have",
+                "text": "you will get a paper with a list of facilities. Please fill "+
+                "it in checking if every item listed is present in your room.",
               },
             ]
           },
@@ -347,6 +349,7 @@ export const dorm = [
               },
               {
                 name: "Rooms",
+                description: "Numbers and types",
                 text: "259 spots in total (157 single / 102 double) with shower/WC,"+
                 "house intercom, internet wireless-LAN",
               },

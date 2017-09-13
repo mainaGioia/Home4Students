@@ -80,10 +80,10 @@ export default class ModalPage extends Component {
         activeOpacity={1}
       />
       { page.map((subcat, i) => (
-          <View key={subcat.name+i}>
-            <Text style={styles.section_title}>{subcat.name[0].toUpperCase()+subcat.name.substr(1)}</Text>
-            <Text style={styles.section_description}>{subcat.description[0].toUpperCase()+subcat.description.substr(1)}</Text>
-            <Text style={styles.section_text}>{subcat.text[0].toUpperCase()+subcat.text.substr(1)}</Text>
+          <View key={obj.name+i}>
+            <Text style={styles.section_title}>{obj.name[0].toUpperCase()+obj.name.substr(1)}</Text>
+            <Text style={styles.section_description}>{obj.description[0].toUpperCase()+obj.description.substr(1)}</Text>
+            <Text style={styles.section_text}>{obj.text[0].toUpperCase()+obj.text.substr(1)}</Text>
             {/*<Text style={styles.notes}>{subcat.note[0].toUpperCase()+subcat.note.substr(1)}</Text>*/}
           </View>
         ))
