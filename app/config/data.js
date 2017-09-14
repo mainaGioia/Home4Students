@@ -358,7 +358,7 @@ export const dorm = [
           },
           {
             key: "nearby",
-            name: "Nerby spots",
+            name: "Nearby spots",
             description: "You need a supermarket or a pharmacy?",
             "initialRegion": {latitude: 47.262930,longitude: 11.348187,latitudeDelta: 0.012, longitudeDelta: 0.012},
             page: {
