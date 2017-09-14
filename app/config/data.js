@@ -314,7 +314,7 @@ export const dorm = [
               {
                 "name": "keys",
                 "description": "how to access your private facilities",
-                "text": "As soon as you come, you are gonna get a pair of keys like the "+
+                "text": "As soon as you come, you will get a pair of keys like the "+
                 "ones in the picture. One is gonna be for the maibox, the other one for "+
                 "your room. Your room's key is an NFC chip, you just have to bring it "+
                 "close to the sensor on the handle to lock/unlock the door. By default "+
@@ -330,7 +330,7 @@ export const dorm = [
               {
                 "name": "list with da stuff in da room",
                 "description": "check what you have and what you do not have",
-                "text": "you will get a paper with a list of facilities. Please fill "+
+                "text": "you will get an inventory. Please fill "+
                 "it in checking if every item listed is present in your room.",
               },
             ]
