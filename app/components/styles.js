@@ -98,15 +98,15 @@ export default StyleSheet.create({
   },
   section_text: {
     fontFamily: 'montserrat',
-    padding: 20,
+    paddingTop: 20,
     paddingBottom:0,
-    textAlign: 'justify',
+    //textAlign: 'justify',
   },
   section_title: {
     marginTop: 20,
     fontSize: 16,
     fontFamily: 'montserrat',
-    left: 5,
+    //left: 5,
   },
   section_description: {
     fontFamily: 'montserrat',
