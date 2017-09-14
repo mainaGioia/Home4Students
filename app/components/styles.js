@@ -116,7 +116,7 @@ export default StyleSheet.create({
     fontFamily: 'open-sans-semi',
     color: "#4a4a4a",
     fontSize: 17,
-    //left:5,
+    left:5,
   },
   list_subtitle: {
     fontFamily: 'montserrat',
