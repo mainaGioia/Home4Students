@@ -15,7 +15,7 @@ export default class Dorm extends Component{
 
   render(){
     return(
-      <View style={{paddingTop: Platform.OS === 'ios' ? Constants.statusBarHeight : 0, flex:1}}>
+      <View style={{flex:1}}>
         <View style={{flex:1}}>
           <Image
             source={ require('../../assets/images/tirolerheim_neu_1.jpg') }
