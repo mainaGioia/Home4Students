@@ -1,9 +1,7 @@
 This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
 
-###android
+### Android
 
-Solarized dark             |  Solarized Ocean
-:-------------------------:|:-------------------------:
 <img src="screenshots/Screenshot_20170921-103216.png" width="100"> |  <img src="screenshots/Screenshot_20170921-103221.png" width="100">
 
 
