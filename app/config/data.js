@@ -344,7 +344,7 @@ export const dorm = [
                 name: "Dormitory",
                 description: "12-month-dormitory (01.09. - 31.08.) -\nrooms are also offered during summer! ",
                 text: "We offer a communal kitchen, washing machine and dryer, garage and bicycle storage,"+
-                "a party room and an amazing garden with a barbeque"+
+                " a party room and an amazing garden with a barbeque. "+
                 "Extensive renovation 2014 ",
               },
               {
