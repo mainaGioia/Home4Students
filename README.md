@@ -2,6 +2,12 @@ This project was bootstrapped with [Create React Native App](https://github.com/
 
 ### Android
 
+<p float="left">
+  <img src="./screenshots/Screenshot_20170921-103216.png" width="150"/>
+  <img src="./screenshots/Screenshot_20170921-103221.png" width="150"/>
+  <img src="/img3.png" width="100" />
+</p>
+
 <img src="./screenshots/Screenshot_20170921-103216.png" width="150"/> |  <img src="./screenshots/Screenshot_20170921-103221.png" width="150"/>
 
 
