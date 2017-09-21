@@ -1,10 +1,10 @@
-import { Dimensions, StyleSheet } from 'react-native';
+import { Dimensions, StyleSheet, Platform } from 'react-native';
 
 export default StyleSheet.create({
   header: {
-    backgroundColor: 'rgba(0,0,0,0.2)',
+    backgroundColor: 'rgba(0,0,0,0.3)',
     position:'absolute',
-    height:80,
+    height:Platform.OS === 'ios' ? 80 : 56,
     top:0,
     left:0,
     right:0,
