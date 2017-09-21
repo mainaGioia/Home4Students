@@ -1,7 +1,12 @@
 This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
 
-<img src="screenshots/Screenshot_20170921-103216.png" width="100"/>
-<img src="screenshots/Screenshot_20170921-103221.png" width="100"/>
+###android
+
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+<img src="screenshots/Screenshot_20170921-103216.png" width="100"> |  <img src="screenshots/Screenshot_20170921-103221.png" width="100">
+
+
 <img src="screenshots/Screenshot_20170921-103226.png" width="100"/>
 <!--Below you'll find information about performing common tasks. The most recent version of the React Native guide is available [here](https://github.com/react-community/create-react-native-app/blob/master/react-native-scripts/template/README.md).
 
