@@ -6,18 +6,29 @@ it can make the tenants' life easier :)
 ### Android
 
 <p float="left">
-  <img src="./screenshots/21-09-2017/Screenshot_20170921-103216.png" width="180"/>
-  <img src="./screenshots/21-09-2017/Screenshot_20170921-103221.png" width="180"/>
-  <img src="screenshots/21-09-2017/Screenshot_20170921-103226.png" width="180"/>
-  <img src="screenshots/21-09-2017/Screenshot_20170921-103245.png" width="180"/>
-  <img src="screenshots/21-09-2017/Screenshot_20170921-103252.png" width="180"/>
-  <img src="screenshots/21-09-2017/Screenshot_20170921-103258.png" width="180"/>
-  <img src="screenshots/21-09-2017/Screenshot_20170921-103308.png" width="180"/>
+  <img src="./screenshots/21-09-2017/Screenshot_20170921-103216.png" width="200"/>
+  <img src="./screenshots/21-09-2017/Screenshot_20170921-103221.png" width="200"/>
+  <img src="screenshots/21-09-2017/Screenshot_20170921-103226.png" width="200"/>
+  <img src="screenshots/21-09-2017/Screenshot_20170921-103245.png" width="200"/>
+  <img src="screenshots/21-09-2017/Screenshot_20170921-103252.png" width="200"/>
+  <img src="screenshots/21-09-2017/Screenshot_20170921-103258.png" width="200"/>
+  <img src="screenshots/21-09-2017/Screenshot_20170921-103308.png" width="200"/>
+</p>
+
+### iOS
+
+<p float="left">
+  <img src="./screenshots/21-09-2017/ios/IMG_0413.png" width="200"/>
+  <img src="./screenshots/21-09-2017/ios/IMG_0414.png" width="200"/>
+  <img src="screenshots/21-09-2017/ios/IMG_0415.png" width="200"/>
+  <img src="screenshots/21-09-2017/ios/IMG_0416.png" width="200"/>
+  <img src="screenshots/21-09-2017/ios/IMG_0417.png" width="200"/>
+  <img src="screenshots/21-09-2017/ios/IMG_0418.png" width="200"/>
+  <img src="screenshots/21-09-2017/ios/IMG_0419.png" width="200"/>
+  <img src="screenshots/21-09-2017/ios/IMG_0421.png" width="200"/>
 </p>
 
 
-
-<img src="screenshots/Screenshot_20170921-103226.png" width="100"/>
 <!--Below you'll find information about performing common tasks. The most recent version of the React Native guide is available [here](https://github.com/react-community/create-react-native-app/blob/master/react-native-scripts/template/README.md).
 
 ## Table of Contents

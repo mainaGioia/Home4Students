@@ -96,7 +96,7 @@ export default class ModalPage extends Component {
         { /* button for dismissing modal page in ios */ }
         <View style={styles.button_for_ios}>
           <Button onPress={() => this.props.navigation.goBack(null)}
-          title="Close" backgroundColor='transparent' color='#397af8'/>
+          title="Close" backgroundColor='transparent' color='#000000'/>
         </View>
 
         { content }

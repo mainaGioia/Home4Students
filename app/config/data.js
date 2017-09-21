@@ -3,7 +3,7 @@ export const utils = [
     "key": "kitchen",
     "name": "Kitchen",
     "subtitle": "How to use the kitchen",
-    "description": "Please mind your kitchen stuff.\nEverything you leave in the kitchen at night\nwill be thrown away by the housekeeper.",
+    "description": "Please mind your kitchen stuff. Everything you leave in the kitchen at night will be thrown away by the housekeeper.",
     "picture": {
       "large": "../images/kitchen.jpg",
       "medium": "",
