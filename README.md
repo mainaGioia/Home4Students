@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
 
-Made for the Home4Students student house in Technikerstraße 7, Innsbruck. With the hope that
+Made for the Home4Students student house in Technikerstraße 7, Innsbruck. Hoping that
 it can make the tenants' life easier :)
 
 ### Android
@@ -18,14 +18,14 @@ it can make the tenants' life easier :)
 ### iOS
 
 <p float="left">
-  <img src="./screenshots/21-09-2017/ios/IMG_0413.png" width="200"/>
-  <img src="./screenshots/21-09-2017/ios/IMG_0414.png" width="200"/>
-  <img src="screenshots/21-09-2017/ios/IMG_0415.png" width="200"/>
-  <img src="screenshots/21-09-2017/ios/IMG_0416.png" width="200"/>
-  <img src="screenshots/21-09-2017/ios/IMG_0417.png" width="200"/>
-  <img src="screenshots/21-09-2017/ios/IMG_0418.png" width="200"/>
-  <img src="screenshots/21-09-2017/ios/IMG_0419.png" width="200"/>
-  <img src="screenshots/21-09-2017/ios/IMG_0421.png" width="200"/>
+  <img src="./screenshots/21-09-2017/ios/IMG_0413.PNG" width="200"/>
+  <img src="./screenshots/21-09-2017/ios/IMG_0414.PNG" width="200"/>
+  <img src="screenshots/21-09-2017/ios/IMG_0415.PNG" width="200"/>
+  <img src="screenshots/21-09-2017/ios/IMG_0416.PNG" width="200"/>
+  <img src="screenshots/21-09-2017/ios/IMG_0417.PNG" width="200"/>
+  <img src="screenshots/21-09-2017/ios/IMG_0418.PNG" width="200"/>
+  <img src="screenshots/21-09-2017/ios/IMG_0419.PNG" width="200"/>
+  <img src="screenshots/21-09-2017/ios/IMG_0421.PNG" width="200"/>
 </p>
 
 
