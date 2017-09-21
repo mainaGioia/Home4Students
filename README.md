@@ -34,11 +34,12 @@ it can make the tenants' life easier :)
 
 - Customise the maps for the points of interests
 - Add timer for the washing machines plus update on the payment system
--
+
 
 ### Test
 
-The app has been tested on
+The app has been tested on:
+- Moto G (android N)
 - Google pixel (android N - android O)
 - iPhone 6s (iOS 10 - iOS 11)
 - iPad (iOS 11)
