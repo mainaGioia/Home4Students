@@ -1,14 +1,16 @@
 This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
 
+Made for the Home4Students student house in Technikerstraße 7, Innsbruck. With the hope that
+it can make the tenants' life easier :)
+
 ### Android
 
 <p float="left">
-  <img src="./screenshots/Screenshot_20170921-103216.png" width="150"/>
-  <img src="./screenshots/Screenshot_20170921-103221.png" width="150"/>
+  <img src="./screenshots/21-09-2017/Screenshot_20170921-103216.png" width="150"/>
+  <img src="./screenshots/21-09-2017/Screenshot_20170921-103221.png" width="150"/>
   <img src="/img3.png" width="100" />
 </p>
 
-<img src="./screenshots/Screenshot_20170921-103216.png" width="150"/> |  <img src="./screenshots/Screenshot_20170921-103221.png" width="150"/>
 
 
 <img src="screenshots/Screenshot_20170921-103226.png" width="100"/>
