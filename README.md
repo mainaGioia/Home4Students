@@ -29,6 +29,19 @@ it can make the tenants' life easier :)
 </p>
 
 
+### ToDo:
+
+- Customise the maps for the points of interests
+- Add timer for the washing machines plus update on the payment system
+-
+
+### Test
+
+The app has been tested on
+- Google pixel (android N - android O)
+- iPhone 6s (iOS 10 - iOS 11)
+- iPad (iOS 11)
+
 <!--Below you'll find information about performing common tasks. The most recent version of the React Native guide is available [here](https://github.com/react-community/create-react-native-app/blob/master/react-native-scripts/template/README.md).
 
 ## Table of Contents
