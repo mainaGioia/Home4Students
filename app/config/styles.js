@@ -2,7 +2,12 @@ import { Dimensions, StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
   header: {
-    backgroundColor: 'rgb(0, 0, 0)',
+    backgroundColor: 'rgba(0,0,0,0.2)',
+    position:'absolute',
+    height:80,
+    top:0,
+    left:0,
+    right:0,
     //height: 42,
     //borderWidth: 1,
     //borderColor: '#ff0000',
