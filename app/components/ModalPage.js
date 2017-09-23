@@ -26,8 +26,8 @@ const createCurrentMap = (address, region, markerCoords) => (
     <View style={styles.text_under_map}>
       <Image
         source={ require('../../assets/images/icons/directions.png') }
-        style={{  }}/>
-      <Text> {address} </Text>
+        />
+      <Text style={{ fontSize:14, fontFamily:'montserrat', color:'#aaaaaa' }}> {address} </Text>
     </View>
   </View>
 )

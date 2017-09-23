@@ -60,10 +60,6 @@ export default StyleSheet.create({
     fontSize:14,
     fontFamily:'montserrat',
   },
-  title:{
-    fontSize: 34,
-    textAlign: 'center',
-  },
   titleView: {
     flexDirection: 'column',
     alignItems: 'center',
@@ -159,6 +155,8 @@ export default StyleSheet.create({
     position: 'absolute',
     top: 250,
     left: 20,
+    flexDirection: 'row',
+    alignItems: 'center',
   },
   text_under_nearbymap: {
     position: 'absolute',
