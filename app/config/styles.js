@@ -4,7 +4,6 @@ export default StyleSheet.create({
   header: {
     backgroundColor: 'rgba(0,0,0,0.3)',
     position:'absolute',
-    height:Platform.OS === 'ios' ? 80 : 56,
     top:0,
     left:0,
     right:0,
@@ -29,8 +28,7 @@ export default StyleSheet.create({
     margin:20,
   },
   tabBarOptions: {
-    width: Dimensions.get("window").width,
-    backgroundColor: '#000000',
+    backgroundColor: 'rgb(0,0,0)',
     //backgroundColor: '#383a3d',
     // home4students color
     // backgroundColor: '#789fbe',
