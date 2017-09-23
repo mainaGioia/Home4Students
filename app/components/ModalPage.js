@@ -24,7 +24,9 @@ const createCurrentMap = (address, region, markerCoords) => (
       markerdescript={address.split(',')[0]}
     />
     <View style={styles.text_under_map}>
-      <Text> We are here: </Text>
+      <Image
+        source={ require('../../assets/images/icons/directions.png') }
+        style={{  }}/>
       <Text> {address} </Text>
     </View>
   </View>
