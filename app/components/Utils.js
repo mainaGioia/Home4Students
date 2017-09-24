@@ -4,17 +4,6 @@ import { List, ListItem, Avatar } from 'react-native-elements';
 import { utils } from '../config/data';
 import styles from './styles';
 
-const images = {
-  image0: require('../../assets/images/icons/kitchenIcon.png'),
-  image1: require('../../assets/images/icons/laundryIcon.png'),
-  image2: require('../../assets/images/icons/cleaningIcon.png'),
-  image3: require('../../assets/images/icons/keysIcon.png'),
-  image4: require('../../assets/images/icons/partyIcon.png'),
-  image5: require('../../assets/images/icons/musicIcon.png'),
-  image6: require('../../assets/images/icons/gymIcon.png'),
-  image7: require('../../assets/images/icons/wasteIcon.png'),
-  image8: require('../../assets/images/icons/writeIcon.png'),
-}
 
 export default class Utils extends Component {
 
@@ -47,7 +36,7 @@ export default class Utils extends Component {
               avatar= {
                 <View style={styles.avatarView}>
                 <Image
-                source={this.getImage(num)}
+                source={util.picture.thumbnail}
                 style={{justifyContent:'center', alignItems:'center',}}
                  />
                </View> }

@@ -56,17 +56,11 @@ const createNearbyMap = (region, points) => (
 )
 
 
-const images = {
-  welcome: require('../../assets/images/tirolerheim_neu_2.jpg'),
-  facilities: require('../../assets/images/doubleroom.jpg'),
-  "common kitchenware": require('../../assets/images/commonKitchenware.jpg'),
-}
-
 export default class ModalPage extends Component {
 
 
   render() {
-    const { key, name, description, initialRegion, coords, address, page } = this.props.navigation.state.params.menuitem;
+    const { key, name, description, picture, initialRegion, coords, address, page } = this.props.navigation.state.params.menuitem;
 
     let content = null;
     if (key.toLowerCase() == "map")
@@ -77,7 +71,7 @@ export default class ModalPage extends Component {
       content = <ScrollView style={{margin:20, marginTop:Platform.OS === 'ios' ? 0 : 20,}}>
       <Tile
         containerStyle={{flex:1, flexDirection:'row', alignItems:'center'}}
-        imageSrc={ images[key] }
+        imageSrc={ picture }
         featured
         activeOpacity={1}
       />

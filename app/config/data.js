@@ -1,5 +1,70 @@
 export const utils = [
   {
+    "key": "keys",
+    "name": "room",
+    "subtitle": "your personal space",
+    "description": "Your room",
+    "caption": "everything you need to know on how to access your personal space",
+    "picture": {
+      "large": "",
+      "medium": "",
+      "thumbnail": require('../../assets/images/icons/keysIcon.png'),
+    },
+    "subcategories":[
+      {
+        "key": "door",
+        "name": "lock/unlock the door",
+        "description": "How to unlock the door and use it as a normal door",
+        "page": [
+          {
+            "name": "lock/unlock the door",
+            "description": "How to unlock the door and use it as a normal door",
+            "text": "You can use your key to lock or unlock the door of your room. "+
+              "When you see a red light on the handle, the door is locked and the handle "+
+              "is really loose. You can also use your door as a normal door, to do so "+
+              "you just have to click the button on the handle in the back of the door. "+
+              "You will see a green light appearing and the handle will become more rigid. "+
+              "Click it again and you will see a red light appearing: the door will be "+
+              "locked again.",
+            "note": "red light: door locked\ngreen light: door unlocked"
+          }
+        ]
+      },
+      {
+        "key": "lockedout",
+        "name": "I've lost my keys!",
+        "description": "what to do in case you are locked out",
+        "page": [
+          {
+            "name": "I've lost my keys!",
+            "description": "what to do in case you are locked out",
+            "text": "Do not panic, we have the solution for you. There are some people "+
+              "you can contact to unlock your room: ",
+            "list": [
+              {
+                "name": "Office desk",
+                "description": "During office opening times, you can ask the admin to unlock the room for you",
+              },
+              {
+                "name": "Gerhard",
+                "description": "Our beloved housekeeper! If you find him, he'll be happy to help you",
+              },
+              {
+                "name": "Cleaning ladies",
+                "description": "During weekdays, you can ask the cleaning ladies to unlock the room for you",
+              },
+              {
+                "name": "Dorm's chosen ones :P",
+                "description": "If nothing above works, here you find a list of people you can contact",
+              },
+            ]
+          }
+        ]
+      }
+
+    ],
+  },
+  {
     "key": "kitchen",
     "name": "Kitchen",
     "subtitle": "How to use the kitchen",
@@ -7,17 +72,18 @@ export const utils = [
     "picture": {
       "large": "../images/kitchen.jpg",
       "medium": "",
-      "thumbnail": "../images/icons/kitchen.png",
+      "thumbnail": require('../../assets/images/icons/kitchenIcon.png'),
     },
     "subcategories":[
       {
         "key": "common kitchenware",
         "name": "Common kitchenware",
         "description": "Where to find or put common kitchen stuff",
+        "picture": require('../../assets/images/commonKitchenware.jpg'),
         "page": [
           {
             "name": "common kitchenware",
-            "description": "under the sink cabinet",
+            "description": "Where to find or put common kitchen stuff",
             "text": "Usually, you can find common pots, pans and cuttlery "+
               "in the cabinet under the sink. This kitchenware used to belong "+
               "to previous tenants or to current ones who decided "+
@@ -32,6 +98,17 @@ export const utils = [
         "key": "personal kitchenware",
         "name": "Personal kitchenware",
         "description": "cupboard, fridge and the freezer!",
+        "page": [
+          {
+            "name": "personal kitchenware",
+            "description": "fridge, freezer and personal cupboard",
+            "text": "In front of the kitchen you find the storage area, usually shared "+
+            "with the rest of the people on your half-floor. In the storage area, use your key "+
+            "to open the fridge and the cupboard with your room number on it. The cupboard "+
+            "is entirely for you, for the fridge and the freezer you can agree with the other "+
+            "tenants on which shelf to use."
+          }
+        ]
       },
       {
         "key": "faq",
@@ -74,7 +151,7 @@ export const utils = [
     "picture": {
       "large": "../images/singleroom.jpg",
       "medium": "",
-      "thumbnail": "../images/icons/laundry.png",
+      "thumbnail": require('../../assets/images/icons/laundryIcon.png'),
     },
     "subcategories": [
       {
@@ -104,43 +181,13 @@ export const utils = [
     "picture": {
       "large": "../images/doubleroom.jpg",
       "medium": "",
-      "thumbnail": "../images/icons/janitor.png",
+      "thumbnail": require('../../assets/images/icons/cleaningIcon.png'),
     },
     "subcategories":[
       {
         name: "Calendar",
         description: "find out when the cleaning lady is coming!",
       }
-    ],
-  },
-  {
-    "key": "keys",
-    "name": "lost my keys",
-    "subtitle": "what to do if you're locked out",
-    "description": "what to do in case you are locked out",
-    "caption": "you can contact the following people",
-    "picture": {
-      "large": "",
-      "medium": "",
-      "thumbnail": "../images/icons/key.png",
-    },
-    "subcategories":[
-      {
-        "name": "Office desk",
-        "description": "During office opening times, you can ask the admin to unlock the room for you",
-      },
-      {
-        "name": "Gerhard",
-        "description": "Our beloved housekeeper! If you find him, he'll be happy to help you",
-      },
-      {
-        "name": "Cleaning ladies",
-        "description": "During weekdays, you can ask the cleaning ladies to unlock the room for you",
-      },
-      {
-        "name": "Dorm's chosen ones :P",
-        "description": "If nothing above works, here you find a list of people you can contact",
-      },
     ],
   },
   {
@@ -152,7 +199,7 @@ export const utils = [
     "picture": {
       "large": "../images/party.png",
       "medium": "",
-      "thumbnail": "../images/icons/party.png",
+      "thumbnail": require('../../assets/images/icons/partyIcon.png'),
     },
     "subcategories":[
       {
@@ -178,7 +225,7 @@ export const utils = [
     "picture": {
       "large": "../images/music.png",
       "medium": "",
-      "thumbnail": "../images/icons/music.png",
+      "thumbnail": require('../../assets/images/icons/musicIcon.png'),
     },
     "subcategories":[
       {
@@ -204,7 +251,7 @@ export const utils = [
     "picture": {
       "large": "",
       "medium": "",
-      "thumbnail": "../images/icons/gym.png",
+      "thumbnail": require('../../assets/images/icons/gymIcon.png'),
     },
     "subcategories":[
       {
@@ -229,7 +276,7 @@ export const utils = [
     "picture": {
       "large": "",
       "medium": "",
-      "thumbnail": "",
+      "thumbnail": require('../../assets/images/icons/wasteIcon.png'),
     },
     "subcategories": [
       {
@@ -258,7 +305,7 @@ export const utils = [
     "picture": {
       "large": "",
       "medium": "",
-      "thumbnail": "../images/icons/email.png",
+      "thumbnail": require('../../assets/images/icons/writeIcon.png'),
     },
     "subcategories":[
       {
@@ -295,6 +342,8 @@ export const dorm = [
             "key": "welcome",
             "name": "things to do as soon as you arrive",
             "description": "meldezettel, wifi and keys",
+            "picture": require('../../assets/images/tirolerheim_neu_2.jpg'),
+
             page: [
               {
                 "name": "meldezettel",
@@ -339,6 +388,7 @@ export const dorm = [
             key: "facilities",
             name: "Facilities",
             description: "What do we offer?",
+            picture: require('../../assets/images/doubleroom.jpg'),
             page: [
               {
                 name: "Dormitory",

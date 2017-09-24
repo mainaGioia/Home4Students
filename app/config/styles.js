@@ -2,7 +2,7 @@ import { Dimensions, StyleSheet, Platform } from 'react-native';
 
 export default StyleSheet.create({
   header: {
-    backgroundColor: 'rgba(0,0,0,0.3)',
+    backgroundColor: 'rgba(0,0,0,0.4)',
     position:'absolute',
     top:0,
     left:0,
