@@ -21,6 +21,10 @@ export default class UtilDetail extends Component {
   render() {
     const { key, picture, name, description, caption, subcategories } = this.props.navigation.state.params;
 
+    let caption_descr = null;
+    if (caption != null)
+      caption_descr = <Text style={styles.captionSubtitle}> { caption } </Text>
+
     return (
       <View style={{flex:1}}>
         <View style={{flex:1}}>
@@ -32,7 +36,7 @@ export default class UtilDetail extends Component {
                 <Text style={ styles.captionTitle }>
                 {description[0].toUpperCase()+description.substr(1)}
                 </Text>
-                <Text style={ styles.captionSubtitle }> { caption } </Text>
+                {caption_descr}
               </View>
             </View>
           </Image>
