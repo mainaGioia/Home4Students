@@ -2,11 +2,11 @@ export const utils = [
   {
     "key": "keys",
     "name": "room",
-    "subtitle": "your personal space",
-    "description": "Your room",
-    "caption": "everything you need to know on how to access your personal space",
+    "subtitle": "bedroom and bathroom",
+    "description": "everything you need to know on how to access your personal space",
+    "caption": "",
     "picture": {
-      "large": "",
+      "large": require('../../assets/images/singleroom_small.jpg'),
       "medium": "",
       "thumbnail": require('../../assets/images/icons/keysIcon.png'),
     },
@@ -15,6 +15,7 @@ export const utils = [
         "key": "door",
         "name": "lock/unlock the door",
         "description": "How to unlock the door and use it as a normal door",
+        "picture": require('../../assets/images/door.jpg'),
         "page": [
           {
             "name": "lock/unlock the door",
@@ -34,6 +35,7 @@ export const utils = [
         "key": "lockedout",
         "name": "I've lost my keys!",
         "description": "what to do in case you are locked out",
+        "picture": require('../../assets/images/keys.jpg'),
         "page": [
           {
             "name": "I've lost my keys!",
@@ -70,7 +72,7 @@ export const utils = [
     "subtitle": "How to use the kitchen",
     "description": "Please mind your kitchen stuff. Everything you leave in the kitchen at night will be thrown away by the housekeeper.",
     "picture": {
-      "large": "../images/kitchen.jpg",
+      "large": require('../../assets/images/kitchen.jpg'),
       "medium": "",
       "thumbnail": require('../../assets/images/icons/kitchenIcon.png'),
     },
@@ -149,7 +151,7 @@ export const utils = [
     "description": "Everything you need to know",
     "caption": "Start the Timer",
     "picture": {
-      "large": "../images/singleroom.jpg",
+      "large": require('../../assets/images/laundry.jpg'),
       "medium": "",
       "thumbnail": require('../../assets/images/icons/laundryIcon.png'),
     },
@@ -179,11 +181,28 @@ export const utils = [
     "description": "they are actually unpredictable...",
     "caption": "shifts for the month",
     "picture": {
-      "large": "../images/doubleroom.jpg",
+      "large": require('../../assets/images/doubleroom_small.jpg'),
       "medium": "",
       "thumbnail": require('../../assets/images/icons/cleaningIcon.png'),
     },
     "subcategories":[
+      {
+        key: "before",
+        name: "Before they come",
+        picture: require('../../assets/images/commonKitchenware.jpg'),
+        description: "what to do before the cleaning ladies come",
+        page: [
+          {
+            "name": "Before they come",
+            "description": "what to do before the cleaning ladies come",
+            "text": "It is strongly suggested to leave your desk and your bathroom shelf "+
+            "empty, otherwise they will not be cleaned. Also the floor should be as empty "+
+            "possible to ease the cleaning ladies' work.\nTry to keep your room as tidy "+
+            "as possible :)",
+            "note":"",
+          },
+        ]
+      },
       {
         name: "Calendar",
         description: "find out when the cleaning lady is coming!",
@@ -197,7 +216,7 @@ export const utils = [
     "description": "Want to throw a party?",
     "caption": "Reserve the room!\nJust mind the other people living here.",
     "picture": {
-      "large": "../images/party.png",
+      "large": require('../../assets/images/party_small.jpg'),
       "medium": "",
       "thumbnail": require('../../assets/images/icons/partyIcon.png'),
     },
@@ -223,7 +242,7 @@ export const utils = [
     "description": "want to play some music?",
     "caption": "We have the place for you! Maybe the\nnew Mozart or Parov Stelar is among us...",
     "picture": {
-      "large": "../images/music.png",
+      "large": require('../../assets/images/music.png'),
       "medium": "",
       "thumbnail": require('../../assets/images/icons/musicIcon.png'),
     },
@@ -249,7 +268,7 @@ export const utils = [
     "description": "Pump it up!",
     "caption": "Mens sana in corpore sano",
     "picture": {
-      "large": "",
+      "large": require('../../assets/images/gym_small.jpg'),
       "medium": "",
       "thumbnail": require('../../assets/images/icons/gymIcon.png'),
     },
@@ -274,7 +293,7 @@ export const utils = [
     "subtitle": "How does it work?",
     "description": "How to separate and where to throw the trash",
     "picture": {
-      "large": "",
+      "large": require('../../assets/images/waste.jpg'),
       "medium": "",
       "thumbnail": require('../../assets/images/icons/wasteIcon.png'),
     },
@@ -303,7 +322,7 @@ export const utils = [
     "subtitle": "He will like to hear from you",
     "description": "Write to us",
     "picture": {
-      "large": "",
+      "large": require('../../assets/images/write.jpg'),
       "medium": "",
       "thumbnail": require('../../assets/images/icons/writeIcon.png'),
     },

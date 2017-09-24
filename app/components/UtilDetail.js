@@ -3,19 +3,6 @@ import { ScrollView, Text, View, Image, Platform } from 'react-native';
 import { Tile, List, ListView, ListItem } from 'react-native-elements';
 import styles from './styles.js';
 
-const images = {
-  welcome: require('../../assets/images/tirolerheim_neu_2.jpg'),
-  kitchen: require('../../assets/images/kitchen.jpg'),
-  laundry: require('../../assets/images/doubleroom_small.jpg'),
-  cleaning: require('../../assets/images/singleroom_small.jpg'),
-  keys: require('../../assets/images/keys.jpg'),
-  party: require('../../assets/images/party_small.jpg'),
-  music: require('../../assets/images/music.png'),
-  gym: require('../../assets/images/gym_small.jpg'),
-  write: require('../../assets/images/write.jpg'),
-  waste: require('../../assets/images/waste.jpg'),
-};
-
 export default class UtilDetail extends Component {
 
   openSub = (menuitem) => {
@@ -38,7 +25,7 @@ export default class UtilDetail extends Component {
       <View style={{flex:1}}>
         <View style={{flex:1}}>
           <Image
-            source={ images[key] }
+            source={ picture.large }
             style={ styles.backgroundImage }>
             <View style={{flex:1, justifyContent:'flex-end'}}>
               <View style={ styles.captionBox }>
