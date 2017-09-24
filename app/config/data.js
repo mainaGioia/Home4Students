@@ -119,7 +119,7 @@ export const utils = [
           {
             "name": "The stove doesn't work!",
             "description": "Do not panic, we have the solution",
-            "text": "Easy! For security reasons, the stove is supposed not"+
+            "text": "Easy! For security reasons, the stove is supposed not "+
               "to work without setting the timer. You find it on the wall, close "+
               "to the kitchen hood.",
             "note":"",
@@ -127,8 +127,7 @@ export const utils = [
           {
             "name": "I left my stuff in the kitchen at night!",
             "description": "And now you don't find it anymore, right?",
-            "text": "Don't say I haven't told you not to leave anything in the kitchen. "+
-              "Luckily sometimes our housekeeper does not throw away whatever he finds "+
+            "text": "Luckily sometimes our housekeeper does not throw away whatever he finds "+
               "but he puts it somewhere on the ground floor. Time for a treasure hunt!"+
               " Another option could be asking to the cleaning ladies, sometimes they "+
               "put kitchenware in their private storage closet.",
