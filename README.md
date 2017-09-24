@@ -33,7 +33,12 @@ it can make the tenants' life easier :)
 ### ToDo:
 
 - Customise the maps for the points of interests
+- Waste disposal section
 - Add timer for the washing machines plus update on the payment system
+- Add calendar for cleaning ladies shifts
+- Add language files
+- Push notifications
+- Link to maps
 
 
 ### Test

@@ -3,7 +3,7 @@ export const utils = [
     "key": "keys",
     "name": "room",
     "subtitle": "bedroom and bathroom",
-    "description": "everything you need to know on how to access your personal space",
+    "description": "everything you need to know on how to use your personal space",
     "picture": {
       "large": require('../../assets/images/singleroom_small.jpg'),
       "medium": "",
