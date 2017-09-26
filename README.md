@@ -33,7 +33,7 @@ it can make the tenants' life easier :)
 ### ToDo:
 
 - Customise the maps for the points of interests
-- Waste disposal section
+- ~~Waste disposal section~~ [26-09-2017]
 - List for contacts
 - Titles for modal pages(?)
 - Add timer for the washing machines plus update on the payment system
