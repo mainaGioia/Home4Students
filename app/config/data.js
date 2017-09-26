@@ -297,20 +297,57 @@ export const utils = [
     },
     "subcategories": [
       {
-        "name": "Waste separation",
-        "description": "Different trash in different box",
+        "key": "biowaste",
+        "name": "Biowaste",
+        "description": "Where to put the biowaste",
+        "picture": require('../../assets/images/compost.jpg'),
+        "page": [
+          {
+            "name": "bio waste",
+            "description": "where to put the bio waste",
+            "text": "There is a small brown trash bin in every kitchen. That is the bin "+
+            "for the organic waste. The housekeeper will take care of its disposal "+
+            "every morning, except for weekends.\n\nWhat goes in the brown bin?\n",
+            "list": "fruit and vegetable scraps\nmeat, poultry, fish, seafood and eggs\n"+
+            "pasta, bread, cereals and rice\nsolid dairy products(butter, mozzarella)\nnuts and shells\n"+
+            "cake, cookies and candy\nherbs and spices\ncoffee grounds, coffee filters, tea leaves and tea bags\n"+
+            "animal food\nwaste with oil or vegetable fats, sauces and vinaigrettes",
+          }
+        ]
       },
       {
-        "name": "Organic waste",
-        "description": "Where to put the organic waste",
-      },
-      {
+        "key": "kitchen waste",
         "name": "Kitchen waste",
-        "description": "What can i put in the trash bin in the cupboards area?"
+        "description": "What can i put in the trash bin in the storage area?",
+        "picture": require('../../assets/images/trash.jpg'),
+        "page":[
+          {
+            "name": "kitchen waste",
+            "description": "what can i put in the trash bin in the storage area?",
+            "text": "All the kitchen waste that does not go in the biowaste, can be "+
+            "disposed in the bin with the big blue plastic bag. Almost every kitchen "+
+            "has this trash bin, if yours doesn't you can request the admins for it. "+
+            "Differently from the biowaste, the housekeeper is not in charge for bringing "+
+            "this bin out, so it's up to you to take care of it.\nClose to the C building "+
+            "you will find an area where you can throw your trash."
+          }
+        ]
       },
       {
+        "key": "personal waste",
         "name": "Personal waste",
         "description": "How does it work with personal waste",
+        "picture": require('../../assets/images/personalTrash.jpg'),
+        "page":[
+          {
+            "name": "Personal waste",
+            "description": "How does it work with personal waste",
+            "text": "All the waste that you produce out of the kitchen, cannot be "+
+            "disposed in common trash bins but can be kept in the small bin you have "+
+            "in your room. \n Close to the C building you will find an area where you can "+
+            "throw your trash."
+          }
+        ]
       }
     ],
   },
