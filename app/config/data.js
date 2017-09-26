@@ -329,7 +329,8 @@ export const utils = [
             "has this trash bin, if yours doesn't you can request the admins for it. "+
             "Differently from the biowaste, the housekeeper is not in charge for bringing "+
             "this bin out, so it's up to you to take care of it.\nClose to the C building "+
-            "you will find an area where you can throw your trash."
+            "you will find an area where you can throw your trash.\nTo recycle paper, metal and glass, you will find specific "+
+            "trash bins in the area between the student house and the college on the left."
           }
         ]
       },
@@ -344,8 +345,9 @@ export const utils = [
             "description": "How does it work with personal waste",
             "text": "All the waste that you produce out of the kitchen, cannot be "+
             "disposed in common trash bins but can be kept in the small bin you have "+
-            "in your room. \n Close to the C building you will find an area where you can "+
-            "throw your trash."
+            "in your room. \nClose to the C building you will find an area where you can "+
+            "throw your trash.\nTo recycle paper, metal and glass, you will find specific "+
+            "trash bins in the area between the student house and the college on the left."
           }
         ]
       }
