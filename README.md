@@ -34,7 +34,7 @@ it can make the tenants' life easier :)
 
 - Customise the maps for the points of interests
 - ~~Waste disposal section~~ [26-09-2017]
-- List for contacts
+- ~~List for contacts~~ [27-09-2017]
 - Titles for modal pages(?)
 - Add timer for the washing machines plus update on the payment system
 - Add calendar for cleaning ladies shifts
