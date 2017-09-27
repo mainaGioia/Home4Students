@@ -55,7 +55,7 @@ export const utils = [
                 "description": "During weekdays, you can ask the cleaning ladies to unlock the room for you",
               },
               {
-                "name": "Dorm's chosen ones :P",
+                "name": "Tenants representative",
                 "description": "If nothing above works, here you find a list of people you can contact",
               },
             ]
@@ -308,7 +308,9 @@ export const utils = [
             "text": "There is a small brown trash bin in every kitchen. That is the bin "+
             "for the organic waste. The housekeeper will take care of its disposal "+
             "every morning, except for weekends.\n\nWhat goes in the brown bin?\n",
-            "list": "fruit and vegetable scraps\nmeat, poultry, fish, seafood and eggs\n"+
+            "list": [{
+              }
+            ]"fruit and vegetable scraps\nmeat, poultry, fish, seafood and eggs\n"+
             "pasta, bread, cereals and rice\nsolid dairy products(butter, mozzarella)\nnuts and shells\n"+
             "cake, cookies and candy\nherbs and spices\ncoffee grounds, coffee filters, tea leaves and tea bags\n"+
             "animal food\nwaste with oil or vegetable fats, sauces and vinaigrettes",

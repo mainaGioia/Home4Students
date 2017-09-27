@@ -41,6 +41,7 @@ it can make the tenants' life easier :)
 - Add language files
 - Push notifications
 - Link to maps
+- Office opening times
 
 
 ### Test
