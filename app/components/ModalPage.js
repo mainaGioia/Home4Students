@@ -67,19 +67,14 @@ export default class ModalPage extends Component {
       note = <Text style={styles.notes}>{page[0].note}</Text>
     let list = null;
     if (page[0].list != null)
-      list = <List>
+      list = <View>
             { page[0].list.map((item,i) => (
-              <ListItem hideChevron={true}
-              key={item+i}
-              title={
-              <View style={{flexDirection: 'row'}}>
-                <Text>{'\u2022'}</Text>
-                <Text style={{fontFamily: 'montserrat',color: "#4a4a4a"}}> {item.name[0].toUpperCase()+item.name.substr(1)} </Text>
-              </View>
-              }
-              />
+                <View style={{flexDirection: 'row'}} key={item+i}>
+                  <Text>{'\u2022'}</Text>
+                  <Text style={{fontFamily: 'montserrat',color: "#4a4a4a"}}> {item.name[0].toUpperCase()+item.name.substr(1)} </Text>
+                </View>
             ))}
-          </List>;
+            </View>;
 
     let content = null;
     if (key.toLowerCase() == "map")

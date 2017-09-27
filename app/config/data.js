@@ -40,7 +40,7 @@ export const utils = [
             "name": "I've lost my keys!",
             "description": "what to do in case you are locked out",
             "text": "Do not panic, we have the solution for you. There are some people "+
-              "you can contact to unlock your room: ",
+              "you can contact to unlock your room:\n",
             "list": [{"name": "Office desk"}, { "name": "housekeeper"}, {"name": "Cleaning ladies"},
               {"name": "Tenants representative"}],
             "note": "Check at the entrance for the office opening times.\nGenerally, you can find the housekeeper "+
