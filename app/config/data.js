@@ -41,24 +41,11 @@ export const utils = [
             "description": "what to do in case you are locked out",
             "text": "Do not panic, we have the solution for you. There are some people "+
               "you can contact to unlock your room: ",
-            "list": [
-              {
-                "name": "Office desk",
-                "description": "During office opening times, you can ask the admin to unlock the room for you",
-              },
-              {
-                "name": "Gerhard",
-                "description": "Our beloved housekeeper! If you find him, he'll be happy to help you",
-              },
-              {
-                "name": "Cleaning ladies",
-                "description": "During weekdays, you can ask the cleaning ladies to unlock the room for you",
-              },
-              {
-                "name": "Tenants representative",
-                "description": "If nothing above works, here you find a list of people you can contact",
-              },
-            ]
+            "list": [{"name": "Office desk"}, { "name": "housekeeper"}, {"name": "Cleaning ladies"},
+              {"name": "Tenants representative"}],
+            "note": "Check at the entrance for the office opening times.\nGenerally, you can find the housekeeper "+
+            "till 9 in the morning, instead the cleaning ladies will be there until lunchtime.\nTenants representative "+
+            "lives in the student house so in case you can't find any of the above, contact them."
           }
         ]
       }
@@ -308,12 +295,12 @@ export const utils = [
             "text": "There is a small brown trash bin in every kitchen. That is the bin "+
             "for the organic waste. The housekeeper will take care of its disposal "+
             "every morning, except for weekends.\n\nWhat goes in the brown bin?\n",
-            "list": [{
-              }
-            ]"fruit and vegetable scraps\nmeat, poultry, fish, seafood and eggs\n"+
-            "pasta, bread, cereals and rice\nsolid dairy products(butter, mozzarella)\nnuts and shells\n"+
-            "cake, cookies and candy\nherbs and spices\ncoffee grounds, coffee filters, tea leaves and tea bags\n"+
-            "animal food\nwaste with oil or vegetable fats, sauces and vinaigrettes",
+            "list": [{name: "fruit and vegetable scraps"},{name:"meat, poultry, fish, seafood and eggs"},
+            {name:"pasta, bread, cereals and rice"},{name:"solid dairy products(butter, mozzarella, etc.)"},
+            {name:"nuts and shells"}, {name:"cake, cookies and candy"}, {name:"herbs and spices"},
+            {name: "coffee grounds, coffee filters, tea leaves and tea bags"},
+            {name: "animal food"}, {name: "waste with oil or vegerable fats, sauces and vinaigrettes"}
+            ]
           }
         ]
       },

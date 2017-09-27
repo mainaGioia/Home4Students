@@ -62,6 +62,25 @@ export default class ModalPage extends Component {
   render() {
     const { key, name, description, picture, initialRegion, coords, address, page } = this.props.navigation.state.params.menuitem;
 
+    let note = null;
+    if (page[0].note != null)
+      note = <Text style={styles.notes}>{page[0].note}</Text>
+    let list = null;
+    if (page[0].list != null)
+      list = <List>
+            { page[0].list.map((item,i) => (
+              <ListItem hideChevron={true}
+              key={item+i}
+              title={
+              <View style={{flexDirection: 'row'}}>
+                <Text>{'\u2022'}</Text>
+                <Text style={{fontFamily: 'montserrat',color: "#4a4a4a"}}> {item.name[0].toUpperCase()+item.name.substr(1)} </Text>
+              </View>
+              }
+              />
+            ))}
+          </List>;
+
     let content = null;
     if (key.toLowerCase() == "map")
       content = createCurrentMap(address, initialRegion, {lat:coords.latitude, long:coords.longitude});
@@ -81,6 +100,8 @@ export default class ModalPage extends Component {
             <Text style={styles.section_description}>{obj.description[0].toUpperCase()+obj.description.substr(1)}</Text>
             <Text style={styles.section_text}>{obj.text[0].toUpperCase()+obj.text.substr(1)}</Text>
             {/*<Text style={styles.notes}>{subcat.note[0].toUpperCase()+subcat.note.substr(1)}</Text>*/}
+            {list}
+            {note}
           </View>
         ))
       }

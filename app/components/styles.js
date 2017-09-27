@@ -96,6 +96,7 @@ export default StyleSheet.create({
     fontFamily: 'montserrat',
     paddingTop: 20,
     paddingBottom:0,
+    color: "#4a4a4a",
     //textAlign: 'justify',
   },
   section_title: {
@@ -173,11 +174,8 @@ export default StyleSheet.create({
     alignItems: 'flex-end',
   },
   notes: {
-    fontFamily: 'open-sans-semi',
-    color: "#4a4a4a",
-    fontSize: 17,
+    fontFamily: 'montserrat',
     paddingTop: 20,
-    textAlign: 'center',
   },
 
 });
