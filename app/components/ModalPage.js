@@ -2,18 +2,11 @@ import React, { Component } from 'react';
 import { ScrollView, Text, View, Image, Platform } from 'react-native';
 import { Tile, List, ListView, ListItem, Button  } from 'react-native-elements';
 import { MyMap } from './Map.js';
-import { MyPin } from './MyPin.js';
+import { MyPin, createNearbyMap } from './MyPin.js';
 import { MapView } from 'expo';
 import styles from './styles.js';
 
-const markers = {
-  bakeries: require('../../assets/images/markers/bakeries.png'),
-  banks: require('../../assets/images/markers/banks.png'),
-  Home4Students: require('../../assets/images/markers/Home4Students.png'),
-  pharmacies: require('../../assets/images/markers/pharmacies.png'),
-  supermarkets: require('../../assets/images/markers/supermarkets.png'),
-  universities: require('../../assets/images/markers/universities.png'),
-};
+
 
 const createCurrentMap = (address, region, markerCoords) => (
   <View>
@@ -32,28 +25,6 @@ const createCurrentMap = (address, region, markerCoords) => (
   </View>
 )
 
-const createNearbyMap = (region, points) => (
-  <View>
-  <View style={styles.map_nearbypoints_container}>
-    <MapView style={styles.map}
-      initialRegion={ region }>
-      { points.map(point => (
-        <MapView.Marker
-          coordinate={ point.coords }
-          key={ point.address }
-          title={ point.name }
-          description={ point.address }
-          image={markers[point.type] }
-          />
-      ))}
-    </MapView>
-    </View>
-    <View style={styles.text_under_nearbymap}>
-      <Text> We are here: </Text>
-      <Text> ciao </Text>
-    </View>
-    </View>
-)
 
 
 export default class ModalPage extends Component {
@@ -80,7 +51,7 @@ export default class ModalPage extends Component {
     if (key.toLowerCase() == "map")
       content = createCurrentMap(address, initialRegion, {lat:coords.latitude, long:coords.longitude});
     else if (key.toLowerCase() == 'nearby')
-      content = createNearbyMap(initialRegion, page.surroundings);
+      content = createNearbyMap(initialRegion, page[0].surroundings);
     else {
       content = <ScrollView style={{margin:20, marginTop:Platform.OS === 'ios' ? 0 : 20,}}>
       <Tile

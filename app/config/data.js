@@ -570,71 +570,75 @@ export const dorm = [
             name: "Nearby spots",
             description: "You need a supermarket or a pharmacy?",
             "initialRegion": {latitude: 47.262930,longitude: 11.348187,latitudeDelta: 0.012, longitudeDelta: 0.012},
-            page: {
-              "surroundings":[
-                {
-                  type: "Home4Students",
-                  name: "Tirolerheim",
-                  address: "Technikestraße 7",
-                  coords: {latitude: 47.264595, longitude: 11.349841},
-                },
-                {
-                  type: "universities",
-                  name: "Universität Innsbruck - Campus Technik",
-                  address: "Technikerstraße 15",
-                  coords: {latitude: 47.264202, longitude: 11.343651},
-                },
-                {
-                  type: "pharmacies",
-                  name: "Lohbach Apotheke",
-                  address: "Technikerstraße 3",
-                  coords: {latitude: 47.263689, longitude: 11.351395},
-                },
-                {
-                  type: "banks",
-                  name: "Hypo Tirol",
-                  address: "Viktor-Franz-Hess-Straße 1",
-                  coords: {latitude: 47.266719, longitude: 11.345393},
-                },
-                {
-                  type: "banks",
-                  name: "Tiroler Sparkasse",
-                  address: "Technikerstraße 34",
-                  coords: {latitude: 47.265466, longitude: 11.352989},
-                },
-                {
-                  type: "supermarkets",
-                  name: "Eurospar",
-                  address: "Technikerstraße 5",
-                  coords: {latitude: 47.264041, longitude: 11.350787},
-                },
-                {
-                  type: "supermarkets",
-                  name: "MPreis",
-                  address: "Viktor-Franz-Hess-Straße 5",
-                  coords: {latitude: 47.265711, longitude: 11.345737},
-                },
-                {
-                  type: "supermarkets",
-                  name: "MPreis - Innsbruck Airport",
-                  address: "Fürstenweg 180",
-                  coords: {latitude: 47.257526, longitude: 11.351541},
-                },
-                {
-                  type: "bakeries",
-                  name: "Der Bäcker Ruetz",
-                  address : "Viktor-Franz-Hess-Straße 3",
-                  coords: {latitude: 47.265551, longitude: 11.345125},
-                  note: "Opened on Sunday till 18:00",
-                },
-                {
-                  type: "post office/cigarettes",
-                  name: "Post Partner",
-                  address: "Technikerstraße 1",
-                  coords: {latitude: 47.263563, longitude: 11.351737},
-                },
-              ],
-            }
+            page: [
+              {
+                "surroundings":[
+                  {
+                    type: "Home4Students",
+                    name: "Tirolerheim",
+                    address: "Technikestraße 7",
+                    coords: {latitude: 47.264595, longitude: 11.349841},
+                  },
+                  {
+                    type: "universities",
+                    name: "Universität Innsbruck - Campus Technik",
+                    address: "Technikerstraße 15",
+                    coords: {latitude: 47.264202, longitude: 11.343651},
+                  },
+                  {
+                    type: "pharmacies",
+                    name: "Lohbach Apotheke",
+                    address: "Technikerstraße 3",
+                    coords: {latitude: 47.263689, longitude: 11.351395},
+                  },
+                  {
+                    type: "banks",
+                    name: "Hypo Tirol",
+                    address: "Viktor-Franz-Hess-Straße 1",
+                    coords: {latitude: 47.266719, longitude: 11.345393},
+                  },
+                  {
+                    type: "banks",
+                    name: "Tiroler Sparkasse",
+                    address: "Technikerstraße 34",
+                    coords: {latitude: 47.265466, longitude: 11.352989},
+                  },
+                  {
+                    type: "supermarkets",
+                    name: "Eurospar",
+                    address: "Technikerstraße 5",
+                    coords: {latitude: 47.264041, longitude: 11.350787},
+                  },
+                  {
+                    type: "supermarkets",
+                    name: "MPreis",
+                    address: "Viktor-Franz-Hess-Straße 5",
+                    coords: {latitude: 47.265711, longitude: 11.345737},
+                  },
+                  {
+                    type: "supermarkets",
+                    name: "MPreis - Innsbruck Airport",
+                    address: "Fürstenweg 180",
+                    coords: {latitude: 47.257526, longitude: 11.351541},
+                  },
+                  {
+                    type: "bakeries",
+                    name: "Der Bäcker Ruetz",
+                    address : "Viktor-Franz-Hess-Straße 3",
+                    coords: {latitude: 47.265551, longitude: 11.345125},
+                    note: "Opened on Sunday till 18:00",
+                  },
+                  {
+                    type: "post office/cigarettes",
+                    name: "Post Partner",
+                    address: "Technikerstraße 1",
+                    coords: {latitude: 47.263563, longitude: 11.351737},
+                  },
+                ],
+              },
+              "note":"",
+
+            ]
           }, //key
         ]
       }
