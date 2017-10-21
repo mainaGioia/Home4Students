@@ -33,6 +33,7 @@ it can make the tenants' life easier :)
 ### ToDo:
 
 - Customise the maps for the points of interests
+- ~~Add list of points of interest~~ [21-10-2017]
 - ~~Waste disposal section~~ [26-09-2017]
 - ~~List for contacts~~ [27-09-2017]
 - Titles for modal pages(?)
