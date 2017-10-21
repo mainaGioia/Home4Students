@@ -354,6 +354,7 @@ export const utils = [
     },
     "subcategories":[
       {
+        "key": "where",
         "name": "Where is it",
         "description": "A block, basement. Look at the map!",
         "page":[
@@ -364,6 +365,7 @@ export const utils = [
         ]
       },
       {
+        "key": "policy",
         "name": "Policy",
         "description": "How to correctly use the gym",
         "page": [
@@ -373,6 +375,7 @@ export const utils = [
         ]
       },
       {
+        "key":"doodle",
         "name": "Who wants to come with me?",
         "description": "Let's go together!",
         "page": [
