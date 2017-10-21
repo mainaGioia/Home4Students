@@ -142,20 +142,61 @@ export const utils = [
     },
     "subcategories": [
       {
-        "name": "Where is it",
-        "description": "C block, basement. Look at the map!"
+        key:"where",
+        name: "Where is it",
+        picture: "",
+        description: "C block, basement. Look at the map!",
+        page: [
+          {
+            "name": "Where is it",
+            "description": "C block, basement. Look at the map!",
+            "text": "just follow the stairs to the garage, you'll find a door"+
+            "right in front of you, that's the door to the laundry :)",
+            "note":"",
+          },
+        ]
       },
       {
-        "name": "laundry, this unknown!",
-        "description": "how to properly do the laundry"
+        key:"how to",
+        name: "laundry, this unknown!",
+        picture: "",
+        description: "how to properly do the laundry",
+        page: [
+          {
+            "name": "Laundry, this unknown!",
+            "description": "How to properly do the laundry",
+            "text": "Some nice suggestions",
+            "note":"",
+          },
+        ]
       },
       {
-        "name": "how to start it",
-        "description": "alias how to pay for it"
+        key: "how to start it",
+        name: "how to start it",
+        picture: "",
+        description: "alias how to pay for it",
+        page: [
+          {
+            name: "how to start it",
+            description: "how to pay for it",
+            text: "they changed the payment method",
+            note: "",
+          }
+        ]
       },
       {
-        "name": "timer",
-        "description": "choose the lavaggio and start the timer!"
+        key: "timer",
+        name: "timer",
+        description: "choose the washing and start the timer!",
+        picture: "",
+        page: [
+          {
+            name: "timer",
+            description: "choose the washing and start the timer!",
+            text: "start!",
+            note: "",
+          }
+        ]
       },
     ]
   },
@@ -189,8 +230,16 @@ export const utils = [
         ]
       },
       {
+        key: "calendar",
         name: "Calendar",
         description: "find out when the cleaning lady is coming!",
+        picture: "",
+        page: [
+          {
+            text: "No shifts! Ask the administrators to keep a list for the cleaning ladies' shifts",
+
+          }
+        ]
       }
     ],
   },
@@ -207,16 +256,39 @@ export const utils = [
     },
     "subcategories":[
       {
+        key: "where",
         "name": "Where is it",
         "description": "B block, basement. Look at the map!",
+        picture: "",
+        page: [
+          {
+            text: "Follow the stairs going to the garage, on the left you'll"+
+            "find the door to the party room. Usually you need the keys from the"+
+            "committee to open it.",
+          }
+        ]
       },
       {
+        key: "policy",
         "name": "Policy",
         "description": "How to correctly use the room",
+        picture: "",
+        page: [
+          {
+            text: "ask for keys/ Keep it clean and everything will be fine",
+          }
+        ]
       },
       {
-        "name": "How to reserve it",
-        "description": "Ask the managers for the keys",
+        key: "how to",
+        name: "How to reserve it",
+        description: "Ask the managers for the keys",
+        picture: "",
+        page: [
+          {
+            text: "Select the dates that you want to book:",
+          }
+        ]
       },
     ],
   },
@@ -233,16 +305,39 @@ export const utils = [
     },
     "subcategories":[
       {
-        "name": "Where is it",
-        "description": "A block, basement. Look at the map!",
+        key: "where",
+        name: "Where is it",
+        description: "A block, basement. Look at the map!",
+        picture: "",
+        page: [
+          {
+            text: "Take the stairs going to the garage, and you'll find signs"+
+            " for the gym and the music room. The latter is on the right.",
+          }
+        ]
       },
       {
-        "name": "Policy",
-        "description": "How to correctly use the room",
+        key: "policy",
+        name: "Policy",
+        description: "How to correctly use the room",
+        picture: "",
+        page: [
+          {
+            text: "of course, do not destroy things. You can be as loud as you want "+
+            "and play as much as you want.",
+          }
+        ]
       },
       {
-        "name": "Wanna play with me?",
-        "description": "Let's arrange a live session!",
+        key: "wanna play",
+        name: "Wanna play with me?",
+        description: "Let's arrange a live session!",
+        picture: "",
+        page: [
+          {
+            text: "doodle?",
+          }
+        ]
       },
     ],
   },
@@ -261,14 +356,30 @@ export const utils = [
       {
         "name": "Where is it",
         "description": "A block, basement. Look at the map!",
+        "page":[
+          {
+            text: "Taking the stairs going to the garage, you will find signs "+
+            "for the music room and the gym. The latter is on the left."
+          }
+        ]
       },
       {
         "name": "Policy",
         "description": "How to correctly use the gym",
+        "page": [
+          {
+            text: "do not break yourself and the tools",
+          }
+        ]
       },
       {
         "name": "Who wants to come with me?",
         "description": "Let's go together!",
+        "page": [
+          {
+            text: "doodle?",
+          }
+        ]
       },
     ],
   },

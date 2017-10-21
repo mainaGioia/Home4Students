@@ -91,8 +91,8 @@ export default class ModalPage extends Component {
       />
       { page.map((obj, i) => (
           <View key={obj.name+i}>
-            <Text style={styles.section_title}>{obj.name[0].toUpperCase()+obj.name.substr(1)}</Text>
-            <Text style={styles.section_description}>{obj.description[0].toUpperCase()+obj.description.substr(1)}</Text>
+            <Text style={styles.section_title}>{name[0].toUpperCase()+name.substr(1)}</Text>
+            <Text style={styles.section_description}>{description[0].toUpperCase()+description.substr(1)}</Text>
             <Text style={styles.section_text}>{obj.text[0].toUpperCase()+obj.text.substr(1)}</Text>
             {/*<Text style={styles.notes}>{subcat.note[0].toUpperCase()+subcat.note.substr(1)}</Text>*/}
             {list}
