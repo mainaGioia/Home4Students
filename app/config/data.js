@@ -502,7 +502,6 @@ export const dorm = [
             "name": "things to do as soon as you arrive",
             "description": "meldezettel, wifi and keys",
             "picture": require('../../assets/images/tirolerheim_neu_2.jpg'),
-
             page: [
               {
                 "name": "meldezettel",
@@ -541,7 +540,6 @@ export const dorm = [
                 "text": "you will get an inventory. Please fill "+
                 "it in checking if every item listed is present in your room.",
               },
-              "note":"",
             ]
           },
           {
@@ -563,7 +561,6 @@ export const dorm = [
                 text: "259 spots in total (157 single / 102 double) with shower/WC,"+
                 "house intercom, internet wireless-LAN",
               },
-              "note":"",
             ]
           },
           {
@@ -637,8 +634,6 @@ export const dorm = [
                   },
                 ],
               },
-              "note":"",
-
             ]
           }, //key
         ]
