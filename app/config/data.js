@@ -541,6 +541,7 @@ export const dorm = [
                 "text": "you will get an inventory. Please fill "+
                 "it in checking if every item listed is present in your room.",
               },
+              "note":"",
             ]
           },
           {
@@ -562,7 +563,7 @@ export const dorm = [
                 text: "259 spots in total (157 single / 102 double) with shower/WC,"+
                 "house intercom, internet wireless-LAN",
               },
-
+              "note":"",
             ]
           },
           {

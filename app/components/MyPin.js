@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Image, Text } from 'react-native';
+import { View, Image, Text, ScrollView } from 'react-native';
 import { MapView } from 'expo';
 import styles from './styles.js';
 
@@ -36,12 +36,12 @@ export function createNearbyMap(region, points) {
   const categoryItem = (item) => {
     if (item.type !== category){
       category = item.type;
-      return <Text>{category}</Text>
+      return <Text style={styles.list_title}>{category}</Text>
     }
   }
 
   return(
-    <View>
+    <View style={{flex:1}}>
       <View style={styles.map_nearbypoints_container}>
         <MapView style={styles.map}
           initialRegion={ region }>
@@ -56,15 +56,15 @@ export function createNearbyMap(region, points) {
           ))}
         </MapView>
         </View>
-        <View style={styles.text_under_nearbymap}>
+        <ScrollView style={styles.text_under_nearbymap}>
         { points.map((point, i) => (
           <View key={i}>
-            {categoryItem(point)}
-            <Text> {point.name} </Text>
-            <Text> {point.address} </Text>
+            <Text>{categoryItem(point)}</Text>
+            <Text style={styles.section_description}> {point.name} </Text>
+            <Text atyle={styles.list_subtitle}> {point.address} </Text>
           </View>
         ))}
-        </View>
+        </ScrollView>
     </View>
   )
 
