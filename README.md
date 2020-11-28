@@ -1,6 +1,6 @@
 # Home 4 Students
 
-This project is my first attempt with React Native [Create React Native App](https://github.com/react-community/create-react-native-app).
+This project is my first attempt with [React Native](https://github.com/react-community/create-react-native-app).
 
 Made for the Home4Students student house in Technikerstraße 7, Innsbruck. Hoping that it can make the tenants' life easier :)
 
