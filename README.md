@@ -1,7 +1,8 @@
-This project was bootstrapped with [Create React Native App](https://github.com/react-community/create-react-native-app).
+# Home 4 Students
 
-Made for the Home4Students student house in Technikerstraße 7, Innsbruck. Hoping that
-it can make the tenants' life easier :)
+This project is my first attempt with React Native [Create React Native App](https://github.com/react-community/create-react-native-app).
+
+Made for the Home4Students student house in Technikerstraße 7, Innsbruck. Hoping that it can make the tenants' life easier :)
 
 ### Android
 
