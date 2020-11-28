@@ -4,7 +4,8 @@ This project is my first attempt with [React Native](https://github.com/react-co
 
 Made for the Home4Students student house in Technikerstraße 7, Innsbruck. Hoping that it can make the tenants' life easier :)
 
-### Android
+### Screenshots 
+#### Android
 
 <p float="left">
   <img src="./screenshots/25-09-2017/Screenshot_20170924-235656.png" width="200"/>
@@ -17,7 +18,7 @@ Made for the Home4Students student house in Technikerstraße 7, Innsbruck. Hopin
   <img src="screenshots/21-09-2017/Screenshot_20170921-115052.png" width="200"/>
 </p>
 
-### iOS
+#### iOS
 
 <p float="left">
   <img src="./screenshots/25-09-2017/IMG_0422.PNG" width="200"/>
