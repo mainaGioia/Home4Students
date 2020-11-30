@@ -6,8 +6,10 @@ Made for the Home4Students student house in Technikerstraße 7, Innsbruck. Hopin
 
 ### Requirements
 
-- Landing page with info about the dorm
-  - Where is it
+- Page with info about the dorm
+  - where is it
+  - what to do as soon as you arrive (meldezettel, wifi and keys)
+  - facilities
   - map with points of interest (uni - pharmacy - supermarkets - ATM - book shops etc)
 - My room
   - what to find in every room
