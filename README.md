@@ -4,6 +4,39 @@ This project is my first attempt with [React Native](https://github.com/react-co
 
 Made for the Home4Students student house in Technikerstraße 7, Innsbruck. Hoping that it can make the tenants' life easier :)
 
+### Requirements
+
+- My room
+  - what to find in every room
+  - how do the keys/lock work - what to do in case you get locked out
+- Kitchen
+  - common spaces (fridge, freezer, storage area)
+  - personal space
+  - troubleshoot
+- Laundry
+  - where is it and how does it work
+- Cleaning lady shifts
+  - when is it
+  - setup reminder in your calendar
+- Party room
+  - where is it 
+  - policy
+  - how to book it for a private party/event
+- Music room
+  - where is it
+  - policy
+  - arrange music sessions together
+- Gym
+  - where is it
+  - policy
+  - arrange sport sessions together
+- Waste
+  - where to find the trash bins
+  - how to separate the trash 
+- Bike/ski/snowboards storage
+- Car parks
+- Write to the admin
+
 ### Screenshots 
 #### Android
 
